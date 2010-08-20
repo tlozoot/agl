@@ -1,5 +1,11 @@
 - div_for item do
-  This is a
-  %strong= item.singular
-  and these are
-  %strong= item.plural
+  .singular
+    This is a
+    %strong= item.singular
+    = image_tag item.clipart.singular_file, :width => "100"
+    
+  .plural
+    and these are
+    %strong= item.plural
+    = (image_tag item.clipart.plural_file, :width => "50") * 3
+  
