@@ -1,0 +1,160 @@
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateParticipants (20100820020141)
+  [4;35;1mSQL (1.2ms)[0m   [0mCREATE TABLE "participants" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "code" varchar(255), "location" varchar(255), "age" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100820020141')[0m
+Migrating to CreateStems (20100820020148)
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "stems" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "singular" varchar(255), "plural_a" varchar(255), "plural_b" varchar(255), "vowel" varchar(255), "stress" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100820020148')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("participants")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("stems")[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateStems (20100820020148)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mDROP TABLE "stems"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20100820020148'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("participants")[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateParticipants (20100820020141)
+Migrating to CreateStems (20100820020148)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "stems" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "singular" varchar(255), "plural" varchar(255), "vowel" varchar(255), "stress" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100820020148')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.9ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("participants")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("stems")[0m
+  [4;36;1mStem Create (0.5ms)[0m   [0;1mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('iamb', '2010-08-20 05:09:35', 's_fup', '2010-08-20 05:09:35', 'u', 's_fip')[0m
+  [4;35;1mStem Create (0.4ms)[0m   [0mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('iamb', '2010-08-20 05:09:36', 'p_snem', '2010-08-20 05:09:36', 'e', 'p_snom')[0m
+  [4;36;1mStem Create (0.3ms)[0m   [0;1mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('iamb', '2010-08-20 05:09:36', 'fr_kuf', '2010-08-20 05:09:36', 'u', 'fr_kif')[0m
+  [4;35;1mStem Create (0.3ms)[0m   [0mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('iamb', '2010-08-20 05:09:36', 'k_zem', '2010-08-20 05:09:36', 'e', 'k_zom')[0m
+  [4;36;1mStem Create (0.3ms)[0m   [0;1mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('trochee', '2010-08-20 05:09:36', 'chak_p', '2010-08-20 05:09:36', 'a', 'chak_p')[0m
+  [4;35;1mStem Create (0.4ms)[0m   [0mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('iamb', '2010-08-20 05:09:36', 'tr_mel', '2010-08-20 05:09:36', 'e', 'tr_mol')[0m
+  [4;36;1mStem Create (0.4ms)[0m   [0;1mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('iamb', '2010-08-20 05:09:36', 'g_sut', '2010-08-20 05:09:36', 'u', 'g_sit')[0m
+  [4;35;1mStem Create (0.3ms)[0m   [0mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('iamb', '2010-08-20 05:09:36', 'bl_zap', '2010-08-20 05:09:36', 'a', 'bl_zap')[0m
+  [4;36;1mStem Create (0.3ms)[0m   [0;1mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('iamb', '2010-08-20 05:09:36', 'l_taf', '2010-08-20 05:09:36', 'a', 'l_taf')[0m
+  [4;35;1mStem Create (0.3ms)[0m   [0mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('trochee', '2010-08-20 05:09:36', 'gun_k', '2010-08-20 05:09:36', 'u', 'gin_k')[0m
+  [4;36;1mStem Create (0.3ms)[0m   [0;1mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('trochee', '2010-08-20 05:09:36', 'katr_f', '2010-08-20 05:09:36', 'a', 'katr_f')[0m
+  [4;35;1mStem Create (0.3ms)[0m   [0mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('trochee', '2010-08-20 05:09:36', 'lup_t', '2010-08-20 05:09:36', 'u', 'lip_t')[0m
+  [4;36;1mStem Create (0.3ms)[0m   [0;1mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('trochee', '2010-08-20 05:09:36', 'desh_f', '2010-08-20 05:09:36', 'e', 'dosh_f')[0m
+  [4;35;1mStem Create (0.3ms)[0m   [0mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('iamb', '2010-08-20 05:09:36', 'b_chuk', '2010-08-20 05:09:36', 'u', 'b_chik')[0m
+  [4;36;1mStem Create (0.3ms)[0m   [0;1mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('trochee', '2010-08-20 05:09:36', 'zant_m', '2010-08-20 05:09:36', 'a', 'zant_m')[0m
+  [4;35;1mStem Create (0.3ms)[0m   [0mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('iamb', '2010-08-20 05:09:36', 'm_raf', '2010-08-20 05:09:36', 'a', 'm_raf')[0m
+  [4;36;1mStem Create (0.3ms)[0m   [0;1mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('trochee', '2010-08-20 05:09:36', 'sag_ch', '2010-08-20 05:09:36', 'a', 'sag_ch')[0m
+  [4;35;1mStem Create (0.3ms)[0m   [0mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('trochee', '2010-08-20 05:09:36', 'plak_t', '2010-08-20 05:09:36', 'a', 'plak_t')[0m
+  [4;36;1mStem Create (0.4ms)[0m   [0;1mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('trochee', '2010-08-20 05:09:36', 'skak_l', '2010-08-20 05:09:36', 'a', 'skak_l')[0m
+  [4;35;1mStem Create (0.3ms)[0m   [0mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('iamb', '2010-08-20 05:09:36', 'shr_dad', '2010-08-20 05:09:36', 'a', 'shr_dad')[0m
+  [4;36;1mStem Create (0.3ms)[0m   [0;1mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('trochee', '2010-08-20 05:09:36', 'chedr_l', '2010-08-20 05:09:36', 'e', 'chodr_l')[0m
+  [4;35;1mStem Create (0.4ms)[0m   [0mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('iamb', '2010-08-20 05:09:36', 'st_sham', '2010-08-20 05:09:36', 'a', 'st_sham')[0m
+  [4;36;1mStem Create (0.3ms)[0m   [0;1mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('trochee', '2010-08-20 05:09:36', 'kush_t', '2010-08-20 05:09:36', 'u', 'kish_t')[0m
+  [4;35;1mStem Create (0.3ms)[0m   [0mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('trochee', '2010-08-20 05:09:36', 'fun_l', '2010-08-20 05:09:36', 'u', 'fin_l')[0m
+  [4;36;1mStem Create (0.3ms)[0m   [0;1mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('iamb', '2010-08-20 05:09:36', 't_gep', '2010-08-20 05:09:36', 'e', 't_gop')[0m
+  [4;35;1mStem Create (0.3ms)[0m   [0mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('trochee', '2010-08-20 05:09:36', 'zedr_m', '2010-08-20 05:09:36', 'e', 'zodr_m')[0m
+  [4;36;1mStem Create (0.5ms)[0m   [0;1mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('iamb', '2010-08-20 05:09:36', 'pl_sum', '2010-08-20 05:09:36', 'u', 'pl_sim')[0m
+  [4;35;1mStem Create (0.3ms)[0m   [0mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('trochee', '2010-08-20 05:09:36', 'brez_l', '2010-08-20 05:09:36', 'e', 'broz_l')[0m
+  [4;36;1mStem Create (0.3ms)[0m   [0;1mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('trochee', '2010-08-20 05:09:36', 'sheb_f', '2010-08-20 05:09:36', 'e', 'shob_f')[0m
+  [4;35;1mStem Create (0.3ms)[0m   [0mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('iamb', '2010-08-20 05:09:36', 'b_ndef', '2010-08-20 05:09:36', 'e', 'b_ndof')[0m
+  [4;36;1mStem Create (0.4ms)[0m   [0;1mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('iamb', '2010-08-20 05:09:36', 'dr_tup', '2010-08-20 05:09:36', 'u', 'dr_tip')[0m
+  [4;35;1mStem Create (0.5ms)[0m   [0mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('iamb', '2010-08-20 05:09:36', 'n_dep', '2010-08-20 05:09:36', 'e', 'n_dop')[0m
+  [4;36;1mStem Create (0.4ms)[0m   [0;1mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('iamb', '2010-08-20 05:09:36', 'st_fet', '2010-08-20 05:09:36', 'e', 'st_fot')[0m
+  [4;35;1mStem Create (0.4ms)[0m   [0mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('trochee', '2010-08-20 05:09:36', 'parn_k', '2010-08-20 05:09:36', 'a', 'parn_k')[0m
+  [4;36;1mStem Create (0.4ms)[0m   [0;1mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('iamb', '2010-08-20 05:09:36', 'sk_net', '2010-08-20 05:09:36', 'e', 'sk_not')[0m
+  [4;35;1mStem Create (0.6ms)[0m   [0mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('iamb', '2010-08-20 05:09:36', 'kl_put', '2010-08-20 05:09:36', 'u', 'kl_pit')[0m
+  [4;36;1mStem Create (0.3ms)[0m   [0;1mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('iamb', '2010-08-20 05:09:36', 'dr_nap', '2010-08-20 05:09:36', 'a', 'dr_nap')[0m
+  [4;35;1mStem Create (0.3ms)[0m   [0mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('trochee', '2010-08-20 05:09:36', 'zard_l', '2010-08-20 05:09:36', 'a', 'zard_l')[0m
+  [4;36;1mStem Create (0.3ms)[0m   [0;1mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('trochee', '2010-08-20 05:09:36', 'sef_k', '2010-08-20 05:09:36', 'e', 'sof_k')[0m
+  [4;35;1mStem Create (0.3ms)[0m   [0mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('iamb', '2010-08-20 05:09:36', 's_bad', '2010-08-20 05:09:36', 'a', 's_bad')[0m
+  [4;36;1mStem Create (0.4ms)[0m   [0;1mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('trochee', '2010-08-20 05:09:36', 'stam_ch', '2010-08-20 05:09:36', 'a', 'stam_ch')[0m
+  [4;35;1mStem Create (0.3ms)[0m   [0mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('trochee', '2010-08-20 05:09:36', 'kef_t', '2010-08-20 05:09:36', 'e', 'kof_t')[0m
+  [4;36;1mStem Create (0.3ms)[0m   [0;1mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('iamb', '2010-08-20 05:09:36', 'k_shel', '2010-08-20 05:09:36', 'e', 'k_shol')[0m
+  [4;35;1mStem Create (0.3ms)[0m   [0mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('iamb', '2010-08-20 05:09:36', 'g_mat', '2010-08-20 05:09:36', 'a', 'g_mat')[0m
+  [4;36;1mStem Create (0.2ms)[0m   [0;1mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('iamb', '2010-08-20 05:09:36', 'm_fat', '2010-08-20 05:09:36', 'a', 'm_fat')[0m
+  [4;35;1mStem Create (0.4ms)[0m   [0mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('iamb', '2010-08-20 05:09:36', 'b_tak', '2010-08-20 05:09:36', 'a', 'b_tak')[0m
+  [4;36;1mStem Create (0.3ms)[0m   [0;1mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('trochee', '2010-08-20 05:09:36', 'sum_l', '2010-08-20 05:09:36', 'u', 'sim_l')[0m
+  [4;35;1mStem Create (0.3ms)[0m   [0mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('iamb', '2010-08-20 05:09:36', 't_kash', '2010-08-20 05:09:36', 'a', 't_kash')[0m
+  [4;36;1mStem Create (0.3ms)[0m   [0;1mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('trochee', '2010-08-20 05:09:36', 'bal_d', '2010-08-20 05:09:36', 'a', 'bal_d')[0m
+  [4;35;1mStem Create (0.3ms)[0m   [0mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('trochee', '2010-08-20 05:09:36', 'fren_p', '2010-08-20 05:09:36', 'e', 'fron_p')[0m
+  [4;36;1mStem Create (0.3ms)[0m   [0;1mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('iamb', '2010-08-20 05:09:36', 'shr_tuk', '2010-08-20 05:09:36', 'u', 'shr_tik')[0m
+  [4;35;1mStem Create (0.3ms)[0m   [0mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('iamb', '2010-08-20 05:09:36', 's_sach', '2010-08-20 05:09:36', 'a', 's_sach')[0m
+  [4;36;1mStem Create (0.3ms)[0m   [0;1mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('trochee', '2010-08-20 05:09:36', 'gast_sh', '2010-08-20 05:09:36', 'a', 'gast_sh')[0m
+  [4;35;1mStem Create (0.3ms)[0m   [0mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('trochee', '2010-08-20 05:09:36', 'bluk_m', '2010-08-20 05:09:36', 'u', 'blik_m')[0m
+  [4;36;1mStem Create (0.3ms)[0m   [0;1mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('iamb', '2010-08-20 05:09:36', 't_shuf', '2010-08-20 05:09:36', 'u', 't_shif')[0m
+  [4;35;1mStem Create (0.3ms)[0m   [0mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('trochee', '2010-08-20 05:09:36', 'sutr_f', '2010-08-20 05:09:36', 'u', 'sitr_f')[0m
+  [4;36;1mStem Create (0.2ms)[0m   [0;1mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('trochee', '2010-08-20 05:09:36', 'past_f', '2010-08-20 05:09:36', 'a', 'past_f')[0m
+  [4;35;1mStem Create (0.3ms)[0m   [0mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('trochee', '2010-08-20 05:09:36', 'bul_k', '2010-08-20 05:09:36', 'u', 'bil_k')[0m
+  [4;36;1mStem Create (0.3ms)[0m   [0;1mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('iamb', '2010-08-20 05:09:36', 'k_nul', '2010-08-20 05:09:36', 'u', 'k_nil')[0m
+  [4;35;1mStem Create (1.1ms)[0m   [0mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('trochee', '2010-08-20 05:09:36', 'kresh_k', '2010-08-20 05:09:36', 'e', 'krosh_k')[0m
+  [4;36;1mStem Create (0.3ms)[0m   [0;1mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('iamb', '2010-08-20 05:09:36', 'sm_ref', '2010-08-20 05:09:36', 'e', 'sm_rof')[0m
+  [4;35;1mStem Create (0.3ms)[0m   [0mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('trochee', '2010-08-20 05:09:36', 'lef_p', '2010-08-20 05:09:36', 'e', 'lof_p')[0m
+  [4;36;1mStem Create (0.3ms)[0m   [0;1mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('iamb', '2010-08-20 05:09:36', 'ch_mum', '2010-08-20 05:09:36', 'u', 'ch_mim')[0m
+  [4;35;1mStem Create (0.3ms)[0m   [0mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('iamb', '2010-08-20 05:09:36', 'f_dral', '2010-08-20 05:09:36', 'a', 'f_dral')[0m
+  [4;36;1mStem Create (0.3ms)[0m   [0;1mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('iamb', '2010-08-20 05:09:36', 'p_dul', '2010-08-20 05:09:36', 'u', 'p_dil')[0m
+  [4;35;1mStem Create (0.3ms)[0m   [0mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('trochee', '2010-08-20 05:09:36', 'prus_m', '2010-08-20 05:09:36', 'u', 'pris_m')[0m
+  [4;36;1mStem Create (0.3ms)[0m   [0;1mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('iamb', '2010-08-20 05:09:36', 'pl_zek', '2010-08-20 05:09:36', 'e', 'pl_zok')[0m
+  [4;35;1mStem Create (1.0ms)[0m   [0mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('trochee', '2010-08-20 05:09:36', 'shund_f', '2010-08-20 05:09:36', 'u', 'shind_f')[0m
+  [4;36;1mStem Create (0.4ms)[0m   [0;1mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('trochee', '2010-08-20 05:09:36', 'larb_d', '2010-08-20 05:09:36', 'a', 'larb_d')[0m
+  [4;35;1mStem Create (0.3ms)[0m   [0mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('trochee', '2010-08-20 05:09:36', 'rask_sh', '2010-08-20 05:09:36', 'a', 'rask_sh')[0m
+  [4;36;1mStem Create (0.3ms)[0m   [0;1mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('trochee', '2010-08-20 05:09:36', 'zum_p', '2010-08-20 05:09:36', 'u', 'zim_p')[0m
+  [4;35;1mStem Create (0.3ms)[0m   [0mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('trochee', '2010-08-20 05:09:36', 'fas_m', '2010-08-20 05:09:36', 'a', 'fas_m')[0m
+  [4;36;1mStem Create (0.3ms)[0m   [0;1mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('trochee', '2010-08-20 05:09:36', 'drag_t', '2010-08-20 05:09:36', 'a', 'drag_t')[0m
+  [4;35;1mStem Create (0.3ms)[0m   [0mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('iamb', '2010-08-20 05:09:36', 'r_zal', '2010-08-20 05:09:36', 'a', 'r_zal')[0m
+  [4;36;1mStem Create (0.3ms)[0m   [0;1mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('iamb', '2010-08-20 05:09:36', 'br_gam', '2010-08-20 05:09:36', 'a', 'br_gam')[0m
+  [4;35;1mStem Create (0.3ms)[0m   [0mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('trochee', '2010-08-20 05:09:36', 'taz_p', '2010-08-20 05:09:36', 'a', 'taz_p')[0m
+  [4;36;1mStem Create (0.3ms)[0m   [0;1mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('iamb', '2010-08-20 05:09:36', 'pr_nash', '2010-08-20 05:09:36', 'a', 'pr_nash')[0m
+  [4;35;1mStem Create (0.3ms)[0m   [0mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('trochee', '2010-08-20 05:09:36', 'must_p', '2010-08-20 05:09:36', 'u', 'mist_p')[0m
+  [4;36;1mStem Create (0.3ms)[0m   [0;1mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('trochee', '2010-08-20 05:09:36', 'mand_k', '2010-08-20 05:09:36', 'a', 'mand_k')[0m
+  [4;35;1mStem Create (1.6ms)[0m   [0mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('trochee', '2010-08-20 05:09:36', 'prek_t', '2010-08-20 05:09:36', 'e', 'prok_t')[0m
+  [4;36;1mStem Create (0.3ms)[0m   [0;1mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('iamb', '2010-08-20 05:09:36', 'ch_pak', '2010-08-20 05:09:36', 'a', 'ch_pak')[0m
+  [4;35;1mStem Create (0.3ms)[0m   [0mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('iamb', '2010-08-20 05:09:36', 'kr_nach', '2010-08-20 05:09:36', 'a', 'kr_nach')[0m
+  [4;36;1mStem Create (0.3ms)[0m   [0;1mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('trochee', '2010-08-20 05:09:36', 'kref_m', '2010-08-20 05:09:36', 'e', 'krof_m')[0m
+  [4;35;1mStem Create (0.3ms)[0m   [0mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('iamb', '2010-08-20 05:09:36', 'm_pek', '2010-08-20 05:09:36', 'e', 'm_pok')[0m
+  [4;36;1mStem Load (8.6ms)[0m   [0;1mSELECT * FROM "stems" [0m
