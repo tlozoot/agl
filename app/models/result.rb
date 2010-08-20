@@ -1,0 +1,13 @@
+class Result < ActiveRecord::Base
+
+  belongs_to :stem
+  belongs_to :participant
+  
+  before_save :update_info
+  
+  def update_info
+    display_order = stem.display_order
+    experiment_phase = stem.experiment_phase
+  end
+
+end

@@ -158,3 +158,3736 @@ Migrating to CreateStems (20100820020148)
   [4;36;1mStem Create (0.3ms)[0m   [0;1mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('trochee', '2010-08-20 05:09:36', 'kref_m', '2010-08-20 05:09:36', 'e', 'krof_m')[0m
   [4;35;1mStem Create (0.3ms)[0m   [0mINSERT INTO "stems" ("stress", "created_at", "singular", "updated_at", "vowel", "plural") VALUES('iamb', '2010-08-20 05:09:36', 'm_pek', '2010-08-20 05:09:36', 'e', 'm_pok')[0m
   [4;36;1mStem Load (8.6ms)[0m   [0;1mSELECT * FROM "stems" [0m
+  [4;36;1mStem Load (5.5ms)[0m   [0;1mSELECT * FROM "stems" [0m
+  [4;36;1mStem Load (5.6ms)[0m   [0;1mSELECT * FROM "stems" [0m
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+  [4;36;1mStem Load (5.6ms)[0m   [0;1mSELECT * FROM "stems" [0m
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+DEPRECATION WARNING: Array#rand is deprecated and will be removed in Rails 3. Use "random_element" instead. (called from randomly_pick at /Users/jonathan/fixagl/lib/array.rb:5)
+  [4;36;1mStem Load (5.7ms)[0m   [0;1mSELECT * FROM "stems" [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateParticipants (20100820020141)
+Migrating to CreateStems (20100820020148)
+Migrating to AddTrainingGroupToParticipants (20100820061509)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mALTER TABLE "participants" ADD "training_group" varchar(255)[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100820061509')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("participants")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("stems")[0m
+  [4;36;1mStem Load (4.1ms)[0m   [0;1mSELECT * FROM "stems" WHERE (vowel = 'a') [0m
+  [4;35;1mStem Load (2.3ms)[0m   [0mSELECT * FROM "stems" WHERE ((vowel = 'e' OR vowel = 'u') AND stress = 'iamb') [0m
+  [4;36;1mStem Load (4.3ms)[0m   [0;1mSELECT * FROM "stems" WHERE (vowel = 'a') [0m
+  [4;35;1mStem Load (2.5ms)[0m   [0mSELECT * FROM "stems" WHERE ((vowel = 'e' OR vowel = 'u') AND stress = 'iamb') [0m
+  [4;36;1mStem Load (4.2ms)[0m   [0;1mSELECT * FROM "stems" WHERE (vowel = 'a') [0m
+  [4;35;1mStem Load (2.5ms)[0m   [0mSELECT * FROM "stems" WHERE ((vowel = 'e' OR vowel = 'u') AND stress = 'iamb') [0m
+  [4;36;1mStem Load (5.3ms)[0m   [0;1mSELECT * FROM "stems" WHERE (vowel = 'a') [0m
+  [4;35;1mStem Load (2.2ms)[0m   [0mSELECT * FROM "stems" WHERE ((vowel = 'e' OR vowel = 'u') AND stress = 'iamb') [0m
+  [4;36;1mStem Load (4.8ms)[0m   [0;1mSELECT * FROM "stems" WHERE (vowel = 'a') [0m
+  [4;35;1mStem Load (2.7ms)[0m   [0mSELECT * FROM "stems" WHERE ((vowel = 'e' OR vowel = 'u') AND stress = 'iamb') [0m
+  [4;36;1mStem Load (4.4ms)[0m   [0;1mSELECT * FROM "stems" WHERE (vowel = 'a') [0m
+  [4;35;1mStem Load (2.6ms)[0m   [0mSELECT * FROM "stems" WHERE ((vowel = 'e' OR vowel = 'u') AND stress = 'iamb') [0m
+  [4;36;1mStem Load (4.4ms)[0m   [0;1mSELECT * FROM "stems" WHERE (vowel = 'a') [0m
+  [4;35;1mStem Load (2.6ms)[0m   [0mSELECT * FROM "stems" WHERE ((vowel = 'e' OR vowel = 'u') AND stress = 'iamb') [0m
+  [4;36;1mStem Load (4.5ms)[0m   [0;1mSELECT * FROM "stems" WHERE (vowel = 'a') [0m
+  [4;35;1mStem Load (2.3ms)[0m   [0mSELECT * FROM "stems" WHERE ((vowel = 'e' OR vowel = 'u') AND stress = 'iamb') [0m
+  [4;36;1mStem Load (4.4ms)[0m   [0;1mSELECT * FROM "stems" WHERE (vowel = 'a') [0m
+  [4;35;1mStem Load (2.6ms)[0m   [0mSELECT * FROM "stems" WHERE ((vowel = 'e' OR vowel = 'u') AND stress = 'iamb') [0m
+  [4;36;1mStem Load (4.3ms)[0m   [0;1mSELECT * FROM "stems" WHERE (vowel = 'a') [0m
+  [4;35;1mStem Load (4.7ms)[0m   [0mSELECT * FROM "stems" WHERE (vowel = 'e' OR vowel = 'u') [0m
+  [4;36;1mStem Load (5.0ms)[0m   [0;1mSELECT * FROM "stems" WHERE (vowel = 'a') [0m
+  [4;35;1mStem Load (4.4ms)[0m   [0mSELECT * FROM "stems" WHERE (vowel = 'e' OR vowel = 'u') [0m
+  [4;36;1mStem Load (4.3ms)[0m   [0;1mSELECT * FROM "stems" WHERE (vowel = 'a') [0m
+  [4;35;1mStem Load (4.1ms)[0m   [0mSELECT * FROM "stems" WHERE (vowel = 'e' OR vowel = 'u') [0m
+  [4;36;1mStem Load (4.5ms)[0m   [0;1mSELECT * FROM "stems" WHERE (vowel = 'a') [0m
+  [4;35;1mStem Load (70.3ms)[0m   [0mSELECT * FROM "stems" WHERE ((vowel = 'e' OR vowel = 'u') AND stress = 'iamb') [0m
+  [4;36;1mStem Load (4.3ms)[0m   [0;1mSELECT * FROM "stems" WHERE (vowel = 'a') [0m
+  [4;35;1mStem Load (2.8ms)[0m   [0mSELECT * FROM "stems" WHERE ((vowel = 'e' OR vowel = 'u') AND stress = 'iamb') [0m
+  [4;36;1mStem Load (4.3ms)[0m   [0;1mSELECT * FROM "stems" WHERE (vowel = 'a') [0m
+  [4;35;1mStem Load (2.4ms)[0m   [0mSELECT * FROM "stems" WHERE ((vowel = 'e' OR vowel = 'u') AND stress = 'iamb') [0m
+  [4;36;1mStem Load (5.3ms)[0m   [0;1mSELECT * FROM "stems" WHERE (vowel = 'a') [0m
+  [4;35;1mStem Load (2.4ms)[0m   [0mSELECT * FROM "stems" WHERE ((vowel = 'e' OR vowel = 'u') AND stress = 'trochee') [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mStem Load (3.8ms)[0m   [0mSELECT * FROM "stems" WHERE (vowel = 'a') [0m
+  [4;36;1mStem Load (0.3ms)[0m   [0;1mSELECT * FROM "stems" WHERE ((vowel = 'e' OR vowel = 'u') AND stress = NULL) [0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateParticipants (20100820020141)
+Migrating to CreateStems (20100820020148)
+Migrating to AddTrainingGroupToParticipants (20100820061509)
+Migrating to CreateResults (20100820063627)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "results" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "participant_id" integer, "stem_id" integer, "category" varchar(255), "response" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100820063627')[0m
+  [4;35;1mSQL (1.7ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("participants")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("results")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("stems")[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateResults (20100820063627)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mDROP TABLE "results"[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20100820063627'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("participants")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("stems")[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateParticipants (20100820020141)
+Migrating to CreateStems (20100820020148)
+Migrating to AddTrainingGroupToParticipants (20100820061509)
+Migrating to CreateResults (20100820063627)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE TABLE "results" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "participant_id" integer, "stem_id" integer, "display_order" integer, "category" varchar(255), "response" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100820063627')[0m
+  [4;35;1mSQL (2.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("participants")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("results")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("stems")[0m
+  [4;36;1mStem Load (5.6ms)[0m   [0;1mSELECT * FROM "stems" [0m
+  [4;35;1mStem Load (6.5ms)[0m   [0mSELECT * FROM "stems" [0m
+  [4;36;1mStem Load (6.1ms)[0m   [0;1mSELECT * FROM "stems" [0m
+  [4;36;1mStem Load (6.0ms)[0m   [0;1mSELECT * FROM "stems" [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateResults (20100820063627)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mDROP TABLE "results"[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20100820063627'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("participants")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("stems")[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateParticipants (20100820020141)
+Migrating to CreateStems (20100820020148)
+Migrating to AddTrainingGroupToParticipants (20100820061509)
+Migrating to CreateResults (20100820063627)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCREATE TABLE "results" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "participant_id" integer, "stem_id" integer, "display_order" integer, "experiment_phase" varchar(255), "response" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100820063627')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("participants")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("results")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("stems")[0m
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2010-08-20 03:30:08) [GET]
+  [4;36;1mSQL (0.9ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Completed in 92ms (View: 11, DB: 1) | 200 OK [http://localhost/rails/info/properties]
+
+
+Processing ParticipantsController#index (for 127.0.0.1 at 2010-08-20 03:30:46) [GET]
+Rendering template within layouts/application
+Rendering participants/index
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:30:46) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:30:46) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#index (for 127.0.0.1 at 2010-08-20 03:31:18) [GET]
+Rendering template within layouts/application
+Rendering participants/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:31:18) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:31:18) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#index (for 127.0.0.1 at 2010-08-20 03:31:30) [GET]
+Rendering template within layouts/application
+Rendering participants/index
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/participants/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:31:30) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:31:30) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:31:33) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:31:33) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:31:33) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:32:05) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:32:05) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:32:05) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#index (for 127.0.0.1 at 2010-08-20 03:32:07) [GET]
+Rendering template within layouts/application
+Rendering participants/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #2 of app/views/participants/index.haml:
+1: %ul
+2:   - @participants.each do |p|
+3:     %li= link_to p
+
+    app/views/participants/index.haml:2:in `_run_haml_app47views47participants47index46haml'
+    haml (3.0.14) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.14) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    compass (0.10.3) lib/compass/app_integration/rails/actionpack2/action_controller.rb:7:in `process'
+    haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendered rescues/_trace (123.5ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ParticipantsController#index (for 127.0.0.1 at 2010-08-20 03:33:14) [GET]
+  [4;36;1mParticipant Load (0.4ms)[0m   [0;1mSELECT * FROM "participants" [0m
+Rendering template within layouts/application
+Rendering participants/index
+Completed in 88ms (View: 1, DB: 0) | 200 OK [http://localhost/participants/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:33:14) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:33:14) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:33:16) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:33:16) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:33:16) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#show (for 127.0.0.1 at 2010-08-20 03:33:18) [GET]
+  Parameters: {"id"=>"index"}
+  [4;35;1mParticipant Load (0.1ms)[0m   [0mSELECT * FROM "participants" WHERE ("participants"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Participant with ID=index):
+  app/controllers/participants_controller.rb:9:in `show'
+  compass (0.10.3) lib/compass/app_integration/rails/actionpack2/action_controller.rb:7:in `process'
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendered rescues/_trace (113.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#index (for 127.0.0.1 at 2010-08-20 03:33:22) [GET]
+  [4;36;1mParticipant Load (0.4ms)[0m   [0;1mSELECT * FROM "participants" [0m
+Rendering template within layouts/application
+Rendering participants/index
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://localhost/participants/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:33:22) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:33:22) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#index (for 127.0.0.1 at 2010-08-20 03:33:54) [GET]
+  [4;35;1mParticipant Load (0.4ms)[0m   [0mSELECT * FROM "participants" [0m
+Rendering template within layouts/application
+Rendering participants/index
+Completed in 6ms (View: 1, DB: 0) | 200 OK [http://localhost/participants/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:33:54) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:33:54) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:33:56) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+
+ActionView::TemplateError (undefined local variable or method `participant' for #<ActionView::Base:0x103046858>) on line #1 of app/views/participants/new.haml:
+1: - semantic_form_for participant do |f|
+2:   = f.inputs
+3:   = f.buttons
+
+    app/views/participants/new.haml:1:in `_run_haml_app47views47participants47new46haml'
+    haml (3.0.14) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.14) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    compass (0.10.3) lib/compass/app_integration/rails/actionpack2/action_controller.rb:7:in `process'
+    haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendered rescues/_trace (49.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2010-08-20 03:35:12) [GET]
+
+SyntaxError (/Users/jonathan/fixagl/app/controllers/participants_controller.rb:20: syntax error, unexpected $end, expecting kEND):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendered rescues/_trace (39.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:35:18) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 55ms (View: 48, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:35:18) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:35:18) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:35:20) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 17ms (View: 10, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:35:20) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:35:20) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:35:21) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 16ms (View: 9, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:35:21) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:35:21) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:35:21) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 17ms (View: 9, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:35:21) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:35:21) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:35:21) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 16ms (View: 9, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:35:22) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:35:22) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:35:22) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 17ms (View: 10, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:35:22) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:35:22) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:35:22) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 89ms (View: 10, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:35:23) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:35:23) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:35:23) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 16ms (View: 10, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:35:23) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:35:23) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:35:23) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 16ms (View: 9, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:35:23) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:35:23) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:35:24) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 86ms (View: 80, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:35:24) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:35:24) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:35:24) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 16ms (View: 9, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:35:24) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:35:24) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:35:24) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 16ms (View: 9, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:35:25) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:35:25) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:35:25) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 17ms (View: 10, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:35:25) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:35:25) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:35:25) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 17ms (View: 10, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:35:25) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:35:25) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:35:26) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 16ms (View: 9, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:35:26) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:35:26) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:35:26) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 16ms (View: 9, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:35:26) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:35:26) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:35:26) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 17ms (View: 10, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:35:26) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:35:26) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:35:27) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 16ms (View: 9, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:35:27) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:35:27) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:35:27) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 16ms (View: 9, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:35:27) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:35:27) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:35:28) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 16ms (View: 9, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:35:28) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:35:28) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:35:28) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 17ms (View: 10, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:35:28) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:35:28) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:35:28) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 17ms (View: 10, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:35:28) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:35:28) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:35:29) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 90ms (View: 10, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:35:29) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:35:29) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:35:29) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 16ms (View: 10, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:35:29) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:35:29) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:35:29) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 16ms (View: 10, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:35:29) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:35:29) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:35:30) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 87ms (View: 80, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:35:30) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:35:30) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:35:30) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 16ms (View: 9, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:35:30) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:35:30) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:35:31) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 16ms (View: 9, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:35:31) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:35:31) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:35:31) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 16ms (View: 9, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:35:31) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:35:31) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:35:31) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 16ms (View: 9, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:35:31) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:35:31) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:36:39) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+
+ActionView::TemplateError (undefined method `inputs' for #<ActionView::Helpers::FormBuilder:0x103266048>) on line #7 of app/views/participants/new.haml:
+4:     %h2 Welcome to the experiment!
+5:     %p This is some intro text here....
+6: - form_for @participant do |f|
+7:   = f.inputs
+8:   = f.buttons
+
+    app/views/participants/new.haml:7:in `_run_haml_app47views47participants47new46haml'
+    haml (3.0.14) rails/./lib/haml/helpers/action_view_mods.rb:225:in `call'
+    haml (3.0.14) rails/./lib/haml/helpers/action_view_mods.rb:225:in `form_for'
+    haml (3.0.14) lib/haml/helpers.rb:588:in `call'
+    haml (3.0.14) lib/haml/helpers.rb:588:in `haml_bind_proc'
+    haml (3.0.14) rails/./lib/haml/helpers/action_view_mods.rb:231:in `form_for'
+    app/views/participants/new.haml:6:in `_run_haml_app47views47participants47new46haml'
+    haml (3.0.14) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.14) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    compass (0.10.3) lib/compass/app_integration/rails/actionpack2/action_controller.rb:7:in `process'
+    haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendered rescues/_trace (129.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:37:15) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 16ms (View: 9, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:37:15) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:37:15) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:39:34) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+
+ActionView::TemplateError (No expansion found for :application) on line #7 of app/views/layouts/application.haml:
+4:     %meta{ :content => "text/html; charset=utf-8", "http-equiv" => "Content-Type" }
+5:     %title figAGL-01
+6:     = javascript_include_tag ''
+7:     = stylesheet_link_tag :application
+8:   %body
+9:     %h1 fixAGL-O1
+10:     #main= yield
+
+    app/views/layouts/application.haml:7:in `_run_haml_app47views47layouts47application46haml'
+    haml (3.0.14) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.14) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    compass (0.10.3) lib/compass/app_integration/rails/actionpack2/action_controller.rb:7:in `process'
+    haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendered rescues/_trace (129.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:39:45) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 17ms (View: 10, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:39:45) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/application.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:39:45) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:44:35) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:44:35) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:47:04) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:47:04) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:47:25) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:47:25) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:49:16) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 16ms (View: 5, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:49:16) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:49:16) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/colors.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:49:26) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 14ms (View: 5, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:49:26) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:49:26) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/colors.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:49:33) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:49:33) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:49:33) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/colors.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:49:38) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:49:38) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:49:38) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/colors.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:49:47) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 13ms (View: 6, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:49:47) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:49:47) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/colors.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:50:03) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:50:03) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:50:03) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/colors.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:50:15) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 13ms (View: 6, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:50:15) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:50:15) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/colors.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:50:26) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 14ms (View: 5, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:50:26) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:50:26) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/colors.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:50:31) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 13ms (View: 6, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:50:31) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:50:31) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/colors.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:50:36) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:50:36) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:50:36) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/colors.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:50:51) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:50:51) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:50:51) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/colors.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:50:59) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:50:59) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:50:59) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/colors.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:51:21) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 18ms (View: 11, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:51:21) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:51:21) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/colors.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:51:54) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:51:54) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:51:54) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/colors.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:52:04) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:52:04) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:52:04) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/colors.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:52:27) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:52:27) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:52:27) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/colors.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:55:09) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+
+ActionView::TemplateError (Inconsistent indentation: "  \t  " was used for indentation, but the rest of the document was indented using 2 spaces.) on line #6 of app/views/participants/new.haml:
+3:   %li#intro
+4:     %h2 Welcome to the experiment!
+5:     :textile
+6:   	  In this survey, you will learn words and their plurals in a made-up language. 
+7:   	  
+8:   	  In the first phase, you will learn some words of this new language. In the second phase, we will ask you to apply what you've learned: You will be given words in the singular, and you'll be asked to supply the plural. Please note that we are not interested in a _correct_ answer, but rather in what feels natural to you.
+9:   	  
+
+    app/views/participants/new.haml:6
+    haml (3.0.14) lib/haml/precompiler.rb:152:in `tabs'
+    haml (3.0.14) lib/haml/precompiler.rb:134:in `instance_eval'
+    haml (3.0.14) lib/haml/precompiler.rb:134:in `tabs'
+    haml (3.0.14) lib/haml/precompiler.rb:942:in `next_line'
+    haml (3.0.14) lib/haml/precompiler.rb:169:in `precompile'
+    haml (3.0.14) lib/haml/engine.rb:121:in `initialize'
+    haml (3.0.14) rails/./lib/haml/template/plugin.rb:29:in `new'
+    haml (3.0.14) rails/./lib/haml/template/plugin.rb:29:in `compile'
+    haml (3.0.14) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.14) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    compass (0.10.3) lib/compass/app_integration/rails/actionpack2/action_controller.rb:7:in `process'
+    haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendered rescues/_trace (56.2ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:55:20) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 200ms (View: 193, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:55:20) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:55:20) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/colors.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:55:36) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 20ms (View: 13, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:55:36) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:55:36) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/colors.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:56:24) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 13ms (View: 6, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:56:24) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:56:24) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/colors.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:56:50) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:56:51) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:56:51) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/colors.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:56:51) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 13ms (View: 6, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:56:51) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:56:51) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/colors.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:56:58) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:56:58) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:56:58) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/colors.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:57:06) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 14ms (View: 6, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:57:07) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:57:07) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/colors.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:57:38) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:57:38) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:57:38) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/colors.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:57:42) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 13ms (View: 6, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:57:42) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:57:42) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/colors.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:57:50) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:57:50) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:57:50) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/colors.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:58:13) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 88ms (View: 78, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:58:14) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:58:14) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/colors.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:58:18) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:58:18) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:58:18) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/colors.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:58:42) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:58:42) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:58:42) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/colors.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:58:51) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:58:51) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:58:51) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/colors.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:59:02) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 15ms (View: 5, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:59:02) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:59:02) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/colors.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:59:18) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 87ms (View: 5, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:59:18) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:59:18) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/colors.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:59:30) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:59:30) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:59:30) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/colors.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 03:59:35) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:59:36) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:59:36) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/colors.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#index (for 127.0.0.1 at 2010-08-20 03:59:42) [GET]
+  [4;36;1mParticipant Load (0.5ms)[0m   [0;1mSELECT * FROM "participants" [0m
+Rendering template within layouts/application
+Rendering participants/index
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://localhost/participants/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:59:42) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:59:42) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/colors.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#index (for 127.0.0.1 at 2010-08-20 03:59:58) [GET]
+  [4;35;1mParticipant Load (0.4ms)[0m   [0mSELECT * FROM "participants" [0m
+Rendering template within layouts/application
+Rendering participants/index
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/participants/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:59:58) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 03:59:58) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/colors.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#index (for 127.0.0.1 at 2010-08-20 04:00:12) [GET]
+  [4;36;1mParticipant Load (0.4ms)[0m   [0;1mSELECT * FROM "participants" [0m
+Rendering template within layouts/application
+Rendering participants/index
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/participants/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 04:00:12) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 04:00:12) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/colors.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#index (for 127.0.0.1 at 2010-08-20 04:01:36) [GET]
+  [4;35;1mParticipant Load (0.4ms)[0m   [0mSELECT * FROM "participants" [0m
+Rendering template within layouts/application
+Rendering participants/index
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/participants/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 04:01:36) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 04:01:36) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/colors.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 04:01:39) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 21ms (View: 13, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 04:01:39) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 04:01:39) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/colors.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#index (for 127.0.0.1 at 2010-08-20 04:02:20) [GET]
+  [4;36;1mParticipant Load (0.4ms)[0m   [0;1mSELECT * FROM "participants" [0m
+Rendering template within layouts/application
+Rendering participants/index
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/participants/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 04:02:20) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 04:02:20) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/colors.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 04:02:27) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 16ms (View: 6, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 04:02:27) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 04:02:27) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/colors.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 04:03:18) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+
+ActionView::TemplateError (There's no Ruby code for = to evaluate.) on line #14 of app/views/layouts/application.haml:
+11:   %body
+12:     %h1 Fixed AGL #1
+13:     #main= yield
+14:     #footer= 
+
+    app/views/layouts/application.haml:14
+    haml (3.0.14) lib/haml/precompiler.rb:760:in `render_tag'
+    haml (3.0.14) lib/haml/precompiler.rb:828:in `render_div'
+    haml (3.0.14) lib/haml/precompiler.rb:213:in `process_line'
+    haml (3.0.14) lib/haml/precompiler.rb:178:in `precompile'
+    haml (3.0.14) lib/haml/engine.rb:121:in `initialize'
+    haml (3.0.14) rails/./lib/haml/template/plugin.rb:29:in `new'
+    haml (3.0.14) rails/./lib/haml/template/plugin.rb:29:in `compile'
+    haml (3.0.14) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.14) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    compass (0.10.3) lib/compass/app_integration/rails/actionpack2/action_controller.rb:7:in `process'
+    haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendered rescues/_trace (129.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 04:03:29) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 17ms (View: 10, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 04:03:29) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 04:03:29) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/colors.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 04:04:12) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 21ms (View: 13, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 04:04:12) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 04:04:12) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/colors.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 04:04:45) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 04:04:45) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 04:04:45) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/colors.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 04:05:01) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 04:05:01) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 04:05:01) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/colors.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 04:05:05) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 14ms (View: 6, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 04:05:05) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 04:05:05) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/colors.css" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 04:06:09) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 04:06:09) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 04:06:22) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 86ms (View: 5, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 04:06:22) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 04:06:27) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 04:06:27) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 04:06:41) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 85ms (View: 5, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 04:06:41) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 04:06:48) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 04:06:48) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 04:07:50) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 86ms (View: 6, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 04:07:50) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 04:08:22) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 21ms (View: 14, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 04:08:22) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 04:08:23) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 04:08:23) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 04:08:30) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 21ms (View: 14, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 04:08:30) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 04:08:31) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 04:08:31) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 04:08:52) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 34ms (View: 24, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 04:08:53) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 04:09:48) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 20ms (View: 14, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 04:09:48) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 04:10:11) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 92ms (View: 6, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 04:10:11) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 04:10:21) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 14ms (View: 6, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 04:10:21) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 04:11:30) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 85ms (View: 6, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 04:11:31) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 04:11:34) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 04:11:34) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 04:12:43) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 18ms (View: 10, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 04:12:43) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 04:12:54) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 93ms (View: 11, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 04:12:54) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 04:14:50) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 21ms (View: 14, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 04:14:50) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 04:15:24) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 90ms (View: 11, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 04:15:24) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#index (for 127.0.0.1 at 2010-08-20 04:15:26) [GET]
+  [4;35;1mParticipant Load (0.4ms)[0m   [0mSELECT * FROM "participants" [0m
+Rendering template within layouts/application
+Rendering participants/index
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 04:15:26) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 04:15:27) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+Completed in 13ms (View: 6, DB: 0) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 04:15:27) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 04:17:09) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+  [4;36;1mStem Load (2.8ms)[0m   [0;1mSELECT * FROM "stems" WHERE (vowel = 'a') [0m
+  [4;35;1mStem Load (1.9ms)[0m   [0mSELECT * FROM "stems" WHERE ((vowel = 'e' OR vowel = 'u') AND stress = 'trochee') [0m
+Rendered items/_training_item (0.6ms)
+Rendered items/_training_item (0.1ms)
+Rendered items/_training_item (0.1ms)
+Rendered items/_training_item (0.1ms)
+Rendered items/_training_item (0.1ms)
+Rendered items/_training_item (0.1ms)
+Rendered items/_training_item (0.1ms)
+Rendered items/_training_item (0.1ms)
+Rendered items/_training_item (0.1ms)
+Rendered items/_training_item (0.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "stems" WHERE (vowel = 'a') [0m
+  [4;35;1mStem Load (3.6ms)[0m   [0mSELECT * FROM "stems" WHERE (vowel = 'e' OR vowel = 'u') [0m
+Rendered items/_testing_item (0.7ms)
+Rendered items/_testing_item (0.1ms)
+Rendered items/_testing_item (0.1ms)
+Rendered items/_testing_item (0.1ms)
+Rendered items/_testing_item (0.1ms)
+Rendered items/_testing_item (0.1ms)
+Rendered items/_testing_item (0.1ms)
+Rendered items/_testing_item (0.1ms)
+Rendered items/_testing_item (0.1ms)
+Rendered items/_testing_item (0.1ms)
+Completed in 125ms (View: 110, DB: 8) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 04:17:09) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 04:17:42) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+  [4;36;1mStem Load (3.0ms)[0m   [0;1mSELECT * FROM "stems" WHERE (vowel = 'a') [0m
+  [4;35;1mStem Load (1.9ms)[0m   [0mSELECT * FROM "stems" WHERE ((vowel = 'e' OR vowel = 'u') AND stress = 'trochee') [0m
+Rendered items/_training_item (0.1ms)
+Rendered items/_training_item (0.1ms)
+Rendered items/_training_item (0.1ms)
+Rendered items/_training_item (0.1ms)
+Rendered items/_training_item (0.1ms)
+Rendered items/_training_item (0.1ms)
+Rendered items/_training_item (0.1ms)
+Rendered items/_training_item (0.1ms)
+Rendered items/_training_item (0.1ms)
+Rendered items/_training_item (0.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "stems" WHERE (vowel = 'a') [0m
+  [4;35;1mStem Load (3.3ms)[0m   [0mSELECT * FROM "stems" WHERE (vowel = 'e' OR vowel = 'u') [0m
+Rendered items/_testing_item (3.5ms)
+Rendered items/_testing_item (0.4ms)
+Rendered items/_testing_item (0.3ms)
+Rendered items/_testing_item (0.5ms)
+Rendered items/_testing_item (72.5ms)
+Rendered items/_testing_item (0.5ms)
+Rendered items/_testing_item (0.4ms)
+Rendered items/_testing_item (0.4ms)
+Rendered items/_testing_item (0.5ms)
+Rendered items/_testing_item (0.4ms)
+Completed in 116ms (View: 101, DB: 8) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 04:17:42) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 04:18:06) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+  [4;36;1mStem Load (2.6ms)[0m   [0;1mSELECT * FROM "stems" WHERE (vowel = 'a') [0m
+  [4;35;1mStem Load (1.8ms)[0m   [0mSELECT * FROM "stems" WHERE ((vowel = 'e' OR vowel = 'u') AND stress = 'iamb') [0m
+Rendered items/_training_item (0.2ms)
+Rendered items/_training_item (0.1ms)
+Rendered items/_training_item (0.1ms)
+Rendered items/_training_item (0.1ms)
+Rendered items/_training_item (0.1ms)
+Rendered items/_training_item (0.1ms)
+Rendered items/_training_item (0.1ms)
+Rendered items/_training_item (0.1ms)
+Rendered items/_training_item (0.1ms)
+Rendered items/_training_item (0.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "stems" WHERE (vowel = 'a') [0m
+  [4;35;1mStem Load (3.3ms)[0m   [0mSELECT * FROM "stems" WHERE (vowel = 'e' OR vowel = 'u') [0m
+Rendered items/_testing_item (2.7ms)
+Rendered items/_testing_item (0.3ms)
+Rendered items/_testing_item (0.4ms)
+Rendered items/_testing_item (0.3ms)
+Rendered items/_testing_item (0.3ms)
+Rendered items/_testing_item (0.3ms)
+Rendered items/_testing_item (0.3ms)
+Rendered items/_testing_item (0.3ms)
+Rendered items/_testing_item (0.5ms)
+Rendered items/_testing_item (0.3ms)
+Completed in 49ms (View: 34, DB: 8) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 04:18:06) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 04:19:07) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+  [4;36;1mStem Load (2.6ms)[0m   [0;1mSELECT * FROM "stems" WHERE (vowel = 'a') [0m
+  [4;35;1mStem Load (1.8ms)[0m   [0mSELECT * FROM "stems" WHERE ((vowel = 'e' OR vowel = 'u') AND stress = 'iamb') [0m
+Rendered items/_training_item (0.1ms)
+Rendered items/_training_item (0.1ms)
+Rendered items/_training_item (0.1ms)
+Rendered items/_training_item (0.1ms)
+Rendered items/_training_item (0.1ms)
+Rendered items/_training_item (0.1ms)
+Rendered items/_training_item (0.1ms)
+Rendered items/_training_item (0.1ms)
+Rendered items/_training_item (0.1ms)
+Rendered items/_training_item (0.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "stems" WHERE (vowel = 'a') [0m
+  [4;35;1mStem Load (3.3ms)[0m   [0mSELECT * FROM "stems" WHERE (vowel = 'e' OR vowel = 'u') [0m
+Rendered items/_testing_item (2.8ms)
+Rendered items/_testing_item (0.4ms)
+Rendered items/_testing_item (0.3ms)
+Rendered items/_testing_item (0.3ms)
+Rendered items/_testing_item (0.3ms)
+Rendered items/_testing_item (0.3ms)
+Rendered items/_testing_item (0.5ms)
+Rendered items/_testing_item (0.3ms)
+Rendered items/_testing_item (0.3ms)
+Rendered items/_testing_item (0.3ms)
+Completed in 38ms (View: 24, DB: 8) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 04:19:07) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 04:19:43) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+  [4;36;1mStem Load (2.8ms)[0m   [0;1mSELECT * FROM "stems" WHERE (vowel = 'a') [0m
+  [4;35;1mStem Load (1.9ms)[0m   [0mSELECT * FROM "stems" WHERE ((vowel = 'e' OR vowel = 'u') AND stress = 'trochee') [0m
+Rendered items/_training_item (0.2ms)
+Rendered items/_training_item (0.1ms)
+Rendered items/_training_item (0.1ms)
+Rendered items/_training_item (0.1ms)
+Rendered items/_training_item (0.1ms)
+Rendered items/_training_item (0.1ms)
+Rendered items/_training_item (0.1ms)
+Rendered items/_training_item (0.1ms)
+Rendered items/_training_item (0.1ms)
+Rendered items/_training_item (0.1ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "stems" WHERE (vowel = 'a') [0m
+  [4;35;1mStem Load (3.4ms)[0m   [0mSELECT * FROM "stems" WHERE (vowel = 'e' OR vowel = 'u') [0m
+Rendered items/_testing_item (2.6ms)
+Rendered items/_testing_item (0.4ms)
+Rendered items/_testing_item (0.3ms)
+Rendered items/_testing_item (0.3ms)
+Rendered items/_testing_item (0.3ms)
+Rendered items/_testing_item (0.3ms)
+Rendered items/_testing_item (0.3ms)
+Rendered items/_testing_item (0.3ms)
+Rendered items/_testing_item (0.3ms)
+Rendered items/_testing_item (0.3ms)
+Completed in 122ms (View: 107, DB: 8) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 04:19:43) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 04:21:15) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+  [4;36;1mStem Load (2.6ms)[0m   [0;1mSELECT * FROM "stems" WHERE (vowel = 'a') [0m
+  [4;35;1mStem Load (1.7ms)[0m   [0mSELECT * FROM "stems" WHERE ((vowel = 'e' OR vowel = 'u') AND stress = 'trochee') [0m
+
+ActionView::TemplateError (Missing template participants/_item.erb in view path app/views) on line #1 of app/views/items/_training_item.haml:
+1: = render 'item', :item => item
+
+    haml (3.0.14) rails/./lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (3.0.14) lib/haml/helpers.rb:90:in `non_haml'
+    haml (3.0.14) rails/./lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/items/_training_item.haml:1:in `_run_haml_app47views47items47_training_item46haml_locals_item_object_training_item'
+    haml (3.0.14) rails/./lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (3.0.14) lib/haml/helpers.rb:90:in `non_haml'
+    haml (3.0.14) rails/./lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/participants/new.haml:20:in `_run_haml_app47views47participants47new46haml'
+    app/views/participants/new.haml:19:in `each'
+    app/views/participants/new.haml:19:in `_run_haml_app47views47participants47new46haml'
+    haml (3.0.14) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.14) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    compass (0.10.3) lib/compass/app_integration/rails/actionpack2/action_controller.rb:7:in `process'
+    haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendered rescues/_trace (66.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 04:21:45) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+  [4;36;1mStem Load (2.8ms)[0m   [0;1mSELECT * FROM "stems" WHERE (vowel = 'a') [0m
+  [4;35;1mStem Load (1.7ms)[0m   [0mSELECT * FROM "stems" WHERE ((vowel = 'e' OR vowel = 'u') AND stress = 'trochee') [0m
+Rendered items/_item (81.8ms)
+Rendered items/_training_item (86.1ms)
+Rendered items/_item (0.5ms)
+Rendered items/_training_item (0.9ms)
+Rendered items/_item (0.5ms)
+Rendered items/_training_item (0.8ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.7ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.7ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.7ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.7ms)
+Rendered items/_item (0.5ms)
+Rendered items/_training_item (0.8ms)
+Rendered items/_item (0.5ms)
+Rendered items/_training_item (0.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "stems" WHERE (vowel = 'a') [0m
+  [4;35;1mStem Load (3.4ms)[0m   [0mSELECT * FROM "stems" WHERE (vowel = 'e' OR vowel = 'u') [0m
+Rendered items/_item (0.5ms)
+Rendered items/_testing_item (1.4ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.6ms)
+Rendered items/_item (0.8ms)
+Rendered items/_testing_item (1.1ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.7ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.6ms)
+Rendered items/_item (0.6ms)
+Rendered items/_testing_item (0.9ms)
+Rendered items/_item (0.5ms)
+Rendered items/_testing_item (0.8ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.7ms)
+Completed in 140ms (View: 125, DB: 8) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 04:21:45) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 04:21:58) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+  [4;36;1mStem Load (2.7ms)[0m   [0;1mSELECT * FROM "stems" WHERE (vowel = 'a') [0m
+  [4;35;1mStem Load (2.0ms)[0m   [0mSELECT * FROM "stems" WHERE ((vowel = 'e' OR vowel = 'u') AND stress = 'iamb') [0m
+Rendered items/_item (3.3ms)
+Rendered items/_training_item (3.8ms)
+Rendered items/_item (0.5ms)
+Rendered items/_training_item (0.9ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.6ms)
+Rendered items/_item (0.6ms)
+Rendered items/_training_item (0.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "stems" WHERE (vowel = 'a') [0m
+  [4;35;1mStem Load (3.4ms)[0m   [0mSELECT * FROM "stems" WHERE (vowel = 'e' OR vowel = 'u') [0m
+Rendered items/_item (0.5ms)
+Rendered items/_testing_item (0.8ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.6ms)
+Rendered items/_item (0.5ms)
+Rendered items/_testing_item (0.8ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.8ms)
+Rendered items/_item (0.5ms)
+Rendered items/_testing_item (1.0ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (1.0ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.7ms)
+Completed in 51ms (View: 36, DB: 8) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 04:21:58) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 04:22:14) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+  [4;36;1mStem Load (2.6ms)[0m   [0;1mSELECT * FROM "stems" WHERE (vowel = 'a') [0m
+  [4;35;1mStem Load (1.7ms)[0m   [0mSELECT * FROM "stems" WHERE ((vowel = 'e' OR vowel = 'u') AND stress = 'trochee') [0m
+Rendered items/_item (2.6ms)
+Rendered items/_training_item (3.0ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.7ms)
+Rendered items/_item (0.6ms)
+Rendered items/_training_item (0.9ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.6ms)
+Rendered items/_item (0.5ms)
+Rendered items/_training_item (0.8ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.7ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "stems" WHERE (vowel = 'a') [0m
+  [4;35;1mStem Load (3.3ms)[0m   [0mSELECT * FROM "stems" WHERE (vowel = 'e' OR vowel = 'u') [0m
+Rendered items/_item (0.7ms)
+Rendered items/_testing_item (1.0ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.6ms)
+Rendered items/_item (0.6ms)
+Rendered items/_testing_item (0.8ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.7ms)
+Rendered items/_item (0.5ms)
+Rendered items/_testing_item (0.7ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.6ms)
+Completed in 116ms (View: 101, DB: 8) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 04:22:14) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 04:23:18) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+  [4;36;1mStem Load (2.7ms)[0m   [0;1mSELECT * FROM "stems" WHERE (vowel = 'a') [0m
+  [4;35;1mStem Load (1.8ms)[0m   [0mSELECT * FROM "stems" WHERE ((vowel = 'e' OR vowel = 'u') AND stress = 'trochee') [0m
+Rendered items/_item (2.7ms)
+Rendered items/_training_item (3.1ms)
+Rendered items/_item (0.5ms)
+Rendered items/_training_item (0.8ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.8ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.7ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "stems" WHERE (vowel = 'a') [0m
+  [4;35;1mStem Load (3.4ms)[0m   [0mSELECT * FROM "stems" WHERE (vowel = 'e' OR vowel = 'u') [0m
+Rendered items/_item (0.5ms)
+Rendered items/_testing_item (0.8ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.7ms)
+Rendered items/_item (77.2ms)
+Rendered items/_testing_item (77.5ms)
+Rendered items/_item (0.8ms)
+Rendered items/_testing_item (1.2ms)
+Rendered items/_item (0.5ms)
+Rendered items/_testing_item (0.9ms)
+Rendered items/_item (0.5ms)
+Rendered items/_testing_item (0.8ms)
+Rendered items/_item (0.5ms)
+Rendered items/_testing_item (0.8ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.9ms)
+Rendered items/_item (0.5ms)
+Rendered items/_testing_item (0.8ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.6ms)
+Completed in 128ms (View: 112, DB: 8) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 04:23:18) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 04:23:35) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+  [4;36;1mStem Load (2.9ms)[0m   [0;1mSELECT * FROM "stems" WHERE (vowel = 'a') [0m
+  [4;35;1mStem Load (1.7ms)[0m   [0mSELECT * FROM "stems" WHERE ((vowel = 'e' OR vowel = 'u') AND stress = 'trochee') [0m
+Rendered items/_item (2.6ms)
+Rendered items/_training_item (3.1ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.7ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.7ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.6ms)
+Rendered items/_item (0.5ms)
+Rendered items/_training_item (0.7ms)
+Rendered items/_item (0.8ms)
+Rendered items/_training_item (73.0ms)
+Rendered items/_item (0.5ms)
+Rendered items/_training_item (0.8ms)
+Rendered items/_item (0.5ms)
+Rendered items/_training_item (0.7ms)
+Rendered items/_item (0.5ms)
+Rendered items/_training_item (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "stems" WHERE (vowel = 'a') [0m
+  [4;35;1mStem Load (3.5ms)[0m   [0mSELECT * FROM "stems" WHERE (vowel = 'e' OR vowel = 'u') [0m
+Rendered items/_item (0.5ms)
+Rendered items/_testing_item (0.9ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.6ms)
+Completed in 121ms (View: 106, DB: 8) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 04:23:35) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 04:23:50) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+  [4;36;1mStem Load (2.6ms)[0m   [0;1mSELECT * FROM "stems" WHERE (vowel = 'a') [0m
+  [4;35;1mStem Load (74.2ms)[0m   [0mSELECT * FROM "stems" WHERE ((vowel = 'e' OR vowel = 'u') AND stress = 'trochee') [0m
+Rendered items/_item (2.9ms)
+Rendered items/_training_item (3.6ms)
+Rendered items/_item (0.5ms)
+Rendered items/_training_item (0.8ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.7ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.7ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.7ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.7ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.7ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.6ms)
+Rendered items/_item (0.5ms)
+Rendered items/_training_item (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "stems" WHERE (vowel = 'a') [0m
+  [4;35;1mStem Load (3.4ms)[0m   [0mSELECT * FROM "stems" WHERE (vowel = 'e' OR vowel = 'u') [0m
+Rendered items/_item (0.5ms)
+Rendered items/_testing_item (0.8ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.6ms)
+Rendered items/_item (0.7ms)
+Rendered items/_testing_item (0.9ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.6ms)
+Rendered items/_item (0.8ms)
+Rendered items/_testing_item (1.1ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.7ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.7ms)
+Completed in 123ms (View: 35, DB: 80) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 04:23:50) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 04:23:57) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+  [4;36;1mStem Load (2.7ms)[0m   [0;1mSELECT * FROM "stems" WHERE (vowel = 'a') [0m
+  [4;35;1mStem Load (1.9ms)[0m   [0mSELECT * FROM "stems" WHERE ((vowel = 'e' OR vowel = 'u') AND stress = 'trochee') [0m
+Rendered items/_item (2.8ms)
+Rendered items/_training_item (3.3ms)
+Rendered items/_item (0.5ms)
+Rendered items/_training_item (0.8ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.7ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "stems" WHERE (vowel = 'a') [0m
+  [4;35;1mStem Load (3.4ms)[0m   [0mSELECT * FROM "stems" WHERE (vowel = 'e' OR vowel = 'u') [0m
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.8ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.6ms)
+Rendered items/_item (0.6ms)
+Rendered items/_testing_item (0.9ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.6ms)
+Rendered items/_item (0.5ms)
+Rendered items/_testing_item (1.2ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.7ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.6ms)
+Completed in 51ms (View: 35, DB: 8) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 04:23:57) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 04:24:10) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+  [4;36;1mStem Load (2.6ms)[0m   [0;1mSELECT * FROM "stems" WHERE (vowel = 'a') [0m
+  [4;35;1mStem Load (2.2ms)[0m   [0mSELECT * FROM "stems" WHERE ((vowel = 'e' OR vowel = 'u') AND stress = 'iamb') [0m
+Rendered items/_item (2.7ms)
+Rendered items/_training_item (3.1ms)
+Rendered items/_item (0.7ms)
+Rendered items/_training_item (1.0ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.6ms)
+Rendered items/_item (0.5ms)
+Rendered items/_training_item (0.7ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.8ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "stems" WHERE (vowel = 'a') [0m
+  [4;35;1mStem Load (3.6ms)[0m   [0mSELECT * FROM "stems" WHERE (vowel = 'e' OR vowel = 'u') [0m
+Rendered items/_item (0.5ms)
+Rendered items/_testing_item (0.8ms)
+Rendered items/_item (0.6ms)
+Rendered items/_testing_item (0.8ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.8ms)
+Rendered items/_item (0.5ms)
+Rendered items/_testing_item (0.8ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.6ms)
+Rendered items/_item (0.5ms)
+Rendered items/_testing_item (0.7ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.6ms)
+Rendered items/_item (0.8ms)
+Rendered items/_testing_item (70.2ms)
+Completed in 119ms (View: 103, DB: 8) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 04:24:11) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 04:24:18) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+  [4;36;1mStem Load (2.6ms)[0m   [0;1mSELECT * FROM "stems" WHERE (vowel = 'a') [0m
+  [4;35;1mStem Load (1.7ms)[0m   [0mSELECT * FROM "stems" WHERE ((vowel = 'e' OR vowel = 'u') AND stress = 'trochee') [0m
+Rendered items/_item (2.6ms)
+Rendered items/_training_item (3.1ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.7ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.6ms)
+Rendered items/_item (0.5ms)
+Rendered items/_training_item (1.0ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.7ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.6ms)
+Rendered items/_item (0.5ms)
+Rendered items/_training_item (0.8ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.7ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "stems" WHERE (vowel = 'a') [0m
+  [4;35;1mStem Load (3.3ms)[0m   [0mSELECT * FROM "stems" WHERE (vowel = 'e' OR vowel = 'u') [0m
+Rendered items/_item (0.9ms)
+Rendered items/_testing_item (1.2ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.7ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.6ms)
+Rendered items/_item (0.5ms)
+Rendered items/_testing_item (0.8ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.6ms)
+Rendered items/_item (70.7ms)
+Rendered items/_testing_item (71.0ms)
+Rendered items/_item (0.6ms)
+Rendered items/_testing_item (0.9ms)
+Completed in 120ms (View: 105, DB: 8) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 04:24:18) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 04:24:18) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+  [4;36;1mStem Load (2.7ms)[0m   [0;1mSELECT * FROM "stems" WHERE (vowel = 'a') [0m
+  [4;35;1mStem Load (1.7ms)[0m   [0mSELECT * FROM "stems" WHERE ((vowel = 'e' OR vowel = 'u') AND stress = 'trochee') [0m
+Rendered items/_item (2.7ms)
+Rendered items/_training_item (3.1ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.7ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.7ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.7ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "stems" WHERE (vowel = 'a') [0m
+  [4;35;1mStem Load (3.4ms)[0m   [0mSELECT * FROM "stems" WHERE (vowel = 'e' OR vowel = 'u') [0m
+Rendered items/_item (0.5ms)
+Rendered items/_testing_item (0.9ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.6ms)
+Rendered items/_item (0.5ms)
+Rendered items/_testing_item (0.8ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.6ms)
+Rendered items/_item (72.1ms)
+Rendered items/_testing_item (72.4ms)
+Rendered items/_item (0.6ms)
+Rendered items/_testing_item (0.9ms)
+Rendered items/_item (0.5ms)
+Rendered items/_testing_item (0.8ms)
+Completed in 121ms (View: 107, DB: 8) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 04:24:18) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 04:24:19) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+  [4;36;1mStem Load (2.7ms)[0m   [0;1mSELECT * FROM "stems" WHERE (vowel = 'a') [0m
+  [4;35;1mStem Load (1.8ms)[0m   [0mSELECT * FROM "stems" WHERE ((vowel = 'e' OR vowel = 'u') AND stress = 'iamb') [0m
+Rendered items/_item (2.8ms)
+Rendered items/_training_item (3.3ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.7ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.6ms)
+Rendered items/_item (0.5ms)
+Rendered items/_training_item (1.0ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.7ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.6ms)
+Rendered items/_item (0.7ms)
+Rendered items/_training_item (1.0ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.7ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.6ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "stems" WHERE (vowel = 'a') [0m
+  [4;35;1mStem Load (3.3ms)[0m   [0mSELECT * FROM "stems" WHERE (vowel = 'e' OR vowel = 'u') [0m
+Rendered items/_item (0.6ms)
+Rendered items/_testing_item (1.3ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.6ms)
+Rendered items/_item (0.6ms)
+Rendered items/_testing_item (1.1ms)
+Rendered items/_item (0.5ms)
+Rendered items/_testing_item (0.8ms)
+Rendered items/_item (0.5ms)
+Rendered items/_testing_item (0.7ms)
+Completed in 123ms (View: 108, DB: 8) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 04:24:19) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ParticipantsController#new (for 127.0.0.1 at 2010-08-20 04:24:19) [GET]
+Rendering template within layouts/application
+Rendering participants/new
+  [4;36;1mStem Load (2.7ms)[0m   [0;1mSELECT * FROM "stems" WHERE (vowel = 'a') [0m
+  [4;35;1mStem Load (1.7ms)[0m   [0mSELECT * FROM "stems" WHERE ((vowel = 'e' OR vowel = 'u') AND stress = 'iamb') [0m
+Rendered items/_item (2.8ms)
+Rendered items/_training_item (3.2ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.6ms)
+Rendered items/_item (0.8ms)
+Rendered items/_training_item (1.1ms)
+Rendered items/_item (0.5ms)
+Rendered items/_training_item (0.8ms)
+Rendered items/_item (0.4ms)
+Rendered items/_training_item (0.6ms)
+Rendered items/_item (0.7ms)
+Rendered items/_training_item (0.9ms)
+Rendered items/_item (0.6ms)
+Rendered items/_training_item (0.9ms)
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "stems" WHERE (vowel = 'a') [0m
+  [4;35;1mStem Load (3.5ms)[0m   [0mSELECT * FROM "stems" WHERE (vowel = 'e' OR vowel = 'u') [0m
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.8ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.6ms)
+Rendered items/_item (0.5ms)
+Rendered items/_testing_item (0.8ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.6ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.6ms)
+Rendered items/_item (0.5ms)
+Rendered items/_testing_item (0.7ms)
+Rendered items/_item (70.5ms)
+Rendered items/_testing_item (70.8ms)
+Rendered items/_item (0.6ms)
+Rendered items/_testing_item (1.1ms)
+Rendered items/_item (0.5ms)
+Rendered items/_testing_item (0.8ms)
+Rendered items/_item (0.4ms)
+Rendered items/_testing_item (0.7ms)
+Completed in 122ms (View: 107, DB: 8) | 200 OK [http://localhost/participants/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-08-20 04:24:20) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/.js" with {:method=>:get}):
+  haml (3.0.14) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendering rescues/layout (not_found)

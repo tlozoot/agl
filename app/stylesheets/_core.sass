@@ -1,0 +1,47 @@
+@import compass/reset/utilities
+
+@import mixins
+@import colors
+
++global-reset
+
+body
+  +serif
+  background-color: $lightGray
+  width: 700px
+  margin: 1em auto
+  
+#main
+  border: 1px solid black
+  padding: 1em
+  background-color: white
+
+h1
+  font-size: 2em
+  font-weight: bold
+  margin: 0.5em auto
+  a
+    color: black
+  
+h2
+  font-size: 1.5em
+  font-weight: bold
+  margin: 0 0 0.5em
+  
+p
+  line-height: 130%
+  margin: 0.5em 0
+
+a
+  text-decoration: none
+  &:hover
+    text-decoration: underline
+  
+#footer
+  +sans
+  font-size: 0.6em
+  text-align: right
+  margin: 0.5em 0
+  color: #555
+  a
+    color: #555

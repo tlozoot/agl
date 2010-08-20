@@ -1,0 +1,14 @@
+!!! 5
+%html
+  %head
+    %meta{ :content => "text/html; charset=utf-8", "http-equiv" => "Content-Type" }
+    %title figAGL-01
+    = javascript_include_tag ''
+    = stylesheet_link_tag 'application'
+    /[if lt IE 8]
+      = stylesheet_link_tag 'ie'
+    
+  %body
+    %h1= link_to "Fixed AGL #1", root_url
+    #main= yield
+    #footer= "&copy; 2010 #{ link_to 'Phonologist.org', 'http://phonologist.org', :target => :blank }"

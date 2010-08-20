@@ -1,0 +1,145 @@
+/* line 14, ../../../.rvm/gems/ruby-1.8.7-p174/gems/compass-0.10.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* line 17, ../../../.rvm/gems/ruby-1.8.7-p174/gems/compass-0.10.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+
+/* line 19, ../../../.rvm/gems/ruby-1.8.7-p174/gems/compass-0.10.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 21, ../../../.rvm/gems/ruby-1.8.7-p174/gems/compass-0.10.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+
+/* line 23, ../../../.rvm/gems/ruby-1.8.7-p174/gems/compass-0.10.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 25, ../../../.rvm/gems/ruby-1.8.7-p174/gems/compass-0.10.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: "" "";
+}
+/* line 96, ../../../.rvm/gems/ruby-1.8.7-p174/gems/compass-0.10.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+}
+
+/* line 27, ../../../.rvm/gems/ruby-1.8.7-p174/gems/compass-0.10.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 8, ../../app/stylesheets/_core.sass */
+body {
+  font-family: Georgia, Times, serif;
+  background-color: #fafafa;
+  width: 700px;
+  margin: 1em auto;
+}
+
+/* line 14, ../../app/stylesheets/_core.sass */
+#main {
+  border: 1px solid black;
+  padding: 1em;
+  background-color: white;
+}
+
+/* line 19, ../../app/stylesheets/_core.sass */
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0.5em auto;
+}
+/* line 23, ../../app/stylesheets/_core.sass */
+h1 a {
+  color: black;
+}
+
+/* line 26, ../../app/stylesheets/_core.sass */
+h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0 0 0.5em;
+}
+
+/* line 31, ../../app/stylesheets/_core.sass */
+p {
+  line-height: 130%;
+  margin: 0.5em 0;
+}
+
+/* line 35, ../../app/stylesheets/_core.sass */
+a {
+  text-decoration: none;
+}
+/* line 37, ../../app/stylesheets/_core.sass */
+a:hover {
+  text-decoration: underline;
+}
+
+/* line 40, ../../app/stylesheets/_core.sass */
+#footer {
+  font-family: Helvetica, Arial, Verdana, sans-serif;
+  font-size: 0.6em;
+  text-align: right;
+  margin: 0.5em 0;
+  color: #555555;
+}
+/* line 46, ../../app/stylesheets/_core.sass */
+#footer a {
+  color: #555555;
+}
+
+/* line 3, ../../app/stylesheets/application.sass */
+form#new_participant {
+  background-color: #fafafa;
+  padding: 0.5em;
+}
+/* line 6, ../../app/stylesheets/application.sass */
+form#new_participant label {
+  font-weight: bold;
+}
+/* line 8, ../../app/stylesheets/application.sass */
+form#new_participant input[type='submit'] {
+  float: right;
+}
+
+/* line 11, ../../app/stylesheets/application.sass */
+ul {
+  margin-top: 1em;
+  list-style: disc;
+}
+/* line 14, ../../app/stylesheets/application.sass */
+ul li {
+  line-height: 120%;
+  margin-left: 2em;
+}

@@ -1,0 +1,25 @@
+
+#intro
+  %h2 Welcome to the experiment!
+  :textile
+    In this survey, you will learn words and their plurals in a made-up language. 
+	  
+    In the first phase, you will learn some words of this new language. In the second phase, we will ask you to apply what you've learned: You will be given words in the singular, and you'll be asked to supply the plural. Please note that we are not interested in a _correct_ answer, but rather in what feels natural to you.
+	  
+    To understand how this works, let's start with a little example. In each of the next three screens, you will be introduced to words and their plurals. Please listen attentively and try to figure out how the plural is formed in this language. Try repeating the words aloud after you hear them.    
+  
+#info    
+  - form_for @participant do |f|
+    = f.label "Your Name: "
+    = f.text_field :name
+    = submit_tag "Continue &raquo;", :disabled => 'disabled'
+  
+%ul#training
+  %h2 Training items
+  - @participant.training_items.each do |item|
+    %li= render 'items/training_item', :item => item
+
+%ul#testing
+  %h2 Testing items
+  - @participant.testing_items.each do |item|
+    %li= render 'items/testing_item', :item => item
