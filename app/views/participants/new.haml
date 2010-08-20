@@ -15,7 +15,7 @@
     = submit_tag "Continue &raquo;", :disabled => 'disabled'
   
 %ul#training
-  %h2 Training items
+  %h2 Training items (#{ @participant.training_group + "s" })
   - @participant.training_items.each do |item|
     %li= render 'items/training_item', :item => item
 

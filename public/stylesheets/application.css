@@ -107,6 +107,11 @@ a:hover {
 }
 
 /* line 40, ../../app/stylesheets/_core.sass */
+strong {
+  font-weight: bold;
+}
+
+/* line 43, ../../app/stylesheets/_core.sass */
 #footer {
   font-family: Helvetica, Arial, Verdana, sans-serif;
   font-size: 0.6em;
@@ -114,7 +119,7 @@ a:hover {
   margin: 0.5em 0;
   color: #555555;
 }
-/* line 46, ../../app/stylesheets/_core.sass */
+/* line 49, ../../app/stylesheets/_core.sass */
 #footer a {
   color: #555555;
 }
@@ -140,6 +145,6 @@ ul {
 }
 /* line 14, ../../app/stylesheets/application.sass */
 ul li {
-  line-height: 120%;
+  line-height: 130%;
   margin-left: 2em;
 }
