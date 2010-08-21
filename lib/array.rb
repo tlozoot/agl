@@ -4,5 +4,8 @@ class Array
   def randomly_pick(number)
     self.sort_by{ Kernel.rand }.first(number)
   end
-    
+  
+  def deep_copy
+    Marshal.load(Marshal.dump(self))
+  end
 end

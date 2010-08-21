@@ -13,13 +13,20 @@
     = f.label "Your Name: "
     = f.text_field :name
     = submit_tag "Continue &raquo;", :disabled => 'disabled'
+    
   
 %ul#training
+  %h2 Training items
+  - @training_items.each do |item|
+    = render 'items/item', :item => item
+
+
+%ul#learning
   %h2 Learning items (#{ @participant.training_group + "s" })
-  - @learning_items.each do |item|
-    = render 'items/training_item', :item => item
+  - @participant.learning_items.each do |item|
+    = render 'items/item', :item => item
 
 %ul#testing
   %h2 Testing items
-  - @testing_items.each do |item|
-    = render 'items/testing_item', :item => item
+  - @participant.testing_items.each do |item|
+    = render 'items/item', :item => item

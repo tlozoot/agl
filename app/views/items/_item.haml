@@ -2,13 +2,12 @@
   .display_order= item.display_order
   .singular.item_text
     This is a
-    %strong= item.singular
+    %span.item_strong= item.singular
     %br
     = image_tag item.clipart.singular_file, :width => "75"
     
   .plural.item_text
     and these are
-    %strong= item.plural
+    %span.item_strong= display_plural_or_form(item)
     %br
     = (image_tag item.clipart.plural_file, :width => "75", :class => "plural_img") * 3
-  

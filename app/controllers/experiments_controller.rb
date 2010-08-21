@@ -7,15 +7,6 @@ class ExperimentsController < ApplicationController
     @vars = Variable.all
   end
   
-  def show
-    @participant = Participant.find(params[:id])
-  end
-  
-  def new
-    
-    
-  end
-  
   def create
     if @participant.save
       render root_url

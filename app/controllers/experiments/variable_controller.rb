@@ -4,6 +4,11 @@ class Experiments::VariableController < ExperimentsController
     @variables = Variable.all
   end
   
+  
+  def show
+    @variable = Variable.find(params[:id])
+  end
+  
   def new
     get_new_participant
     assign_pictures_to_stems
@@ -11,15 +16,8 @@ class Experiments::VariableController < ExperimentsController
     load_control_words
     load_experimental_words
     
-    @learning_items = get_experiment_items(:learning)
-    @testing_items = get_experiment_items(:testing)
-  end
-  
-  def show
-    @variable = Variable.find(params[:id])
-  end
-  
-  def create
+    @participant.learning_items = get_experiment_items(:learning)
+    @participant.testing_items = get_experiment_items(:testing)
   end
   
   private
@@ -37,7 +35,7 @@ class Experiments::VariableController < ExperimentsController
   end
   
   def get_training_words 
-    @training_words = [@stems.select{ |s| s.consonant == 'l' }.first, \
+    @training_items = [@stems.select{ |s| s.consonant == 'l' }.first, \
                        @stems.select{ |s| s.consonant == 'm' }.first, \
                        @stems.select{ |s| s.consonant == 'r' }.first] \
                       .each{ |item| item.experiment_phase = 'training' }
@@ -51,14 +49,14 @@ class Experiments::VariableController < ExperimentsController
   def load_experimental_words
     @experimental_words = {}
     @experimental_words[:testing]  = @stems.select{ |s| s.singular =~ /(p|t|k)$/ }
-    @experimental_words[:learning] = @experimental_words[:testing].select do |s|
+    @experimental_words[:learning] = @experimental_words[:testing].deep_copy.select do |s|
       s.stress == @participant.training_group 
     end
     
   end
   
   def get_experiment_items(phase)
-    @items = @control_words.randomly_pick(5) + @experimental_words[phase].randomly_pick(5) 
+    @items = @control_words.deep_copy.randomly_pick(5) + @experimental_words[phase].randomly_pick(5) 
     @items.each_index do |i|
       @items[i].experiment_phase = phase.to_s
       @items[i].display_order = i + 1
