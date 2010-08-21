@@ -1,13 +1,13 @@
 - content_tag_for(:li, item) do
   .display_order= item.display_order
-  .singular.item_text
+  .singular.item_text{ :data_sound => item.singular }
     This is a
     %span.item_strong= item.singular
     %br
     = image_tag item.clipart.singular_file, :width => "75"
     
-  .plural.item_text
+  .plural.item_text{ :data_sound => item.plural }
     and these are
-    %span.item_strong= display_plural_or_form(item)
+    = display_plural_or_form(item)
     %br
     = (image_tag item.clipart.plural_file, :width => "75", :class => "plural_img") * 3
