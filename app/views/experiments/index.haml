@@ -1,0 +1,13 @@
+/ .new#fixed= link_to "Start a Fixed AGL experiment", new_experiment_path
+/ %hr
+.new#variable= link_to "Start a Variable AGL experiment", new_variable_path
+
+%ul
+  %h2 Fixed AGL 
+  - @fixes.each do |p|
+    %li= link_to p.name, p
+  
+%ul
+  %h2 Variable AGL
+  - @vars.each do |p|
+    %li= link_to p.name, p

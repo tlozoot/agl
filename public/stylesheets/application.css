@@ -125,16 +125,16 @@ strong {
 }
 
 /* line 1, ../../app/stylesheets/_experiment.sass */
-form#new_participant {
+form.participant_name {
   background-color: #fafafa;
   padding: 0.5em;
 }
 /* line 4, ../../app/stylesheets/_experiment.sass */
-form#new_participant label {
+form.participant_name label {
   font-weight: bold;
 }
 /* line 6, ../../app/stylesheets/_experiment.sass */
-form#new_participant input[type='submit'] {
+form.participant_name input[type='submit'] {
   float: right;
 }
 
@@ -158,14 +158,21 @@ ul li {
   vertical-align: middle;
   *display: inline;
   *vertical-align: auto;
-  width: 49%;
   text-align: center;
 }
-/* line 23, ../../app/stylesheets/_experiment.sass */
+/* line 22, ../../app/stylesheets/_experiment.sass */
 .stem .item_text img {
   margin-top: 1em;
 }
-/* line 25, ../../app/stylesheets/_experiment.sass */
-.stem .item_text img.plural {
+/* line 24, ../../app/stylesheets/_experiment.sass */
+.stem .item_text img.plural_img {
   margin-right: 1em;
+}
+/* line 26, ../../app/stylesheets/_experiment.sass */
+.stem .singular {
+  width: 275px;
+}
+/* line 28, ../../app/stylesheets/_experiment.sass */
+.stem .plural {
+  width: 375px;
 }

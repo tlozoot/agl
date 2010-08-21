@@ -1,8 +1,9 @@
 ActionController::Routing::Routes.draw do |map|
   
-  map.root :controller => :participants, :action => :index
+  map.root :controller => :experiments, :action => :index
   
-  map.resources :participants
+  map.resources :experiments
+  map.resources :variable, :controller => "experiments/variable"
   
   # The priority is based upon order of creation: first created -> highest priority.
 

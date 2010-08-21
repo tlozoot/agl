@@ -1,4 +1,5 @@
 - content_tag_for(:li, item) do
+  .display_order= item.display_order
   .singular.item_text
     This is a
     %strong= item.singular
@@ -9,5 +10,5 @@
     and these are
     %strong= item.plural
     %br
-    = (image_tag item.clipart.plural_file, :width => "75", :class => "plural") * 3
+    = (image_tag item.clipart.plural_file, :width => "75", :class => "plural_img") * 3
   

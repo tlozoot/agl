@@ -1,7 +1,0 @@
-%h2 Participants
-
-#new= link_to "Start an experiment!", new_participant_path 
-
-%ul
-  - @participants.each do |p|
-    %li= link_to p.name, p

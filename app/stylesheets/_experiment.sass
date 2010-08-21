@@ -1,4 +1,4 @@
-form#new_participant
+form.participant_name
   background-color: $lightGray
   padding: 0.5em
   label
@@ -18,9 +18,12 @@ ul
 .stem
   .item_text
     +inline-block
-    width: 49%
     text-align: center
     img
       margin-top: 1em
-      &.plural
+      &.plural_img
         margin-right: 1em
+  .singular
+    width: 275px
+  .plural
+    width: 375px

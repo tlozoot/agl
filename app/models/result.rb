@@ -8,6 +8,7 @@ class Result < ActiveRecord::Base
   def update_info
     display_order = stem.display_order
     experiment_phase = stem.experiment_phase
+    reponse = stem.response
   end
 
 end
