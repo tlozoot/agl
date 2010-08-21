@@ -1,11 +1,13 @@
-- div_for item do
-  .singular
+- content_tag_for(:li, item) do
+  .singular.item_text
     This is a
     %strong= item.singular
-    = image_tag item.clipart.singular_file, :width => "100"
+    %br
+    = image_tag item.clipart.singular_file, :width => "75"
     
-  .plural
+  .plural.item_text
     and these are
     %strong= item.plural
-    = (image_tag item.clipart.plural_file, :width => "50") * 3
+    %br
+    = (image_tag item.clipart.plural_file, :width => "75", :class => "plural") * 3
   

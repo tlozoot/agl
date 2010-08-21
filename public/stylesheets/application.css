@@ -58,7 +58,7 @@ a img {
   border: none;
 }
 
-/* line 8, ../../app/stylesheets/_core.sass */
+/* line 1, ../../app/stylesheets/_core.sass */
 body {
   font-family: Georgia, Times, serif;
   background-color: #fafafa;
@@ -66,52 +66,52 @@ body {
   margin: 1em auto;
 }
 
-/* line 14, ../../app/stylesheets/_core.sass */
+/* line 7, ../../app/stylesheets/_core.sass */
 #main {
   border: 1px solid black;
   padding: 1em;
   background-color: white;
 }
 
-/* line 19, ../../app/stylesheets/_core.sass */
+/* line 12, ../../app/stylesheets/_core.sass */
 h1 {
   font-size: 2em;
   font-weight: bold;
   margin: 0.5em auto;
 }
-/* line 23, ../../app/stylesheets/_core.sass */
+/* line 16, ../../app/stylesheets/_core.sass */
 h1 a {
   color: black;
 }
 
-/* line 26, ../../app/stylesheets/_core.sass */
+/* line 19, ../../app/stylesheets/_core.sass */
 h2 {
   font-size: 1.5em;
   font-weight: bold;
   margin: 0 0 0.5em;
 }
 
-/* line 31, ../../app/stylesheets/_core.sass */
+/* line 24, ../../app/stylesheets/_core.sass */
 p {
   line-height: 130%;
   margin: 0.5em 0;
 }
 
-/* line 35, ../../app/stylesheets/_core.sass */
+/* line 28, ../../app/stylesheets/_core.sass */
 a {
   text-decoration: none;
 }
-/* line 37, ../../app/stylesheets/_core.sass */
+/* line 30, ../../app/stylesheets/_core.sass */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 40, ../../app/stylesheets/_core.sass */
+/* line 33, ../../app/stylesheets/_core.sass */
 strong {
   font-weight: bold;
 }
 
-/* line 43, ../../app/stylesheets/_core.sass */
+/* line 36, ../../app/stylesheets/_core.sass */
 #footer {
   font-family: Helvetica, Arial, Verdana, sans-serif;
   font-size: 0.6em;
@@ -119,32 +119,53 @@ strong {
   margin: 0.5em 0;
   color: #555555;
 }
-/* line 49, ../../app/stylesheets/_core.sass */
+/* line 42, ../../app/stylesheets/_core.sass */
 #footer a {
   color: #555555;
 }
 
-/* line 3, ../../app/stylesheets/application.sass */
+/* line 1, ../../app/stylesheets/_experiment.sass */
 form#new_participant {
   background-color: #fafafa;
   padding: 0.5em;
 }
-/* line 6, ../../app/stylesheets/application.sass */
+/* line 4, ../../app/stylesheets/_experiment.sass */
 form#new_participant label {
   font-weight: bold;
 }
-/* line 8, ../../app/stylesheets/application.sass */
+/* line 6, ../../app/stylesheets/_experiment.sass */
 form#new_participant input[type='submit'] {
   float: right;
 }
 
-/* line 11, ../../app/stylesheets/application.sass */
+/* line 9, ../../app/stylesheets/_experiment.sass */
 ul {
   margin-top: 1em;
-  list-style: disc;
 }
-/* line 14, ../../app/stylesheets/application.sass */
+/* line 11, ../../app/stylesheets/_experiment.sass */
 ul li {
   line-height: 130%;
-  margin-left: 2em;
+  border-top: 1px solid #bbbbbb;
+  margin-top: 1em;
+  padding-top: 1em;
+}
+
+/* line 19, ../../app/stylesheets/_experiment.sass */
+.stem .item_text {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *display: inline;
+  *vertical-align: auto;
+  width: 49%;
+  text-align: center;
+}
+/* line 23, ../../app/stylesheets/_experiment.sass */
+.stem .item_text img {
+  margin-top: 1em;
+}
+/* line 25, ../../app/stylesheets/_experiment.sass */
+.stem .item_text img.plural {
+  margin-right: 1em;
 }

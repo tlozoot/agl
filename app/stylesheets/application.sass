@@ -1,17 +1,10 @@
+@import compass/reset/utilities
+@import compass/css3/inline-block
+
+@import mixins
+@import colors
+
++global-reset
+
 @import core
-
-form#new_participant
-  background-color: $lightGray
-  padding: 0.5em
-  label
-    font-weight: bold
-  input[type='submit']
-    float: right
-
-ul
-  margin-top: 1em
-  list-style: disc
-  li
-    line-height: 130%
-    margin-left: 2em
-  
+@import experiment

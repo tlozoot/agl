@@ -17,9 +17,9 @@
 %ul#training
   %h2 Training items (#{ @participant.training_group + "s" })
   - @participant.training_items.each do |item|
-    %li= render 'items/training_item', :item => item
+    = render 'items/training_item', :item => item
 
 %ul#testing
   %h2 Testing items
   - @participant.testing_items.each do |item|
-    %li= render 'items/testing_item', :item => item
+    = render 'items/testing_item', :item => item
