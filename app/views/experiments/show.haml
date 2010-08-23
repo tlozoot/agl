@@ -3,15 +3,15 @@
 
 %ul
   %h3 Training items
-  - @participant.select_items(:training).each do |item|
+  - @participant.select_results(:training).each do |item|
     = render 'experiments/responses/result', :item => item
     
 %ul
   %h3 Learning items
-  - @participant.select_items(:learning).each do |item|
+  - @participant.select_results(:learning).each do |item|
     = render 'experiments/responses/result', :item => item
     
 %ul
   %h3 Testing items
-  - @participant.select_items(:testing).each do |item|
+  - @participant.select_results(:testing).each do |item|
     = render 'experiments/responses/result', :item => item

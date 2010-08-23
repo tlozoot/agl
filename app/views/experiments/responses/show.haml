@@ -2,18 +2,18 @@
   %h2= @result.experiment_phase.capitalize
 
   - div_for @result.stem do
-    .singular.item_text{ :data_sound => @result.stem.singular }
-      This is a
-      %span.item_strong= @result.stem.singular + "."
+    #singular_col.item_text{ :data_sound => @result.stem.singular }
+      This is a 
+      %span.item_strong#singular= @result.stem.singular
       %br
       = image_tag @result.clipart.singular_file, :width => "75"
     
-    .plural.item_text{ :data_sound => @result.stem.plural }
-      These are
+    #plural_col.item_text{ :data_sound => @result.stem.plural }
+      These are 
       - if @result.experiment_phase == 'testing'
         = f.text_field :response
       - else
-        %span.item_strong= @result.stem.plural + "."
+        %span.item_strong#plural= @result.stem.plural
       %br
       = (image_tag @result.clipart.plural_file, :width => "75", :class => "plural_img") * 3
   %fieldset.continue

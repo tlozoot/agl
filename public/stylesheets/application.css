@@ -206,10 +206,10 @@ span.item_strong:hover {
   margin-right: 1em;
 }
 /* line 36, ../../app/stylesheets/_experiment.sass */
-.stem .singular {
+.stem #singular_col {
   width: 275px;
 }
 /* line 38, ../../app/stylesheets/_experiment.sass */
-.stem .plural {
+.stem #plural_col {
   width: 375px;
 }

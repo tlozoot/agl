@@ -15,18 +15,18 @@ class Participant < ActiveRecord::Base
     self.code = Digest::MD5.hexdigest(name + Time.now.to_s)
   end
   
-  def items
-    self.results.map do |r| 
-       stem = r.stem
-       stem.experiment_phase = r.experiment_phase
-       stem.display_order = r.display_order
-       stem.response = r.response
-       stem
-     end
-  end
+  # def items
+  #   self.results.map do |r| 
+  #      stem = r.stem
+  #      stem.experiment_phase = r.experiment_phase
+  #      stem.display_order = r.display_order
+  #      stem.response = r.response
+  #      stem
+  #    end
+  # end
   
-  def select_items(phase)
-    self.items.select{ |r| r.experiment_phase == phase.to_s }
+  def select_results(phase)
+    self.results.select{ |r| r.experiment_phase == phase.to_s }
   end
   
 end

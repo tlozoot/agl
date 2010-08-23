@@ -5,9 +5,6 @@
 soundManager.url = "/soundmanager2.swf";
 soundManager.debugMode = false;
 
-soundManager.onload = function() { }
-
-
 jQuery.ajaxSetup({ 
   'beforeSend': function(xhr) {xhr.setRequestHeader("Accept", "text/javascript")}
 })
@@ -20,19 +17,27 @@ jQuery.fn.submitWithAjax = function() {
   return this;
 };
 
+jQuery.fn.createSound = function() {
+  var sound = this.html();
+  soundManager.createSound({
+    id: sound,
+    url: "/stimuli/variable/" + sound + ".mp3"
+  });
+  return sound;
+};
+
+soundManager.onload = function() {
+  var singular = $('span.item_strong#singular').createSound();
+  var plural = $('span.item_strong#plural').createSound();
+  
+  soundManager.play(singular, { onfinish: function() {
+    var playPl = function() { soundManager.play(plural) };
+    setTimeout(playPl, 500);
+  } });
+}
+
 $(document).ready(function() {
   
-  // Sound manager stuff
-  $('span.item_strong').click(function() {
-    var sound = $(this).html();
-    soundManager.createSound({
-     id: sound,
-     url: "/stimuli/variable/" + sound + ".mp3"
-    });
-    soundManager.play(sound);
-  })
-  
   $('form.ajax').submitWithAjax();
-  
-  
+
 })

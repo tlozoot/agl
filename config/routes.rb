@@ -4,6 +4,11 @@ ActionController::Routing::Routes.draw do |map|
   
   map.resources :experiments do |experiments|
     experiments.resources :responses, :controller => 'experiments/responses'
+    
+    experiments.training 'training', :controller => 'experiments/responses', :action => 'training'
+    experiments.learning 'learning', :controller => 'experiments/responses', :action => 'learning'
+    experiments.testing 'testing', :controller => 'experiments/responses', :action => 'testing'
+    experiments.finished 'finished', :controller => 'experiments/responses', :action => 'finished'
   end
   
   map.resources :variable, :controller => "experiments/variable"
