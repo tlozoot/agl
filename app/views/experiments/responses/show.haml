@@ -1,23 +1,20 @@
-- item = @stem
-- form_for [:experiment, @result], :url => experiment_responses_url do |f|
-  %h2= item.experiment_phase
-  = f.hidden_field :id
-  = f.hidden_field :experiment_phase
-  = f.hidden_field :display_order
+- form_for [:experiment, @result], :url => experiment_response_path(@participant, @result.display_order), :html => { :method => :put } do |f|
+  %h2= @result.experiment_phase.capitalize
 
-  - content_tag_for :li, item do
-    .display_order= item.display_order
-    .singular.item_text{ :data_sound => item.singular }
+  - div_for @result.stem do
+    .singular.item_text{ :data_sound => @result.stem.singular }
       This is a
-      %span.item_strong= item.singular
+      %span.item_strong= @result.stem.singular + "."
       %br
-      / = image_tag item.clipart.singular_file, :width => "75"
+      = image_tag @result.clipart.singular_file, :width => "75"
     
-    .plural.item_text{ :data_sound => item.plural }
-      and these are
-      - if item.experiment_phase == 'testing'
+    .plural.item_text{ :data_sound => @result.stem.plural }
+      These are
+      - if @result.experiment_phase == 'testing'
         = f.text_field :response
       - else
-        %span.item_strong= item.plural
+        %span.item_strong= @result.stem.plural + "."
       %br
-      / = (image_tag item.clipart.plural_file, :width => "75", :class => "plural_img") * 3
+      = (image_tag @result.clipart.plural_file, :width => "75", :class => "plural_img") * 3
+  %fieldset.continue
+    = submit_tag "Next &raquo;"

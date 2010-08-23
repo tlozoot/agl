@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100821074907) do
+ActiveRecord::Schema.define(:version => 20100823165817) do
 
   create_table "cliparts", :force => true do |t|
     t.string   "name"
@@ -36,6 +36,7 @@ ActiveRecord::Schema.define(:version => 20100821074907) do
     t.string   "response"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "clipart_id"
   end
 
   create_table "stems", :force => true do |t|

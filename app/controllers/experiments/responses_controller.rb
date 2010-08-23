@@ -6,18 +6,16 @@ class Experiments::ResponsesController < ApplicationController
   end
   
   def show
-    @stem = Stem.find(params[:id])
-    @result = Result.new(:stem => @stem)
+    @result = @participant.results.find_by_display_order(params[:id])
   end
   
-  def create
-    @result = @participant.results.build(params[:result])
-    if @result.save
-      # redirect_to experiment_response_url(@participant, )
-    else
-      flash[:notice] = "Sorry, we couldn't save your results!"
-      render :index 
+  def update
+    @result = @participant.results.find_by_display_order(params[:id])
+    if @result.experiment_phase == 'testing'
+      @result.update_attributes params[:result]
     end
+    next_result = @participant.results.find_by_display_order(@result.display_order + 1)
+    redirect_to experiment_response_url(@participant, next_result.display_order)
   end
   
   private

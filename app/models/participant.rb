@@ -1,11 +1,9 @@
 class Participant < ActiveRecord::Base
   
   has_many :results
-  has_many :stems, :through => :results
-  accepts_nested_attributes_for :stems
+  accepts_nested_attributes_for :results
   
   before_save :generate_code
-  after_save :update_results_from_stems
   
   validates_presence_of :name
   
@@ -29,16 +27,6 @@ class Participant < ActiveRecord::Base
   
   def select_items(phase)
     self.items.select{ |r| r.experiment_phase == phase.to_s }
-  end
-  
-  def update_results_from_stems
-    self.results.each do |r|
-      stem = self.stems.select{ |s| s.id == r.stem_id }.first
-      r.display_order = stem.display_order
-      r.experiment_phase = stem.experiment_phase
-      r.response = stem.response
-      r.save
-    end
   end
   
 end
