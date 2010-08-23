@@ -1,0 +1,17 @@
+%h2 Participant #{ @participant.id } (#{ @participant.name })
+#code Code: #{ @participant.code }
+
+%ul
+  %h3 Training items
+  - @participant.items(:training).each do |item|
+    = render 'results/result', :item => item
+    
+%ul
+  %h3 Learning items
+  - @participant.items(:learning).each do |item|
+    = render 'results/result', :item => item
+    
+%ul
+  %h3 Testing items
+  - @participant.items(:testing).each do |item|
+    = render 'results/result', :item => item

@@ -8,25 +8,27 @@
 	  
     To understand how this works, let's start with a little example. In each of the next three screens, you will be introduced to words and their plurals. Please listen attentively and try to figure out how the plural is formed in this language. Try repeating the words aloud after you hear them.    
   
-#info    
-  - form_for @participant, :url => experiments_url, :html => { :class => 'participant_name' } do |f|
+- form_for @participant, :url => variable_index_url do |f|
+  %fieldset#name
     = f.label "Your Name: "
     = f.text_field :name
-    = submit_tag "Continue &raquo;", :disabled => 'disabled'
     
+    = submit_tag "Continue &raquo;" , :disabled => 'disabled'
+  %fieldset#stems
+    %ul#training
+      %h2 Training items
+      - @participant.items(:training).each do |item|
+        = render 'items/item', :item => item, :f => f
+
+    %ul#learning
+      %h2 Learning items (#{ @participant.training_group + "s" })
+      - @participant.items(:learning).each do |item|
+        = render 'items/item', :item => item, :f => f
+
+    %ul#testing
+      %h2 Testing items
+      - @participant.items(:testing).each do |item|
+        = render 'items/item', :item => item, :f => f
   
-%ul#training
-  %h2 Training items
-  - @training_items.each do |item|
-    = render 'items/item', :item => item
-
-
-%ul#learning
-  %h2 Learning items (#{ @participant.training_group + "s" })
-  - @participant.learning_items.each do |item|
-    = render 'items/item', :item => item
-
-%ul#testing
-  %h2 Testing items
-  - @participant.testing_items.each do |item|
-    = render 'items/item', :item => item
+  %fieldset#submit
+    = submit_tag "Submit survey"

@@ -10,5 +10,7 @@
     
   %body
     %h1= link_to "Artificial Grammar Learning", root_url
+    - if flash[:message]
+      #flash= flash[:message]
     #main= yield
     #footer= "&copy; 2010 #{ link_to 'Phonologist.org', 'http://phonologist.org', :target => :blank }"

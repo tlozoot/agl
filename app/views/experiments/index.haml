@@ -5,9 +5,9 @@
 %ul
   %h2 Fixed AGL 
   - @fixes.each do |p|
-    %li= link_to p.name, p
+    %li= link_to p.name, result_url(p)
   
 %ul
   %h2 Variable AGL
   - @vars.each do |p|
-    %li= link_to p.name, p
+    %li= link_to p.name, result_url(p)

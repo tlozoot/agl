@@ -5,6 +5,8 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :experiments
   map.resources :variable, :controller => "experiments/variable"
   
+  map.resources :results
+  
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:

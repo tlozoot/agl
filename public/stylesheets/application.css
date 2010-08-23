@@ -1,4 +1,4 @@
-/* line 14, ../../../.rvm/gems/ruby-1.8.7-p174/gems/compass-0.10.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 14, ../../../../.rvm/gems/ruby-1.8.7-p174/gems/compass-0.10.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -18,42 +18,42 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   vertical-align: baseline;
 }
 
-/* line 17, ../../../.rvm/gems/ruby-1.8.7-p174/gems/compass-0.10.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../.rvm/gems/ruby-1.8.7-p174/gems/compass-0.10.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 body {
   line-height: 1;
   color: black;
   background: white;
 }
 
-/* line 19, ../../../.rvm/gems/ruby-1.8.7-p174/gems/compass-0.10.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 19, ../../../../.rvm/gems/ruby-1.8.7-p174/gems/compass-0.10.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 21, ../../../.rvm/gems/ruby-1.8.7-p174/gems/compass-0.10.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 21, ../../../../.rvm/gems/ruby-1.8.7-p174/gems/compass-0.10.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: separate;
   border-spacing: 0;
   vertical-align: middle;
 }
 
-/* line 23, ../../../.rvm/gems/ruby-1.8.7-p174/gems/compass-0.10.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 23, ../../../../.rvm/gems/ruby-1.8.7-p174/gems/compass-0.10.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 25, ../../../.rvm/gems/ruby-1.8.7-p174/gems/compass-0.10.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 25, ../../../../.rvm/gems/ruby-1.8.7-p174/gems/compass-0.10.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: "" "";
 }
-/* line 96, ../../../.rvm/gems/ruby-1.8.7-p174/gems/compass-0.10.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 96, ../../../../.rvm/gems/ruby-1.8.7-p174/gems/compass-0.10.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
 }
 
-/* line 27, ../../../.rvm/gems/ruby-1.8.7-p174/gems/compass-0.10.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 27, ../../../../.rvm/gems/ruby-1.8.7-p174/gems/compass-0.10.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
@@ -92,26 +92,33 @@ h2 {
 }
 
 /* line 24, ../../app/stylesheets/_core.sass */
+h3 {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin: 0.5em 0;
+}
+
+/* line 29, ../../app/stylesheets/_core.sass */
 p {
   line-height: 130%;
   margin: 0.5em 0;
 }
 
-/* line 28, ../../app/stylesheets/_core.sass */
+/* line 33, ../../app/stylesheets/_core.sass */
 a {
   text-decoration: none;
 }
-/* line 30, ../../app/stylesheets/_core.sass */
+/* line 35, ../../app/stylesheets/_core.sass */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 33, ../../app/stylesheets/_core.sass */
+/* line 38, ../../app/stylesheets/_core.sass */
 strong {
   font-weight: bold;
 }
 
-/* line 36, ../../app/stylesheets/_core.sass */
+/* line 41, ../../app/stylesheets/_core.sass */
 #footer {
   font-family: Helvetica, Arial, Verdana, sans-serif;
   font-size: 0.6em;
@@ -119,22 +126,31 @@ strong {
   margin: 0.5em 0;
   color: #555555;
 }
-/* line 42, ../../app/stylesheets/_core.sass */
+/* line 47, ../../app/stylesheets/_core.sass */
 #footer a {
   color: #555555;
 }
 
+/* line 50, ../../app/stylesheets/_core.sass */
+#flash {
+  background-color: #66bb66;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 1em;
+  padding: 0.5em;
+}
+
 /* line 1, ../../app/stylesheets/_experiment.sass */
-form.participant_name {
-  background-color: #fafafa;
+fieldset#name {
+  background-color: #eeeeee;
   padding: 0.5em;
 }
 /* line 4, ../../app/stylesheets/_experiment.sass */
-form.participant_name label {
+fieldset#name label {
   font-weight: bold;
 }
 /* line 6, ../../app/stylesheets/_experiment.sass */
-form.participant_name input[type='submit'] {
+fieldset#name input[type='submit'] {
   float: right;
 }
 
@@ -167,7 +183,7 @@ span.item_strong {
 }
 /* line 24, ../../app/stylesheets/_experiment.sass */
 span.item_strong:hover {
-  background-color: #fafafa;
+  background-color: #ffffaa;
 }
 
 /* line 28, ../../app/stylesheets/_experiment.sass */

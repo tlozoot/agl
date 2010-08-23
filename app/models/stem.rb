@@ -5,7 +5,7 @@ class Stem < ActiveRecord::Base
   
   attr_accessor :display_order, :experiment_phase, :clipart, :response
   
-  def to_s
+  def readable
     "Singular: #{ singular }
     Plural: #{ plural }
     Vowel: #{ vowel }

@@ -12,12 +12,23 @@ class Experiments::VariableController < ExperimentsController
   def new
     get_new_participant
     assign_pictures_to_stems
-    get_training_words
     load_control_words
     load_experimental_words
     
-    @participant.learning_items = get_experiment_items(:learning)
-    @participant.testing_items = get_experiment_items(:testing)
+    @participant.stems << get_training_items
+    @participant.stems << get_experiment_items(:learning)
+    @participant.stems << get_experiment_items(:testing)
+  end
+  
+  def create
+    @participant = Variable.new(params[:variable])
+    if @participant.save     
+      flash[:message] = "Thanks for your participation!"
+      redirect_to result_url(@participant)
+    else
+      flash.now[:message] = "Whoops--we had a problem saving your results."
+      render :new
+    end
   end
   
   private
@@ -34,11 +45,11 @@ class Experiments::VariableController < ExperimentsController
                  .each{ |stem| stem.clipart = @clipart.shift }
   end
   
-  def get_training_words 
-    @training_items = [@stems.select{ |s| s.consonant == 'l' }.first, \
-                       @stems.select{ |s| s.consonant == 'm' }.first, \
-                       @stems.select{ |s| s.consonant == 'r' }.first] \
-                      .each{ |item| item.experiment_phase = 'training' }
+  def get_training_items
+    @training_items = [@stems.select{ |s| s.consonant == 'l' }.first, 
+                       @stems.select{ |s| s.consonant == 'm' }.first, 
+                       @stems.select{ |s| s.consonant == 'r' }.first]
+    assign_phase_and_order(@training_items, 'training')
     # then delete training items?
   end
   
@@ -51,15 +62,18 @@ class Experiments::VariableController < ExperimentsController
     @experimental_words[:testing]  = @stems.select{ |s| s.singular =~ /(p|t|k)$/ }
     @experimental_words[:learning] = @experimental_words[:testing].deep_copy.select do |s|
       s.stress == @participant.training_group 
-    end
-    
+    end    
   end
   
   def get_experiment_items(phase)
     @items = @control_words.deep_copy.randomly_pick(5) + @experimental_words[phase].randomly_pick(5) 
-    @items.each_index do |i|
-      @items[i].experiment_phase = phase.to_s
-      @items[i].display_order = i + 1
+    assign_phase_and_order(@items, phase)
+  end
+  
+  def assign_phase_and_order(items, phase)
+    items.each_index do |i|
+      items[i].experiment_phase = phase.to_s
+      items[i].display_order = i + 1
     end
   end
   

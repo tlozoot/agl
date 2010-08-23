@@ -1,0 +1,12 @@
+%h2 Results
+
+%ul
+  %h3 Variable AGL
+  - @vars.each do |v|
+    %li= link_to v.name, result_url(v)
+    
+    
+%ul
+  %h3 Fixed AGL
+  - @fixes.each do |f|
+    %li= link_to f.name, result_url(f)
