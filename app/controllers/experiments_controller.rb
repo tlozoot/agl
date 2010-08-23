@@ -6,5 +6,9 @@ class ExperimentsController < ApplicationController
     @fixes = Fixed.all
     @vars = Variable.all
   end
+  
+  def show
+    @participant = Participant.find(params[:id])
+  end
 
 end

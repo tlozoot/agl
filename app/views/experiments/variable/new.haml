@@ -13,10 +13,10 @@
     = f.label "Your Name: "
     = f.text_field :name
     
-    = submit_tag "Continue &raquo;" , :disabled => 'disabled'
-  %fieldset#stems
-    - [:training, :learning, :testing].each do |phase|
-      = render "items/list", :phase => phase, :participant => @participant, :f => f
-    
-  %fieldset#submit
-    = submit_tag "Submit survey!"
+    = submit_tag "Continue &raquo;" #, :disabled => 'disabled'
+  / %fieldset#stems
+  /   - [:training, :learning, :testing].each do |phase|
+  /     = render "items/list", :phase => phase, :participant => @participant, :f => f
+  /   
+  / %fieldset#submit
+  /   = submit_tag "Submit survey!"

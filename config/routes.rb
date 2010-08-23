@@ -2,8 +2,8 @@ ActionController::Routing::Routes.draw do |map|
   
   map.root :controller => :experiments, :action => :index
   
-  map.resources :experiments, :shallow => true do |experiments|
-    experiments.resources :results, :controller => 'experiments/results', :only => [:index, :new, :create]
+  map.resources :experiments do |experiments|
+    experiments.resources :responses, :controller => 'experiments/responses'
   end
   
   map.resources :variable, :controller => "experiments/variable"

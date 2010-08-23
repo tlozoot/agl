@@ -4,27 +4,22 @@ class Experiments::VariableController < ExperimentsController
     @variables = Variable.all
   end
   
-  
   def show
     @variable = Variable.find(params[:id])
   end
   
   def new
-    get_new_participant
-    assign_pictures_to_stems
-    load_control_words
-    load_experimental_words
-    
-    @participant.stems << get_training_items
-    @participant.stems << get_experiment_items(:learning)
-    @participant.stems << get_experiment_items(:testing)
+    @participant = Variable.new
   end
   
   def create
     @participant = Variable.new(params[:variable])
-    if @participant.save     
-      flash[:message] = "Thanks for your participation!"
-      redirect_to result_url(@participant)
+    @participant.assign_training_group
+    @participant.generate_items
+    
+    if @participant.save
+      item = @participant.items.sort_by{ |a,b| a.display_order <=> b.display_order }.first
+      redirect_to experiment_response_url(@participant, )
     else
       flash.now[:message] = "Whoops--we had a problem saving your results."
       render :new
@@ -32,18 +27,6 @@ class Experiments::VariableController < ExperimentsController
   end
   
   private
-  
-  def get_new_participant
-    @participant = Variable.new(:training_group => (rand > 0.5 ? 'iamb' : 'mono'))
-  end
-  
-  def assign_pictures_to_stems
-    @clipart = Clipart.all.sort_by{ rand }
-    @stems = Stem.find(:all, :conditions => { :experiment_type => 'variable', }) \
-                 .reject{ |stem| stem.stress == 'trochee' } \
-                 .sort_by{ rand } \
-                 .each{ |stem| stem.clipart = @clipart.shift }
-  end
   
   def get_training_items
     @training_items = [@stems.select{ |s| s.consonant == 'l' }.first, 
