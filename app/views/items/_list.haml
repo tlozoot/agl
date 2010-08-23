@@ -1,0 +1,4 @@
+%ul{ :id => phase.to_s }
+  %h2 #{phase.to_s.capitalize} items
+  - participant.items(phase).each do |item|
+    = render 'items/item', :item => item, :f => f

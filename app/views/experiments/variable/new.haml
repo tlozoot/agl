@@ -15,20 +15,8 @@
     
     = submit_tag "Continue &raquo;" , :disabled => 'disabled'
   %fieldset#stems
-    %ul#training
-      %h2 Training items
-      - @participant.items(:training).each do |item|
-        = render 'items/item', :item => item, :f => f
-
-    %ul#learning
-      %h2 Learning items (#{ @participant.training_group + "s" })
-      - @participant.items(:learning).each do |item|
-        = render 'items/item', :item => item, :f => f
-
-    %ul#testing
-      %h2 Testing items
-      - @participant.items(:testing).each do |item|
-        = render 'items/item', :item => item, :f => f
-  
+    - [:training, :learning, :testing].each do |phase|
+      = render "items/list", :phase => phase, :participant => @participant, :f => f
+    
   %fieldset#submit
-    = submit_tag "Submit survey"
+    = submit_tag "Submit survey!"

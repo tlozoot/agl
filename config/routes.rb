@@ -2,10 +2,13 @@ ActionController::Routing::Routes.draw do |map|
   
   map.root :controller => :experiments, :action => :index
   
-  map.resources :experiments
+  map.resources :experiments, :shallow => true do |experiments|
+    experiments.resources :results, :controller => 'experiments/results', :only => [:index, :new, :create]
+  end
+  
   map.resources :variable, :controller => "experiments/variable"
   
-  map.resources :results
+  # map.resources :results
   
   # The priority is based upon order of creation: first created -> highest priority.
 

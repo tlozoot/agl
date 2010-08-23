@@ -1,0 +1,2 @@
+module Experiments::ResultsHelper
+end
