@@ -336,40 +336,53 @@ span.item_strong:hover {
 }
 
 /* line 12, ../../app/stylesheets/_results.sass */
+#code {
+  margin-bottom: 1em;
+}
+
+/* line 15, ../../app/stylesheets/_results.sass */
+.analytics {
+  padding: 1em;
+  background-color: #eeeeee;
+  margin-bottom: 1em;
+}
+
+/* line 20, ../../app/stylesheets/_results.sass */
 span.toggle_results {
   font-size: 12px;
   font-family: Helvetica, Arial, Verdana, sans-serif;
   cursor: pointer;
   font-weight: normal;
 }
-/* line 17, ../../app/stylesheets/_results.sass */
+/* line 25, ../../app/stylesheets/_results.sass */
 span.toggle_results:hover {
   text-decoration: underline;
 }
 
-/* line 20, ../../app/stylesheets/_results.sass */
+/* line 28, ../../app/stylesheets/_results.sass */
 ul.phase_items {
+  display: none;
   margin-bottom: 2em;
 }
 
-/* line 24, ../../app/stylesheets/_results.sass */
+/* line 32, ../../app/stylesheets/_results.sass */
 .result {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 25, ../../app/stylesheets/_results.sass */
+/* line 33, ../../app/stylesheets/_results.sass */
 .result img {
   float: left;
   margin-right: 1em;
 }
 
-/* line 30, ../../app/stylesheets/_results.sass */
+/* line 38, ../../app/stylesheets/_results.sass */
 .correct {
   color: green;
   font-weight: bold;
 }
 
-/* line 33, ../../app/stylesheets/_results.sass */
+/* line 41, ../../app/stylesheets/_results.sass */
 .incorrect {
   color: red;
   font-weight: bold;

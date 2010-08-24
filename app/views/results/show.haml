@@ -3,8 +3,9 @@
   Code:
   %strong= @participant.code
 
-%h3 Analytics
-%p= "Correct plurals: #{ @participant.correct_plurals.length } / #{ @participant.select_results(:testing).length }"
+.analytics
+  %h3 Analytics
+  %p= "Correct plurals: #{ @participant.correct_plurals.length } / #{ @participant.select_results(:testing).length }"
 
 - [:testing, :learning, :training_test].each do |phase|
   %h3
