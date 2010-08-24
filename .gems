@@ -1,8 +1,8 @@
 rails -v 2.3.8
+RedCloth
 authlogic
 haml
 formtastic
 paperclip
 compass
-redcloth
 

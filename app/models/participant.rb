@@ -20,7 +20,7 @@ class Participant < ActiveRecord::Base
   end
   
   def assign_training_group
-    self.training_group ||= self.pick_training_group
+    self.training_group ||= pick_training_group
   end
   
   def generate_items
