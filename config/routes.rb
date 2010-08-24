@@ -3,14 +3,13 @@ ActionController::Routing::Routes.draw do |map|
   map.root :controller => :experiments, :action => :new
   
   map.resources :experiments do |experiments|
-    experiments.resources :responses, :controller => 'experiments/responses', :only => [:new, :show, :update], :member => { :training, :trainingtest, :learning, :testing, :finished }
+    experiments.resources :responses, :controller => 'experiments/responses', :only => [:new, :show, :update]
     
-    # experiments.member 
-    # experiments.training 'training', :controller => 'experiments/responses', :action => 'training'
-    # experiments.trainingtest 'trainingtest', :controller => 'experiments/responses', :action => 'trainingtest'
-    # experiments.learning 'learning', :controller => 'experiments/responses', :action => 'learning'
-    # experiments.testing 'testing', :controller => 'experiments/responses', :action => 'testing'
-    # experiments.finished 'finished', :controller => 'experiments/responses', :action => 'finished'
+    experiments.training 'training', :controller => 'experiments/responses', :action => 'training'
+    experiments.trainingtest 'trainingtest', :controller => 'experiments/responses', :action => 'trainingtest'
+    experiments.learning 'learning', :controller => 'experiments/responses', :action => 'learning'
+    experiments.testing 'testing', :controller => 'experiments/responses', :action => 'testing'
+    experiments.finished 'finished', :controller => 'experiments/responses', :action => 'finished'
   end
   
   map.resource :variable, :only => :show, :controller => :variable

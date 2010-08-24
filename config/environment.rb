@@ -23,13 +23,9 @@ Rails::Initializer.run do |config|
   # config.gem "aws-s3", :lib => "aws/s3"
   
   config.gem 'authlogic'
-  
   config.gem 'haml'
-
   config.gem 'formtastic'
-  
   config.gem 'paperclip'
-  
   config.gem 'compass', :version => ">= 0.10.3"
 
   # Only load the plugins named here, in the order given (default is alphabetical).
