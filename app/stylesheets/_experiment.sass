@@ -1,4 +1,4 @@
-fieldset.continue
+.continue
   background-color: $lightGray
   padding: 0.5em
   margin-top: 0.5em
@@ -6,6 +6,12 @@ fieldset.continue
     font-weight: bold
   input[type='submit']
     float: right
+  span.phase
+    +sans
+    color: #888
+    font-size: 0.8em
+    font-weight: bold
+    vertical-align: middle
     
 form.plural_form
   +inline-block
@@ -28,6 +34,7 @@ span.item_strong
 .stem
   .item_text
     +inline-block
+    vertical-align: top
     text-align: center
     img
       margin-top: 1em

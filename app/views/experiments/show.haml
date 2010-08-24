@@ -1,17 +1,8 @@
 %h2 Participant #{ @participant.id } (#{ @participant.name })
 #code Code: #{ @participant.code }
 
-%ul
-  %h3 Training items
-  - @participant.select_results(:training).each do |item|
-    = render 'experiments/responses/result', :item => item
-    
-%ul
-  %h3 Learning items
-  - @participant.select_results(:learning).each do |item|
-    = render 'experiments/responses/result', :item => item
-    
-%ul
-  %h3 Testing items
-  - @participant.select_results(:testing).each do |item|
-    = render 'experiments/responses/result', :item => item
+- [:training, :learning, :testing].each do |phase|
+  %ul
+    %h3 #{phase.to_s.capitalize} items
+    - @participant.select_results(phase).each do |result|
+      = render 'experiments/responses/result', :result => result

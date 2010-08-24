@@ -1,13 +1,5 @@
 class Experiments::VariableController < ExperimentsController
   
-  def index
-    @variables = Variable.all
-  end
-  
-  def show
-    @variable = Variable.find(params[:id])
-  end
-  
   def new
     @participant = Variable.new
   end

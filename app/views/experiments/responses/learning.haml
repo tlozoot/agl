@@ -7,4 +7,4 @@
 %p You may proceed as soon as you're ready.
 
 %fieldset.continue
-  
+  = button_to "Continue &raquo;", experiment_response_url(@participant, @next_result.display_order), :method => :get

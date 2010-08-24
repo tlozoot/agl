@@ -1,5 +1,4 @@
 - form_for [:experiment, @result], :url => experiment_response_path(@participant, @result.display_order), :html => { :method => :put } do |f|
-  %h2= @result.experiment_phase.capitalize
 
   - div_for @result.stem do
     #singular_col.item_text{ :data_sound => @result.stem.singular }
@@ -17,4 +16,5 @@
       %br
       = (image_tag @result.clipart.plural_file, :width => "75", :class => "plural_img") * 3
   %fieldset.continue
+    %span.phase= @result.experiment_phase.capitalize
     = submit_tag "Next &raquo;"
