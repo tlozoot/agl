@@ -14,15 +14,19 @@ class Participant < ActiveRecord::Base
   def select_results(phase)
     self.results.select{ |r| r.experiment_phase == phase.to_s }
   end
-  
+    
   def generate_code
     self.code = Digest::MD5.hexdigest(name + Time.now.to_s)
   end
   
+  def assign_training_group
+    self.training_group ||= self.pick_training_group
+  end
+  
   def generate_items
-    self.assign_training_group if self.training_group.nil?
-    @stems = Stem.assign_pictures_to_stems_of_type(self.experiment_type)
-    
+    assign_training_group
+    @stems = Stem.assign_pictures_to_stems_of_type(experiment_type.downcase)
+  
     @control_words = control_words
     
     @experimental_words = {}

@@ -1,3 +1,11 @@
+tmp
+log/*.log
+tmp/**/*
 tmp/*
-log/*
+doc/api
+doc/app
+**/**/#*
+**/**/.#*
+*~x
+db/*.sqlite3
 

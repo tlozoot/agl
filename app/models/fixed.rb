@@ -1,7 +1,14 @@
 class Fixed < Participant
 
-  def assign_training_group
-    self.training_group = (rand > 0.5 ? 'iamb' : 'trochee')
+  def self.test
+    f = Fixed.new(:name => "fixed test")
+    f.save
+    f.generate_items
+    f
+  end
+
+  def pick_training_group
+    rand > 0.5 ? 'iamb' : 'trochee'
   end
   
   private

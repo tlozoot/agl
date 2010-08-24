@@ -1,9 +1,9 @@
 class Variable < Participant
-  
-  def assign_training_group
-    self.training_group = (rand > 0.5 ? 'iamb' : 'mono')
+    
+  def self.pick_training_group
+    rand > 0.5 ? 'iamb' : 'mono'
   end
-
+  
   private
   
   def control_words
