@@ -19,10 +19,11 @@ jQuery.fn.submitWithAjax = function() {
 
 jQuery.fn.createSound = function() {
   if (this.length > 0 ) {
-    var sound = this.html();
+    var sound = this.html() + ' ' + this.attr('id')
+    var soundFile = this.attr('data-soundFile');
     soundManager.createSound({
       id: sound,
-      url: "/stimuli/variable/" + sound + ".mp3"
+      url: soundFile
     });
     return sound;
   }
@@ -35,7 +36,7 @@ soundManager.onload = function() {
   var singular = $('span.item_strong#singular').createSound();
   var plural = $('span.item_strong#plural').createSound();
 
-  if (singular) {
+  if (singular) { 
     soundManager.play(singular, { onfinish: function() {
       var playPl = function() { if (plural) { soundManager.play(plural); } };
       setTimeout(playPl, 500);

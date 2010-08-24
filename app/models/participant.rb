@@ -71,9 +71,6 @@ class Participant < ActiveRecord::Base
   def experiment_items(phase)
     @items = (@control_words.deep_copy.randomly_pick(5) + @experimental_words[phase].randomly_pick(5)) \
              .sort_by{ rand }
-    @items.each do |item|
-      item.experiment_phase = phase.to_s
-    end
   end
   
   
