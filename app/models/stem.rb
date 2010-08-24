@@ -8,7 +8,7 @@ class Stem < ActiveRecord::Base
   def self.assign_pictures_to_stems_of_type(type)
     @clipart = Clipart.all.sort_by{ rand }
     Stem.find(:all, :conditions => { :experiment_type => type.to_s.downcase, }) \
-        .reject{ |stem| (stem.stress == 'trochee') && (type == :variable) } \
+        .reject{ |stem| (stem.stress == 'trochee') && (type.to_s.downcase == 'variable') } \
         .sort_by{ rand } \
         .each{ |stem| stem.clipart = @clipart.shift }
   end

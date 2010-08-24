@@ -28,11 +28,14 @@ jQuery.fn.createSound = function() {
 
 soundManager.onload = function() {
   var singular = $('span.item_strong#singular').createSound();
-  var plural = $('span.item_strong#plural').createSound();
+  var plural_obj = $('span.item_strong#plural');
+  if (plural_obj.length > 0) {
+    var plural = plural_obj.createSound();
+  }
   
   if (singular) {
     soundManager.play(singular, { onfinish: function() {
-      var playPl = function() { if(plural){ soundManager.play(plural) } };
+      var playPl = function() { if (plural) { soundManager.play(plural); } };
       setTimeout(playPl, 500);
     } });
   }

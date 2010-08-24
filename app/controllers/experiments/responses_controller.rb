@@ -11,7 +11,8 @@ class Experiments::ResponsesController < ApplicationController
   
   def update
     @result = @participant.results.find_by_display_order(params[:id])
-    if @result.experiment_phase == 'testing'
+    case @result.experiment_phase
+    when 'testing', 'training_test'
       @result.update_attributes params[:result]
     end
     next_result = @participant.results.find_by_display_order(@result.display_order + 1)

@@ -23,6 +23,7 @@ class Participant < ActiveRecord::Base
     self.training_group ||= pick_training_group
   end
   
+  
   def generate_items
     assign_training_group
     @stems = Stem.assign_pictures_to_stems_of_type(experiment_type.downcase)

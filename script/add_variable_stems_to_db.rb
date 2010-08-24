@@ -3,7 +3,7 @@
 @lines.each do |line|
   stem = Stem.new do |s|
     s.singular, s.consonant, s.stress, s.vowel, s.plural = line
-    s.experiment = "variable"
+    s.experiment_type = "variable"
   end
   stem.save
 end
