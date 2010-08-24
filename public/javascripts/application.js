@@ -18,21 +18,23 @@ jQuery.fn.submitWithAjax = function() {
 };
 
 jQuery.fn.createSound = function() {
-  var sound = this.html();
-  soundManager.createSound({
-    id: sound,
-    url: "/stimuli/variable/" + sound + ".mp3"
-  });
-  return sound;
+  if (this.length > 0 ) {
+    var sound = this.html();
+    soundManager.createSound({
+      id: sound,
+      url: "/stimuli/variable/" + sound + ".mp3"
+    });
+    return sound;
+  }
+  else {
+    return false;
+  }
 };
 
 soundManager.onload = function() {
   var singular = $('span.item_strong#singular').createSound();
-  var plural_obj = $('span.item_strong#plural');
-  if (plural_obj.length > 0) {
-    var plural = plural_obj.createSound();
-  }
-  
+  var plural = $('span.item_strong#plural').createSound();
+
   if (singular) {
     soundManager.play(singular, { onfinish: function() {
       var playPl = function() { if (plural) { soundManager.play(plural); } };
@@ -45,7 +47,7 @@ $(document).ready(function() {
   $('#volume_test').click(function(){
     soundManager.createSound({
       id: 'testSound',
-      url: "/stimuli/variable/n_jol.mp3"
+      url: "/stimuli/welcome.mp3"
     });
     soundManager.play('testSound');
   });
