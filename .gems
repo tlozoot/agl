@@ -4,3 +4,5 @@ haml
 formtastic
 paperclip
 compass
+redcloth
+
