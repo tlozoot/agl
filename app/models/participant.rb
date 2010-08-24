@@ -44,7 +44,7 @@ class Participant < ActiveRecord::Base
     
     @items[:training_test] = @items[:training]
     
-    [:training, :learning, :testing].each do |phase|
+    [:training, :training_test, :learning, :testing].each do |phase|
       @items[phase].each do |item|
         self.results.create(:stem => item, :clipart => item.clipart, :experiment_phase => phase.to_s)
       end

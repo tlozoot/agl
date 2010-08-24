@@ -1,12 +1,5 @@
 class Fixed < Participant
 
-  def self.test
-    f = Fixed.new(:name => "fixed test")
-    f.save
-    f.generate_items
-    f
-  end
-
   def pick_training_group
     rand > 0.5 ? 'iamb' : 'trochee'
   end

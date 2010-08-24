@@ -6,7 +6,7 @@ ActionController::Routing::Routes.draw do |map|
     experiments.resources :responses, :controller => 'experiments/responses', :only => [:new, :show, :update]
     
     experiments.training 'training', :controller => 'experiments/responses', :action => 'training'
-    experiments.trainingtest 'trainingtest', :controller => 'experiments/responses', :action => 'trainingtest'
+    experiments.trainingtest 'training_test', :controller => 'experiments/responses', :action => 'training_test'
     experiments.learning 'learning', :controller => 'experiments/responses', :action => 'learning'
     experiments.testing 'testing', :controller => 'experiments/responses', :action => 'testing'
     experiments.finished 'finished', :controller => 'experiments/responses', :action => 'finished'
