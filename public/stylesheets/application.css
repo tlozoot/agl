@@ -240,7 +240,7 @@ label.strong {
 /* line 23, ../../app/stylesheets/_experiment.sass */
 .intro_inputs {
   float: left;
-  width: 300px;
+  width: 315px;
   background-color: #eeeeee;
   padding: 0.5em;
   margin-right: 1em;
@@ -325,9 +325,10 @@ span.item_strong:hover {
   *vertical-align: auto;
   width: 310px;
   margin-top: 0;
+  vertical-align: top;
 }
 
-/* line 6, ../../app/stylesheets/_results.sass */
+/* line 7, ../../app/stylesheets/_results.sass */
 #variable {
   margin-left: 15px;
   padding-left: 15px;

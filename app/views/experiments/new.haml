@@ -5,7 +5,7 @@
   .intro_inputs
     %strong
       Test sound:
-      %button Play
+      %button#volume_test Play
     - form_for @participant, :url => experiments_url, :html => { :class => "new_participant" } do |f|
       %fieldset.name
         = f.label :name, "Your name: ", :class => "strong"

@@ -30,13 +30,22 @@ soundManager.onload = function() {
   var singular = $('span.item_strong#singular').createSound();
   var plural = $('span.item_strong#plural').createSound();
   
-  soundManager.play(singular, { onfinish: function() {
-    var playPl = function() { soundManager.play(plural) };
-    setTimeout(playPl, 500);
-  } });
+  if (singular) {
+    soundManager.play(singular, { onfinish: function() {
+      var playPl = function() { if(plural){ soundManager.play(plural) } };
+      setTimeout(playPl, 500);
+    } });
+  }
 }
 
 $(document).ready(function() {
+  $('#volume_test').click(function(){
+    soundManager.createSound({
+      id: 'testSound',
+      url: "/stimuli/variable/n_jol.mp3"
+    });
+    soundManager.play('testSound');
+  });
   
   $('form.ajax').submitWithAjax();
 
