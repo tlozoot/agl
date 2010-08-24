@@ -51,5 +51,9 @@ $(document).ready(function() {
   });
   
   $('form.ajax').submitWithAjax();
+  
+  $('.toggle_results').click(function() {
+    $('ul#' + $(this).attr('data-phase')).slideToggle();
+  });
 
 })

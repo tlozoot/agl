@@ -1,8 +1,15 @@
 %h2 Participant #{ @participant.id } (#{ @participant.name })
-#code Code: #{ @participant.code }
+#code
+  Code:
+  %strong= @participant.code
+
+%h3 Analytics
+%p= "Correct plurals: #{ @participant.correct_plurals.length } / #{ @participant.select_results(:testing).length }"
 
 - [:testing, :learning, :training_test].each do |phase|
-  %ul
-    %h3 #{phase.to_s.capitalize} items
+  %h3
+    #{phase.to_s.humanize} items
+    %span.toggle_results{ 'data-phase' => phase } (show/hide)
+  %ul.phase_items{ :id => phase }
     - @participant.select_results(phase).each do |result|
       = render 'result', :result => result

@@ -1,3 +1,13 @@
-.result
-  = result.stem.plural
-  = result.response
+- content_tag_for(:li, result) do
+  = image_tag result.clipart.singular_file, :width => "50"
+  .plural
+    %strong Plural:
+    = result.stem.plural
+  - unless result.experiment_phase == 'learning'
+    .reponse
+      %strong Response:
+      = result.response
+    - if result.stem.plural == result.response
+      .correct Correct!
+    - else
+      .incorrect Incorrect

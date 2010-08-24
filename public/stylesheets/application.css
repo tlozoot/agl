@@ -334,3 +334,43 @@ span.item_strong:hover {
   padding-left: 15px;
   border-left: 1px solid silver;
 }
+
+/* line 12, ../../app/stylesheets/_results.sass */
+span.toggle_results {
+  font-size: 12px;
+  font-family: Helvetica, Arial, Verdana, sans-serif;
+  cursor: pointer;
+  font-weight: normal;
+}
+/* line 17, ../../app/stylesheets/_results.sass */
+span.toggle_results:hover {
+  text-decoration: underline;
+}
+
+/* line 20, ../../app/stylesheets/_results.sass */
+ul.phase_items {
+  margin-bottom: 2em;
+}
+
+/* line 24, ../../app/stylesheets/_results.sass */
+.result {
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 25, ../../app/stylesheets/_results.sass */
+.result img {
+  float: left;
+  margin-right: 1em;
+}
+
+/* line 30, ../../app/stylesheets/_results.sass */
+.correct {
+  color: green;
+  font-weight: bold;
+}
+
+/* line 33, ../../app/stylesheets/_results.sass */
+.incorrect {
+  color: red;
+  font-weight: bold;
+}

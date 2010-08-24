@@ -1,9 +1,12 @@
-%ul#fixed.inline_col
-  %h2 Fixed AGL 
-  - @fixes.each do |p|
-    %li= link_to p.name, result_url(p)
-  
-%ul#variable.inline_col
-  %h2 Variable AGL
-  - @vars.each do |p|
-    %li= link_to p.name, result_url(p)
+%h2 Analytics
+%p Coming soon...
+
+- ['fixed', 'variable'].each do |type|
+  %ul.inline_col{ :id => type }
+    %h2 #{ type.capitalize } AGL
+    - subgroup = @participants.select{ |p| p.experiment_type.downcase == type }
+    %p #{ subgroup.length } participants
+    - subgroup.each do |p|
+      %li
+        = "#{p.id}."
+        = link_to p.name, result_url(p)

@@ -23,6 +23,13 @@ class Participant < ActiveRecord::Base
     self.training_group ||= pick_training_group
   end
   
+  def correct_plurals
+    @correct_plurals = []
+    results.each do |r|
+      @correct_plurals << r if (r.stem.plural == r.response) && r.experiment_phase == 'testing'
+    end
+    @correct_plurals
+  end
   
   def generate_items
     assign_training_group
