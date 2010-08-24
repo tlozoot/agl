@@ -2,7 +2,10 @@ ActionController::Routing::Routes.draw do |map|
   
   map.root :controller => :experiments, :action => :new
   
-  map.resources :experiments do |experiments|
+  map.login 'login', :controller => 'user_sessions', :action => 'new'  
+  map.logout 'logout', :controller => 'user_sessions', :action => 'destroy'
+  
+  map.resources :experiments, :except => [:show] do |experiments|
     experiments.resources :responses, :controller => 'experiments/responses', :only => [:new, :show, :update]
     
     experiments.training 'training', :controller => 'experiments/responses', :action => 'training'
@@ -15,7 +18,10 @@ ActionController::Routing::Routes.draw do |map|
   map.resource :variable, :only => :show, :controller => :variable
   map.resource :fixed, :only => :show, :controller => :fixed
   
-  map.resources :results
+  map.resources :results, :only => [:index, :show]
+  
+  map.resources :user_sessions
+  map.resources :users
   
   # The priority is based upon order of creation: first created -> highest priority.
 

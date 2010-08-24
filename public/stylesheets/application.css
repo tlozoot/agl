@@ -58,6 +58,62 @@ a img {
   border: none;
 }
 
+/* line 3, ../../app/stylesheets/_formtastic.sass */
+form.formtastic input[type=text], form.formtastic textarea, form.formtastic input[type=password] {
+  width: 250px;
+  font-family: Georgia, Times, serif;
+}
+/* line 7, ../../app/stylesheets/_formtastic.sass */
+form.formtastic textarea {
+  height: 4em;
+}
+/* line 10, ../../app/stylesheets/_formtastic.sass */
+form.formtastic input[type=submit] {
+  left: 130px;
+  position: relative;
+  margin-top: 10px;
+  font-size: 1.2em;
+  font-family: Georgia, Times, serif;
+}
+/* line 17, ../../app/stylesheets/_formtastic.sass */
+form.formtastic label {
+  width: 120px;
+  padding: 4px 10px 0 0;
+  display: inline-block;
+  font-size: 0.7em;
+  font-weight: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #888888;
+  text-align: right;
+  position: relative;
+  top: 0px;
+  float: left;
+}
+/* line 30, ../../app/stylesheets/_formtastic.sass */
+form.formtastic p.inline-errors {
+  font-size: 0.7em;
+  display: inline;
+  line-height: 120%;
+  margin-left: 10px;
+  font-weight: normal;
+  font-family: Helvetica, Arial, Verdana, sans-serif;
+  color: #cc0000;
+}
+/* line 39, ../../app/stylesheets/_formtastic.sass */
+form.formtastic li.boolean {
+  left: 130px;
+}
+/* line 41, ../../app/stylesheets/_formtastic.sass */
+form.formtastic li.boolean label {
+  text-align: left;
+}
+/* line 45, ../../app/stylesheets/_formtastic.sass */
+form.formtastic fieldset ol li {
+  display: block;
+  position: relative;
+  margin-bottom: 7px;
+}
+
 /* line 1, ../../app/stylesheets/_core.sass */
 body {
   font-family: Georgia, Times, serif;
@@ -124,18 +180,22 @@ strong {
 #footer {
   font-family: Helvetica, Arial, Verdana, sans-serif;
   font-size: 0.6em;
-  text-align: right;
   margin: 0.5em 0;
   color: #555555;
 }
-/* line 48, ../../app/stylesheets/_core.sass */
+/* line 45, ../../app/stylesheets/_core.sass */
+#footer span.copy {
+  float: right;
+  clear: both;
+}
+/* line 50, ../../app/stylesheets/_core.sass */
 #footer a {
   color: #555555;
 }
 
-/* line 51, ../../app/stylesheets/_core.sass */
+/* line 53, ../../app/stylesheets/_core.sass */
 #flash {
-  background-color: #66bb66;
+  background-color: #666666;
   color: white;
   font-weight: bold;
   margin-bottom: 1em;
@@ -253,4 +313,23 @@ span.item_strong:hover {
 /* line 66, ../../app/stylesheets/_experiment.sass */
 .stem #plural_col {
   width: 375px;
+}
+
+/* line 1, ../../app/stylesheets/_results.sass */
+.inline_col {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *display: inline;
+  *vertical-align: auto;
+  width: 310px;
+  margin-top: 0;
+}
+
+/* line 6, ../../app/stylesheets/_results.sass */
+#variable {
+  margin-left: 15px;
+  padding-left: 15px;
+  border-left: 1px solid silver;
 }

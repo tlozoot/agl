@@ -3,12 +3,7 @@ class ExperimentsController < ApplicationController
   layout 'application'
   
   def index
-    @fixes = Fixed.all
-    @vars = Variable.all
-  end
-  
-  def show
-    @participant = Participant.find(params[:id])
+    redirect_to :action => :new
   end
   
   def new
