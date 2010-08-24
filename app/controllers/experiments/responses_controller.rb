@@ -26,7 +26,9 @@ class Experiments::ResponsesController < ApplicationController
     end
   end
   
-  def training ; end
+  def training 
+    get_next_result(:training)
+  end
   
   def learning 
     get_next_result(:learning)

@@ -71,54 +71,56 @@ body {
   border: 1px solid black;
   padding: 1em;
   background-color: white;
+  overflow: hidden;
+  *zoom: 1;
 }
 
-/* line 12, ../../app/stylesheets/_core.sass */
+/* line 13, ../../app/stylesheets/_core.sass */
 h1 {
   font-size: 2em;
   font-weight: bold;
   margin: 0.5em auto;
 }
-/* line 16, ../../app/stylesheets/_core.sass */
+/* line 17, ../../app/stylesheets/_core.sass */
 h1 a {
   color: black;
 }
 
-/* line 19, ../../app/stylesheets/_core.sass */
+/* line 20, ../../app/stylesheets/_core.sass */
 h2 {
   font-size: 1.5em;
   font-weight: bold;
   margin: 0 0 0.5em;
 }
 
-/* line 24, ../../app/stylesheets/_core.sass */
+/* line 25, ../../app/stylesheets/_core.sass */
 h3 {
   font-size: 1.1em;
   font-weight: bold;
   margin: 0.5em 0;
 }
 
-/* line 29, ../../app/stylesheets/_core.sass */
+/* line 30, ../../app/stylesheets/_core.sass */
 p {
   line-height: 130%;
   margin: 0.5em 0;
 }
 
-/* line 33, ../../app/stylesheets/_core.sass */
+/* line 34, ../../app/stylesheets/_core.sass */
 a {
   text-decoration: none;
 }
-/* line 35, ../../app/stylesheets/_core.sass */
+/* line 36, ../../app/stylesheets/_core.sass */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 38, ../../app/stylesheets/_core.sass */
+/* line 39, ../../app/stylesheets/_core.sass */
 strong {
   font-weight: bold;
 }
 
-/* line 41, ../../app/stylesheets/_core.sass */
+/* line 42, ../../app/stylesheets/_core.sass */
 #footer {
   font-family: Helvetica, Arial, Verdana, sans-serif;
   font-size: 0.6em;
@@ -126,12 +128,12 @@ strong {
   margin: 0.5em 0;
   color: #555555;
 }
-/* line 47, ../../app/stylesheets/_core.sass */
+/* line 48, ../../app/stylesheets/_core.sass */
 #footer a {
   color: #555555;
 }
 
-/* line 50, ../../app/stylesheets/_core.sass */
+/* line 51, ../../app/stylesheets/_core.sass */
 #flash {
   background-color: #66bb66;
   color: white;
@@ -141,20 +143,22 @@ strong {
 }
 
 /* line 1, ../../app/stylesheets/_experiment.sass */
+label.strong {
+  font-weight: bold;
+}
+
+/* line 4, ../../app/stylesheets/_experiment.sass */
 .continue {
   background-color: #eeeeee;
   padding: 0.5em;
   margin-top: 0.5em;
 }
-/* line 5, ../../app/stylesheets/_experiment.sass */
-.continue label {
-  font-weight: bold;
-}
-/* line 7, ../../app/stylesheets/_experiment.sass */
-.continue input[type='submit'] {
+/* line 8, ../../app/stylesheets/_experiment.sass */
+.continue fieldset.submit {
   float: right;
+  clear: both;
 }
-/* line 9, ../../app/stylesheets/_experiment.sass */
+/* line 11, ../../app/stylesheets/_experiment.sass */
 .continue span.phase {
   font-family: Helvetica, Arial, Verdana, sans-serif;
   color: #888888;
@@ -163,7 +167,35 @@ strong {
   vertical-align: middle;
 }
 
-/* line 16, ../../app/stylesheets/_experiment.sass */
+/* line 18, ../../app/stylesheets/_experiment.sass */
+.inline {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *display: inline;
+  *vertical-align: auto;
+}
+
+/* line 23, ../../app/stylesheets/_experiment.sass */
+.intro_inputs {
+  float: left;
+  width: 300px;
+  background-color: #eeeeee;
+  padding: 0.5em;
+  margin-right: 1em;
+}
+
+/* line 31, ../../app/stylesheets/_experiment.sass */
+form.new_participant fieldset {
+  margin-top: 1em;
+}
+/* line 34, ../../app/stylesheets/_experiment.sass */
+form.new_participant fieldset.submit {
+  float: right;
+}
+
+/* line 37, ../../app/stylesheets/_experiment.sass */
 form.plural_form {
   display: -moz-inline-box;
   -moz-box-orient: vertical;
@@ -173,11 +205,11 @@ form.plural_form {
   *vertical-align: auto;
 }
 
-/* line 19, ../../app/stylesheets/_experiment.sass */
+/* line 40, ../../app/stylesheets/_experiment.sass */
 ul {
   margin-top: 1em;
 }
-/* line 21, ../../app/stylesheets/_experiment.sass */
+/* line 42, ../../app/stylesheets/_experiment.sass */
 ul li {
   line-height: 130%;
   border-top: 1px solid #bbbbbb;
@@ -185,17 +217,17 @@ ul li {
   padding-top: 1em;
 }
 
-/* line 28, ../../app/stylesheets/_experiment.sass */
+/* line 49, ../../app/stylesheets/_experiment.sass */
 span.item_strong {
   font-weight: bold;
   cursor: pointer;
 }
-/* line 31, ../../app/stylesheets/_experiment.sass */
+/* line 52, ../../app/stylesheets/_experiment.sass */
 span.item_strong:hover {
   background-color: #ffffaa;
 }
 
-/* line 35, ../../app/stylesheets/_experiment.sass */
+/* line 56, ../../app/stylesheets/_experiment.sass */
 .stem .item_text {
   display: -moz-inline-box;
   -moz-box-orient: vertical;
@@ -206,19 +238,19 @@ span.item_strong:hover {
   vertical-align: top;
   text-align: center;
 }
-/* line 39, ../../app/stylesheets/_experiment.sass */
+/* line 60, ../../app/stylesheets/_experiment.sass */
 .stem .item_text img {
   margin-top: 1em;
 }
-/* line 41, ../../app/stylesheets/_experiment.sass */
+/* line 62, ../../app/stylesheets/_experiment.sass */
 .stem .item_text img.plural_img {
   margin-right: 1em;
 }
-/* line 43, ../../app/stylesheets/_experiment.sass */
+/* line 64, ../../app/stylesheets/_experiment.sass */
 .stem #singular_col {
   width: 275px;
 }
-/* line 45, ../../app/stylesheets/_experiment.sass */
+/* line 66, ../../app/stylesheets/_experiment.sass */
 .stem #plural_col {
   width: 375px;
 }

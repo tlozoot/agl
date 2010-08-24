@@ -1,10 +1,10 @@
-%p Now you have seen how you learn this new language and how you will be tested on it. Next, you will go on to learn the rest of the language.
+:textile
+  Now you have seen how you learn this new language and how you will be tested on it. Next, you will go on to learn the rest of the language.
 
-%p As before, try saying the words aloud before continuing to the next page. You will not be asked to memorize these words, but it will help you learn how the plurals are formed.
+  As before, try saying the words aloud before continuing to the next page. You will not be asked to memorize these words, but it will help you learn how the plurals are formed.
 
-%p If you have any questions, please ask the experimenter now.
+  If you have any questions, please ask the experimenter now.
 
-%p You may proceed as soon as you're ready.
+  You may proceed as soon as you're ready.
 
-%fieldset.continue
-  = button_to "Continue &raquo;", experiment_response_url(@participant, @next_result.display_order), :method => :get
+= render 'continue'

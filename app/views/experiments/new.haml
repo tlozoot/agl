@@ -1,0 +1,27 @@
+
+#intro
+  %h2 Welcome to AGL!
+  
+  .intro_inputs
+    %strong
+      Test sound:
+      %button Play
+    - form_for @participant, :url => experiments_url, :html => { :class => "new_participant" } do |f|
+      %fieldset.name
+        = f.label :name, "Your name: ", :class => "strong"
+        = f.text_field :name
+      %fieldset.experiment_type{ :style => "display: #{@participant.experiment_type.nil? ? 'block' : 'none'};" }
+        = f.label :experiment, "Experiment type: ", :class => "strong"
+        = radio_button(:participant, :experiment_type, :variable)
+        = f.label(:variable, "Variable")
+        = radio_button(:participant, :experiment_type, :fixed)
+        = f.label(:fixed, "Fixed")
+      %fieldset.submit= submit_tag "Continue &raquo;" #, :disabled => 'disabled'
+      
+  .info
+    :textile
+      Please put your headphones on, press the "play" button to hear a sample sound, and adjust the volume to a comfortable level.
+    
+      Enter your name, #{ if @participant.experiment_type.nil? then "choose your experiment type, " end } and press the "continue" button when you are all set.  
+  
+    

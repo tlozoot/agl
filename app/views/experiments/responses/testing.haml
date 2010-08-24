@@ -1,8 +1,8 @@
-%p Okay, you've learned your new language. Feel free to take a couple of minutes to relax.
+:textile
+  Okay, you've learned your new language. Feel free to take a couple of minutes to relax.
 
-%p In the next few minutes, you will be tested on what you've learned. Some of the words will be repeated from before, and some will be new.
+  In the next few minutes, you will be tested on what you've learned. Some of the words will be repeated from before, and some will be new.
 
-%p You will hear the singulars only, and you will be asked to  supply the plural, speaking clearly to the microphone. If you don't know what the plural is, simply say "I don't know."
+  You will hear the singulars only, and you will be asked to  supply the plural, speaking clearly to the microphone. If you don't know what the plural is, simply say "I don't know."
 
-%fieldset.continue
-  = button_to "Continue &raquo;", experiment_response_url(@participant, @next_result.display_order), :method => :get
+= render 'continue'

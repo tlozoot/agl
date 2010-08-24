@@ -1,18 +1,39 @@
+label.strong
+  font-weight: bold
+
 .continue
   background-color: $lightGray
   padding: 0.5em
   margin-top: 0.5em
-  label
-    font-weight: bold
-  input[type='submit']
+  fieldset.submit
     float: right
+    clear: both
   span.phase
     +sans
     color: #888
     font-size: 0.8em
     font-weight: bold
     vertical-align: middle
-    
+
+.inline
+  +inline-block
+  
+.info
+
+.intro_inputs
+  float: left
+  width: 300px
+  background-color: $lightGray
+  padding: 0.5em
+  margin-right: 1em
+
+form.new_participant
+  fieldset
+    margin-top: 1em
+  fieldset.experiment_type
+  fieldset.submit
+    float: right
+  
 form.plural_form
   +inline-block
 
