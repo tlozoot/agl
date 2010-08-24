@@ -9,7 +9,7 @@
     
     #plural_col.item_text{ :data_sound => @result.stem.plural }
       These are 
-      - if @result.experiment_phase == 'testing'
+      - if (@result.experiment_phase == 'testing') || (@result.experiment_phase == 'training_test')
         = f.text_field :response
       - else
         %span.item_strong#plural= @result.stem.plural

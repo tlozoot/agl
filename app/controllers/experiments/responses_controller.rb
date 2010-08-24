@@ -30,6 +30,10 @@ class Experiments::ResponsesController < ApplicationController
     get_next_result(:training)
   end
   
+  def training_test
+    get_next_result(:training_test)
+  end
+  
   def learning 
     get_next_result(:learning)
   end

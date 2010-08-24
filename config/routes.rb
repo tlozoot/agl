@@ -3,12 +3,14 @@ ActionController::Routing::Routes.draw do |map|
   map.root :controller => :experiments, :action => :new
   
   map.resources :experiments do |experiments|
-    experiments.resources :responses, :controller => 'experiments/responses'
+    experiments.resources :responses, :controller => 'experiments/responses', :only => [:new, :show, :update], :member => { :training, :trainingtest, :learning, :testing, :finished }
     
-    experiments.training 'training', :controller => 'experiments/responses', :action => 'training'
-    experiments.learning 'learning', :controller => 'experiments/responses', :action => 'learning'
-    experiments.testing 'testing', :controller => 'experiments/responses', :action => 'testing'
-    experiments.finished 'finished', :controller => 'experiments/responses', :action => 'finished'
+    # experiments.member 
+    # experiments.training 'training', :controller => 'experiments/responses', :action => 'training'
+    # experiments.trainingtest 'trainingtest', :controller => 'experiments/responses', :action => 'trainingtest'
+    # experiments.learning 'learning', :controller => 'experiments/responses', :action => 'learning'
+    # experiments.testing 'testing', :controller => 'experiments/responses', :action => 'testing'
+    # experiments.finished 'finished', :controller => 'experiments/responses', :action => 'finished'
   end
   
   map.resource :variable, :only => :show, :controller => :variable
@@ -55,6 +57,6 @@ ActionController::Routing::Routes.draw do |map|
   # Install the default routes as the lowest priority.
   # Note: These default routes make all actions in every controller accessible via GET requests. You should
   # consider removing or commenting them out if you're using named routes and resources.
-  map.connect ':controller/:action/:id'
-  map.connect ':controller/:action/:id.:format'
+  # map.connect ':controller/:action/:id'
+  # map.connect ':controller/:action/:id.:format'
 end
