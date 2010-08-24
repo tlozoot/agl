@@ -5,7 +5,7 @@ class Participant < ActiveRecord::Base
   
   before_save :generate_code
   
-  validates_presence_of :name
+  validates_presence_of :name, :experiment_type
   
   def self.inheritance_column
     "experiment_type"

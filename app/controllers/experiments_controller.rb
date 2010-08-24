@@ -16,14 +16,14 @@ class ExperimentsController < ApplicationController
   end
   
   def create
-    @participant = Participant.new(params[:participant])
+    @participant = params[:participant][:experiment_type].capitalize.constantize.new(params[:participant])
     @participant.assign_training_group
     
     if @participant.save
       @participant.generate_items
       redirect_to experiment_training_url(@participant)
     else
-      flash.now[:message] = "Whoops--we had a problem saving your results."
+      flash.now[:message] = "Sorry, we had a problem starting your experiment."
       render :new
     end
   end
