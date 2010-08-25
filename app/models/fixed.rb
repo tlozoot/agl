@@ -11,7 +11,7 @@ class Fixed < Participant
   end
   
   def testing_words
-    @stems.select{ |stem| stem.singular =~ /(e|u)$/ }
+    @stems.select{ |stem| stem.singular =~ /(e|u)/ }
   end
   
   def training_items

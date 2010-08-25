@@ -34,8 +34,6 @@ class Participant < ActiveRecord::Base
   def generate_items
     assign_training_group
     @stems = Stem.assign_pictures_to_stems_of_type(experiment_type.downcase)
-    
-    puts "stems:\n #{@stems}"
   
     @control_words = control_words
     
