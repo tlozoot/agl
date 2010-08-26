@@ -3,7 +3,7 @@ class Stem < ActiveRecord::Base
   has_many :results
   has_many :participants, :through => :results
   
-  attr_accessor :clipart
+  attr_accessor :clipart, :experiment_type
   
   def self.assign_pictures_to_stems_of_type(type)
     @clipart = Clipart.all.sort_by{ rand }
