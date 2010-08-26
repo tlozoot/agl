@@ -25,7 +25,6 @@ class Variable < Participant
   def training_items
     ['l', 'm', 'r'].map do |c|
       stem = @stems.select{ |s| s.consonant == c }.first
-      stem.experiment_phase = 'training'
       stem
     end
   end
