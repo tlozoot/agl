@@ -8,4 +8,6 @@ doc/app
 **/**/.#*
 *~x
 db/*.sqlite3
+.dropbox
+Icon*
 
