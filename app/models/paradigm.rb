@@ -33,20 +33,25 @@ class Paradigm < ActiveRecord::Base
   def spelled_plural
     case experiment_type
     when 'fixed'
-      spelled_singular
+      case vowel
+      when 'u'
+        spelled_singular.sub('u', 'i')
+      when 'e'
+        spelled_singular.sub('e', 'o')
+      else
+        spelled_singular + 'ni'
+      end
     when 'variable'
-      Proc.new do
-        case consonant
-        when 'p'
-          spelled_singular.sub(/p$/, 'b')
-        when 't'
-          spelled_singular.sub(/t$/, 'd')
-        when 'k'
-          spelled_singular.sub(/k$/, 'g')
-        else
-          spelled_singular
-        end
-      end.call + 'ni'
+      (case consonant
+      when 'p'
+        spelled_singular.sub(/p$/, 'b')
+      when 't'
+        spelled_singular.sub(/t$/, 'd')
+      when 'k'
+        spelled_singular.sub(/k$/, 'g')
+      else
+        spelled_singular
+      end) + 'ni'
     end
   end
   
