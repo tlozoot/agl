@@ -15,17 +15,17 @@ class Variable < Participant
   private
   
   def control_words
-    @stems.select{ |stem| stem.singular =~ /(r|l|m|ng)$/ }
+    @paradigms.select{ |paradigm| paradigm.singular =~ /(r|l|m|ng)$/ }
   end
   
   def testing_words
-    @stems.select{ |stem| stem.singular =~ /(p|t|k)$/ }
+    @paradigms.select{ |paradigm| paradigm.singular =~ /(p|t|k)$/ }
   end
   
   def training_items
     ['l', 'm', 'r'].map do |c|
-      stem = @stems.select{ |s| s.consonant == c }.first
-      stem
+      paradigm = @paradigms.select{ |s| s.consonant == c }.first
+      paradigm
     end
   end
   

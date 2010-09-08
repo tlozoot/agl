@@ -26,14 +26,14 @@ class Participant < ActiveRecord::Base
   def correct_plurals
     @correct_plurals = []
     results.each do |r|
-      @correct_plurals << r if (r.stem.plural == r.response) && r.experiment_phase == 'testing'
+      @correct_plurals << r if (r.paradigm.plural == r.response) && r.experiment_phase == 'testing'
     end
     @correct_plurals
   end
   
   def generate_items
     assign_training_group
-    @stems = Stem.assign_pictures_to_stems_of_type(experiment_type.downcase)
+    @paradigms = Paradigm.assign_pictures_to_paradigms_of_type(experiment_type.downcase)
   
     @control_words = control_words
     
@@ -54,7 +54,7 @@ class Participant < ActiveRecord::Base
     
     [:training, :training_test, :learning, :testing].each do |phase|
       @items[phase].each do |item|
-        self.results.create(:stem => item, :clipart => item.clipart, :experiment_phase => phase.to_s)
+        self.results.create(:paradigm => item, :clipart => item.clipart, :experiment_phase => phase.to_s)
       end
     end
     

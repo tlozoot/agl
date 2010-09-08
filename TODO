@@ -1,34 +1,15 @@
-1) Spelling column
-  - Only for singulars
-  - We need to decide what plurals are anyway
-    - And if we're spelling them
-  
-2) Fixed AGL
-  - Figure out which items are plural and which are singular!
-  - add [ni] to [a] stems in plural
+- give paradigms spelled singular (and plural?)
 
-3) Pictures
-  - Big picture for singular
-  - lots of small ones for plural
+- We need to decide what plurals are for fixed AGL
+	- add [ni] to [a] stems in plural?
+	
+- do we spell plurals for the user ever?
   
-4) stems -> paradigms
-  - Singular
-  - Plural
-  - Spelled singular
-  - ?Spelled plural
-  - Stress, final consonant, vowel, etc
-  - Experiment type
-  - Clipart while in RAM
-  
-5) responses -> trails
-  
-6) selecting items
+- selecting items
   training: 3 places * 3 of each (only one stress) + 9 filler = 18 training words
   testing:  3 places * (5 training[2 old + 3 new] + 5 opposite training) + 5 old filler + 5 new filler = 40 testing words 
 
-7) meet wednesday at 2
-
-8) chop up matt2 and matt3
+- chop up matt2 and matt3
   
 12412) Ask Anouk to do experiment
 

@@ -1,13 +1,13 @@
 class Result < ActiveRecord::Base
 
-  belongs_to :stem
+  belongs_to :paradigm
   belongs_to :participant
   belongs_to :clipart
     
-  validates_presence_of :stem, :participant
+  validates_presence_of :paradigm, :participant
   
   def to_s
-    stem.to_s.chomp + "
+    paradigm.to_s.chomp + "
     Order: #{display_order}
     Phase: #{experiment_phase}
     Response: #{response}"

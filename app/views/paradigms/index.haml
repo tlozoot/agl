@@ -1,0 +1,6 @@
+%h2 Paradigms
+
+%ul
+  - @paradigms.each do |paradigm|
+    %li= render 'paradigm', :paradigm => paradigm
+    

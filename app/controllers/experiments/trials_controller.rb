@@ -1,4 +1,4 @@
-class Experiments::ResponsesController < ApplicationController
+class Experiments::TrialsController < ApplicationController
  
   before_filter :get_participant
   
@@ -20,7 +20,7 @@ class Experiments::ResponsesController < ApplicationController
       if @result.experiment_phase != next_result.experiment_phase
         redirect_to :action => next_result.experiment_phase
       else
-        redirect_to experiment_response_url(@participant, next_result.display_order)
+        redirect_to experiment_trial_url(@participant, next_result.display_order)
       end
     else
       render :finished

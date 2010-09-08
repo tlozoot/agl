@@ -6,19 +6,20 @@ ActionController::Routing::Routes.draw do |map|
   map.logout 'logout', :controller => 'user_sessions', :action => 'destroy'
   
   map.resources :experiments, :except => [:show] do |experiments|
-    experiments.resources :responses, :controller => 'experiments/responses', :only => [:new, :show, :update]
+    experiments.resources :trials, :controller => 'experiments/trials', :only => [:new, :show, :update]
     
-    experiments.training 'training', :controller => 'experiments/responses', :action => 'training'
-    experiments.trainingtest 'training_test', :controller => 'experiments/responses', :action => 'training_test'
-    experiments.learning 'learning', :controller => 'experiments/responses', :action => 'learning'
-    experiments.testing 'testing', :controller => 'experiments/responses', :action => 'testing'
-    experiments.finished 'finished', :controller => 'experiments/responses', :action => 'finished'
+    experiments.training 'training', :controller => 'experiments/trials', :action => 'training'
+    experiments.trainingtest 'training_test', :controller => 'experiments/trials', :action => 'training_test'
+    experiments.learning 'learning', :controller => 'experiments/trials', :action => 'learning'
+    experiments.testing 'testing', :controller => 'experiments/trials', :action => 'testing'
+    experiments.finished 'finished', :controller => 'experiments/trials', :action => 'finished'
   end
   
   map.resource :variable, :only => :show, :controller => :variable
   map.resource :fixed, :only => :show, :controller => :fixed
   
   map.resources :results, :only => [:index, :show]
+  map.resources :paradigms
   
   map.resources :user_sessions
   map.resources :users

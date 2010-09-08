@@ -2,12 +2,12 @@
   = image_tag result.clipart.singular_file, :width => "50"
   .plural
     %strong Plural:
-    = result.stem.plural
+    = result.paradigm.plural
   - unless result.experiment_phase == 'learning'
     .reponse
       %strong Response:
       = result.response
-    - if result.stem.plural == result.response
+    - if result.paradigm.plural == result.response
       .correct Correct!
     - else
       .incorrect Incorrect

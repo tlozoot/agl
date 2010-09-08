@@ -7,15 +7,15 @@ class Fixed < Participant
   private
   
   def control_words
-    @stems.select{ |stem| stem.singular =~ /a/ }
+    @paradigms.select{ |paradigm| paradigm.singular =~ /a/ }
   end
   
   def testing_words
-    @stems.select{ |stem| stem.singular =~ /(e|u)/ }
+    @paradigms.select{ |paradigm| paradigm.singular =~ /(e|u)/ }
   end
   
   def training_items
-    @stems.select{ |s| s.vowel == 'a' }.sort_by{ rand }.first(3)
+    @paradigms.select{ |s| s.vowel == 'a' }.sort_by{ rand }.first(3)
   end
   
 end
