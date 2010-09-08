@@ -30,27 +30,27 @@ class Paradigm < ActiveRecord::Base
     "/stimuli/#{experiment_type}/#{plural}.mp3"
   end
   
-  def spelled_plural
+  def plural
     case experiment_type
     when 'fixed'
       case vowel
       when 'u'
-        spelled_singular.sub('u', 'i')
+        singular.sub('u', 'i')
       when 'e'
-        spelled_singular.sub('e', 'o')
+        singular.sub('e', 'o')
       else
-        spelled_singular + 'ni'
+        singular + 'ni'
       end
     when 'variable'
       (case consonant
       when 'p'
-        spelled_singular.sub(/p$/, 'b')
+        singular.sub(/p$/, 'b')
       when 't'
-        spelled_singular.sub(/t$/, 'd')
+        singular.sub(/t$/, 'd')
       when 'k'
-        spelled_singular.sub(/k$/, 'g')
+        singular.sub(/k$/, 'g')
       else
-        spelled_singular
+        singular
       end) + 'ni'
     end
   end

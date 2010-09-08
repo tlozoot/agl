@@ -1,5 +1,15 @@
 - semantic_form_for @paradigm do |f|
-  = f.inputs
+  - f.inputs do 
+    = f.input :singular
+    %li
+      %label Plural
+      %span.static_form_element= @paradigm.plural
+    = f.input :spelled_singular
+    = f.input :spelled_plural
+    = f.input :vowel
+    = f.input :consonant
+    = f.input :stress
+    = f.input :experiment_type
   = f.buttons
 
 = link_to '&laquo; Back to index', paradigms_url
