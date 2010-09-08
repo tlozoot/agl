@@ -26,7 +26,7 @@ class Participant < ActiveRecord::Base
   def correct_plurals
     @correct_plurals = []
     results.each do |r|
-      @correct_plurals << r if (r.paradigm.plural == r.response) && r.experiment_phase == 'testing'
+      @correct_plurals << r if (r.paradigm.spelled_plural == r.response) && r.experiment_phase == 'testing'
     end
     @correct_plurals
   end
