@@ -1,18 +1,21 @@
 - give paradigms spelled singular and plural
-	- should we store any plural forms in the db?
 
 - do we spell plurals for the user ever?
 
 - We need to decide what plurals are for fixed AGL
 	- add [ni] to [a] stems in plural?
 	
+- don't let people retake experiments (store progress)
+- AJAX!
 
-  
+- Use ajax/soundman to control when plurals appear
+	
 - selecting items
   training: 3 places * 3 of each (only one stress) + 9 filler = 18 training words
   testing:  3 places * (5 training[2 old + 3 new] + 5 opposite training) + 5 old filler + 5 new filler = 40 testing words 
 
 - chop up matt2 and matt3
+
   
 12412) Ask Anouk to do experiment
 

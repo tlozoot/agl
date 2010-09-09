@@ -8,8 +8,8 @@
       %button#volume_test Play
     - form_for @participant, :url => experiments_url, :html => { :class => "new_participant" } do |f|
       %fieldset.name
-        = f.label :name, "Your name: ", :class => "strong"
-        = f.text_field :name
+        %label.strong Your ID:
+        %span.static_form_field= @participant.code
       %fieldset.experiment_type{ :style => "display: #{@participant.experiment_type.nil? ? 'block' : 'none'};" }
         = f.label :experiment, "Experiment type: ", :class => "strong"
         = radio_button(:participant, :experiment_type, :variable)

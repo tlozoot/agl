@@ -7,7 +7,7 @@ class ExperimentsController < ApplicationController
   end
   
   def new
-    @participant = Participant.new
+    @participant = Participant.new(:code => Participant.generate_code)
   end
   
   def create

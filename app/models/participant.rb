@@ -3,20 +3,18 @@ class Participant < ActiveRecord::Base
   has_many :results
   accepts_nested_attributes_for :results
   
-  before_save :generate_code
-  
   validates_presence_of :name, :experiment_type
   
   def self.inheritance_column
     "experiment_type"
   end
-  
+
+  def self.generate_code
+    code = (0..2).map{ (rand(26) + 65).chr }.join + (Participant.last.id + 1).to_s
+  end
+
   def select_results(phase)
     self.results.select{ |r| r.experiment_phase == phase.to_s }
-  end
-    
-  def generate_code
-    self.code = Digest::MD5.hexdigest(name + Time.now.to_s)
   end
   
   def assign_training_group
@@ -71,5 +69,6 @@ class Participant < ActiveRecord::Base
              .sort_by{ rand }
   end
   
+
   
 end
