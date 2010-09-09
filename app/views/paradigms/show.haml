@@ -1,4 +1,8 @@
 %h2 Paradigm
 = render 'paradigm', :paradigm => @paradigm
 %br
-= link_to '&laquo; Back to index', paradigms_url
+= link_to '&laquo; previous paradigm', paradigm_url(@paradigm.id - 1)
+|
+= link_to 'back to index', paradigms_url
+|
+= link_to 'next paradigm &raquo;', paradigm_url(@paradigm.id + 1)
