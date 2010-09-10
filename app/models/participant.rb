@@ -3,14 +3,14 @@ class Participant < ActiveRecord::Base
   has_many :results
   accepts_nested_attributes_for :results
   
-  validates_presence_of :name, :experiment_type
+  validates_presence_of :experiment_type
   
   def self.inheritance_column
     "experiment_type"
   end
 
   def self.generate_code
-    code = (0..2).map{ (rand(26) + 65).chr }.join + (Participant.last.id + 1).to_s
+    code = (0..2).map{ (rand(26) + 65).chr }.join + Participant.all.length.to_s
   end
 
   def select_results(phase)

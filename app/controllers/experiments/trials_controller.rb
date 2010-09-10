@@ -2,28 +2,31 @@ class Experiments::TrialsController < ApplicationController
  
   before_filter :get_participant
   
-  def index
-  end
-  
   def show
-    @result = @participant.results.find_by_display_order(params[:id])
+    unless @result = @participant.results.find_by_display_order(@participant.experiment_position)
+      render :finished
+    end
   end
   
   def update
-    @result = @participant.results.find_by_display_order(params[:id])
-    case @result.experiment_phase
-    when 'testing', 'training_test'
-      @result.update_attributes params[:result]
-    end
-    next_result = @participant.results.find_by_display_order(@result.display_order + 1)
-    unless next_result.nil?
-      if @result.experiment_phase != next_result.experiment_phase
-        redirect_to :action => next_result.experiment_phase
+    @result = @participant.results.find_by_display_order(@participant.experiment_position)
+    @participant.experiment_position += 1
+    if @participant.save
+      case @result.experiment_phase
+      when 'testing', 'training_test'
+        @result.update_attributes params[:result]
+      end
+      next_result = @participant.results.find_by_display_order(@participant.experiment_position)
+      unless next_result.nil?
+        if @result.experiment_phase != next_result.experiment_phase
+          redirect_to :action => next_result.experiment_phase
+        else
+          redirect_to experiment_trials_url(@participant)
+        end
       else
-        redirect_to experiment_trial_url(@participant, next_result.display_order)
+        render :finished
       end
     else
-      render :finished
     end
   end
   

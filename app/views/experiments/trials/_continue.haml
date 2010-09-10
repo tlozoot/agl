@@ -1,2 +1,3 @@
 %fieldset.continue
-  %fieldset.submit= button_to "Continue &raquo;", experiment_trial_url(@participant, @next_result.display_order), :method => :get
+  = render 'progress', :participant => @participant
+  %fieldset.submit= button_to "Continue &raquo;", experiment_trials_url(@participant), :method => :get

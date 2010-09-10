@@ -10,6 +10,7 @@
       %fieldset.name
         %label.strong Your ID:
         %span.static_form_field= @participant.code
+        = f.hidden_field :code
       %fieldset.experiment_type{ :style => "display: #{@participant.experiment_type.nil? ? 'block' : 'none'};" }
         = f.label :experiment, "Experiment type: ", :class => "strong"
         = radio_button(:participant, :experiment_type, :variable)

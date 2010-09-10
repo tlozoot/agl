@@ -1,7 +1,11 @@
-%h2 Participant #{ @participant.id } (#{ @participant.name })
+%h2 Participant #{ @participant.code }
 #code
-  Code:
-  %strong= @participant.code
+  Status:
+  %strong
+    - if @participant.experiment_position > @participant.results.length
+      = "finished"
+    - else
+      = "Completed #{@participant.experiment_position}/#{@participant.results.length}"
 
 .analytics
   %h3 Analytics

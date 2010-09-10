@@ -6,7 +6,7 @@ ActionController::Routing::Routes.draw do |map|
   map.logout 'logout', :controller => 'user_sessions', :action => 'destroy'
   
   map.resources :experiments, :except => [:show] do |experiments|
-    experiments.resources :trials, :controller => 'experiments/trials', :only => [:new, :show, :update]
+    experiments.resource :trials, :controller => 'experiments/trials', :only => [:new, :show, :update]
     
     experiments.training 'training', :controller => 'experiments/trials', :action => 'training'
     experiments.trainingtest 'training_test', :controller => 'experiments/trials', :action => 'training_test'

@@ -10,4 +10,8 @@
     - subgroup.each do |p|
       %li
         = "#{p.id}."
-        = link_to p.name, result_url(p)
+        = link_to p.code, result_url(p)
+        - if p.experiment_position > p.results.length
+          = "(finished)"
+        - else
+          = "(#{p.experiment_position}/#{p.results.length})"

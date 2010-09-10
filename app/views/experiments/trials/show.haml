@@ -1,4 +1,4 @@
-- form_for [:experiment, @result], :url => experiment_trial_path(@participant, @result.display_order), :html => { :method => :put } do |f|
+- form_for [:experiment, @result], :url => experiment_trials_path(@participant), :html => { :method => :put } do |f|
 
   - div_for @result.paradigm do
     #singular_col.item_text
@@ -18,5 +18,6 @@
       %br
       = (image_tag @result.clipart.plural_file, :width => "50", :class => "plural_img") * 2
   %fieldset.continue
-    %span.phase= @result.experiment_phase.humanize
+    /%span.phase= @result.experiment_phase.humanize
+    = render 'progress', :participant => @participant
     %fieldset.submit= submit_tag "Next &raquo;"
