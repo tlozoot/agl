@@ -5,14 +5,12 @@ ActionController::Routing::Routes.draw do |map|
   map.login 'login', :controller => 'user_sessions', :action => 'new'  
   map.logout 'logout', :controller => 'user_sessions', :action => 'destroy'
   
-  map.resources :experiments, :except => [:show] do |experiments|
-    experiments.resource :trials, :controller => 'experiments/trials', :only => [:new, :show, :update]
-    
-    experiments.training 'training', :controller => 'experiments/trials', :action => 'training'
-    experiments.trainingtest 'training_test', :controller => 'experiments/trials', :action => 'training_test'
-    experiments.learning 'learning', :controller => 'experiments/trials', :action => 'learning'
-    experiments.testing 'testing', :controller => 'experiments/trials', :action => 'testing'
-    experiments.finished 'finished', :controller => 'experiments/trials', :action => 'finished'
+  map.resources :experiments do |experiments|
+    experiments.training 'training', :controller => 'experiments', :action => 'training'
+    experiments.trainingtest 'training_test', :controller => 'experiments', :action => 'training_test'
+    experiments.learning 'learning', :controller => 'experiments', :action => 'learning'
+    experiments.testing 'testing', :controller => 'experiments', :action => 'testing'
+    experiments.finished 'finished', :controller => 'experiments', :action => 'finished'
   end
   
   map.resource :variable, :only => :show, :controller => :variable

@@ -2,17 +2,11 @@
 
 - do we spell plurals for the user ever?
 	
-- AJAX!
-
-- Use ajax/soundman to control when plurals appear
+- AJAX??!
 	
 - selecting items
   training: 3 places * 3 of each (only one stress) + 9 filler = 18 training words
   testing:  3 places * (5 training[2 old + 3 new] + 5 opposite training) + 5 old filler + 5 new filler = 40 testing words 
 
 - chop up matt2 and matt3
-
-  
-12412) Ask Anouk to do experiment
-
-Running LAME: for i in *.wav; do /Applications/lame "$i" "$i.mp3"; done
+ - Running LAME: for i in *.wav; do /Applications/lame "$i" "$i.mp3"; done
