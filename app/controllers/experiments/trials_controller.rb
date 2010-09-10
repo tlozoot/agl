@@ -6,6 +6,12 @@ class Experiments::TrialsController < ApplicationController
     unless @result = @participant.results.find_by_display_order(@participant.experiment_position)
       render :finished
     end
+    @button_status = case @result.experiment_phase
+                     when 'training', 'learning'
+                       true
+                     else
+                       false
+                     end 
   end
   
   def update

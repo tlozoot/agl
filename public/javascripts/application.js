@@ -38,7 +38,14 @@ soundManager.onload = function() {
 
   if (singular) { 
     soundManager.play(singular, { onfinish: function() {
-      var playPl = function() { if (plural) { soundManager.play(plural); } };
+      var playPl = function() {
+        if (plural) {
+          soundManager.play(plural, { onfinish: function() { $("input[name=commit]").attr({disabled: false}); } });
+        } else {
+          $("input[name=commit]").attr({disabled: false});
+        }
+      };
+      $("#plural_col").css({display: "inline-block"});
       setTimeout(playPl, 500);
     } });
   }

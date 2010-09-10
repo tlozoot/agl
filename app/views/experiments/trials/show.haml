@@ -20,4 +20,4 @@
   %fieldset.continue
     /%span.phase= @result.experiment_phase.humanize
     = render 'progress', :participant => @participant
-    %fieldset.submit= submit_tag "Next &raquo;"
+    %fieldset.submit= submit_tag "Next &raquo;", :disabled => true

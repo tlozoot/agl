@@ -341,6 +341,7 @@ span.item_strong {
 /* line 78, ../../app/stylesheets/_experiment.sass */
 .paradigm #plural_col {
   width: 375px;
+  display: none;
 }
 
 /* line 1, ../../app/stylesheets/_results.sass */
