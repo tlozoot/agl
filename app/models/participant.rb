@@ -29,6 +29,8 @@ class Participant < ActiveRecord::Base
     @correct_plurals
   end
   
+  # learning: 3 places * 3 of each (only one stress) + 9 filler = 18 learning words
+  # testing:  3 places * (5 training[2 old + 3 new] + 5 opposite training) + 5 old filler + 5 new filler = 40 testing words
   def generate_items
     assign_training_group
     @paradigms = Paradigm.assign_pictures_to_paradigms_of_type(experiment_type.downcase)

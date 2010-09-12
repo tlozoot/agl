@@ -1,12 +1,6 @@
-- fix spellings!
-
-- AJAX??! would be nice
-	
-- selecting items
-  learning: 3 places * 3 of each (only one stress) + 9 filler = 18 learning words
-  testing:  3 places * (5 training[2 old + 3 new] + 5 opposite training) + 5 old filler + 5 new filler = 40 testing words 
-
-	- DONE!
-
 - chop up matt2 and matt3
  - Running LAME: for i in *.wav; do /Applications/lame "$i" "$i.mp3"; done
+
+- AJAX??! would be nice
+
+- fix spellings!
