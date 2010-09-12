@@ -10,12 +10,16 @@ class Fixed < Participant
     @paradigms.select{ |paradigm| paradigm.singular =~ /a/ }
   end
   
-  def testing_words
-    @paradigms.select{ |paradigm| paradigm.singular =~ /(e|u)/ }
-  end
-  
   def training_items
     @paradigms.select{ |s| s.vowel == 'a' }.sort_by{ rand }.first(3)
+  end
+  
+  def places_of_articulation
+    %w(e u)
+  end
+  
+  def independent_variable
+    'vowel'
   end
   
 end

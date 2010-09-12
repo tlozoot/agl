@@ -32,43 +32,46 @@ class Participant < ActiveRecord::Base
   def generate_items
     assign_training_group
     @paradigms = Paradigm.assign_pictures_to_paradigms_of_type(experiment_type.downcase)
-  
-    @control_words = control_words
     
-    @experimental_words = {}
-    @experimental_words[:testing]  = testing_words 
-    @experimental_words[:learning] = @experimental_words[:testing].deep_copy.select do |s|
-      s.stress == self.training_group  
-    end
-    
-    @items = {}
-    @items = {
-      :training => training_items,
-      :learning => experiment_items(:learning),
-      :testing  => experiment_items(:testing),
-    }
-    
+    @items = {} # is this necessary?
+    @items[:training] = training_items
     @items[:training_test] = @items[:training]
     
-    [:training, :training_test, :learning, :testing].each do |phase|
-      @items[phase].each do |item|
+    @items[:learning] = []
+    @items[:testing] = []
+    
+    @control_words = control_words.randomly_pick(14) 
+    @items[:learning] += @control_words.last(9)
+    @items[:testing] += @control_words.first(10)
+    
+    places_of_articulation.each do |place|
+      @training_words = training_words_by_place(place).randomly_pick(6)
+      @items[:learning] += @training_words.last(3)
+      @items[:testing] += @training_words.first(5)
+      @items[:testing] += testing_words_by_place(place).randomly_pick(5)
+    end
+    
+    @items.each_pair do |phase, items|
+      items.sort_by{ rand }
+      items.each do |item|
         self.results.create(:paradigm => item, :clipart => item.clipart, :experiment_phase => phase.to_s)
       end
     end
     
-    self.results.each_index do |i|
-      self.results[i].display_order = i + 1
-      self.results[i].save
+    self.results.each_with_index do |result, i|
+      result.display_order = i + 1
+      result.save
     end
   end
   
   private
   
-  def experiment_items(phase)
-    @items = (@control_words.deep_copy.randomly_pick(5) + @experimental_words[phase].randomly_pick(5)) \
-             .sort_by{ rand }
+  def training_words_by_place(place)
+    @paradigms.select{ |p| p.method(independent_variable).call == place && p.stress == training_group }
   end
   
-
+  def testing_words_by_place(place)
+    @paradigms.select{ |p| p.method(independent_variable).call == place && p.stress != training_group }
+  end
   
 end

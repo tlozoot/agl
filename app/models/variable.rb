@@ -18,15 +18,19 @@ class Variable < Participant
     @paradigms.select{ |paradigm| paradigm.singular =~ /(r|l|m|ng)$/ }
   end
   
-  def testing_words
-    @paradigms.select{ |paradigm| paradigm.singular =~ /(p|t|k)$/ }
-  end
-  
   def training_items
-    ['l', 'm', 'r'].map do |c|
+    %w(l m r).map do |c|
       paradigm = @paradigms.select{ |s| s.consonant == c }.first
       paradigm
     end
+  end
+  
+  def places_of_articulation
+    %w(p t k)
+  end
+  
+  def independent_variable
+    'consonant'
   end
   
 end
