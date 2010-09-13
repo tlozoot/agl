@@ -7,7 +7,7 @@ class ParadigmsController < ApplicationController
     @paradigms = Paradigm.all
     respond_to do |format|
       format.html
-      format.csv { render :layout => false }
+      format.csv { @filename = 'paradigms.csv'; render :layout => false }
     end
   end
   
