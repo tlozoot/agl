@@ -5,4 +5,5 @@ haml
 formtastic
 paperclip
 compass
+fastercsv
 

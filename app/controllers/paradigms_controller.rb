@@ -5,6 +5,10 @@ class ParadigmsController < ApplicationController
   
   def index    
     @paradigms = Paradigm.all
+    respond_to do |format|
+      format.html
+      format.csv { render :layout => false }
+    end
   end
   
   def show

@@ -1,5 +1,4 @@
-- chop up matt2 and matt3
- - Running LAME: for i in *.wav; do /Applications/lame "$i" "$i.mp3"; done
+- select best samples
 
 - AJAX??! would be nice
 
