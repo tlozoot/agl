@@ -1,8 +1,9 @@
+formtastic --ignore-dependencies
+rack -v 1.1.0
 rails -v 2.3.8
 RedCloth
 authlogic
 haml
-formtastic
 paperclip
 compass
 fastercsv
