@@ -53,7 +53,7 @@ class Participant < ActiveRecord::Base
       @items[:testing] += testing_words_by_place(place).randomly_pick(5)
     end
     
-    [:training, :training_test, :learning, :testing] do |phase|
+    [:training, :training_test, :learning, :testing].each do |phase|
       @items[phase].sort_by{ rand }
       @items[phase].each do |item|
         self.results.create(:paradigm => item, :clipart => item.clipart, :experiment_phase => phase.to_s)
