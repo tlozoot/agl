@@ -53,9 +53,9 @@ class Participant < ActiveRecord::Base
       @items[:testing] += testing_words_by_place(place).randomly_pick(5)
     end
     
-    @items.each_pair do |phase, items|
-      items.sort_by{ rand }
-      items.each do |item|
+    [:training, :training_test, :learning, :testing] do |phase|
+      @items[phase].sort_by{ rand }
+      @items[phase].each do |item|
         self.results.create(:paradigm => item, :clipart => item.clipart, :experiment_phase => phase.to_s)
       end
     end
