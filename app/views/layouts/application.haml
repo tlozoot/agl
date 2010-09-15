@@ -12,7 +12,8 @@
     / %h1 Artificial Grammar Learning
     - if flash[:message]
       #flash= flash[:message]
-    #main= yield
+    #main
+      = yield
     #footer
       - if current_user
         = link_to 'results', results_url

@@ -1,3 +1,3 @@
 %fieldset.continue
   = render 'progress', :participant => @participant
-  %fieldset.submit= button_to "Continue &raquo;", experiment_url(@participant), :method => :get
+  %fieldset.submit= button_to "Continue &raquo;", experiment_url(@participant), :method => :get, :class => "ajax_submit"

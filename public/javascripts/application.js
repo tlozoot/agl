@@ -5,15 +5,44 @@
 soundManager.url = "/soundmanager2.swf";
 soundManager.debugMode = false;
 
-jQuery.ajaxSetup({ 
-  'beforeSend': function(xhr) {xhr.setRequestHeader("Accept", "text/javascript")}
-})
+var loadSoundManager = function() {
+  var singular = $('span.item_strong#singular').createSound();
+  var plural = $('span.item_strong#plural').createSound();
+
+  if (singular) { 
+    soundManager.play(singular, { onfinish: function() {
+      var playPl = function() {
+        if (plural) {
+          soundManager.play(plural, { onfinish: function() { $("input[name=commit]").attr({disabled: false}); } });
+        } else {
+          $("input[name=commit]").attr({disabled: false});
+        }
+      };
+      $("#plural_col").css({display: "inline-block"});
+      setTimeout(playPl, 500);
+    } });
+  }
+};
+
+jQuery.ajaxSetup( { 
+  'beforeSend': function(xhr) {
+    $('fieldset.submit').html("Loading...");
+    xhr.setRequestHeader("Accept", "text/javascript");
+  }
+});
 
 jQuery.fn.submitWithAjax = function() {
   this.submit(function() {
-    $.post(this.action, $(this).serialize(), null, "script");
+    $.post(this.action, $(this).serialize(), function(data) {
+      $('#main').html(data.mainDiv);
+      // console.log(data.mainDiv);
+      loadSoundManager();
+      $('#result_response').attr('value', '');
+      $('form.edit_result').submitWithAjax();
+    }, "json");
+    // console.log($(this).serialize());
     return false;
-  })
+  });
   return this;
 };
 
@@ -32,24 +61,7 @@ jQuery.fn.createSound = function() {
   }
 };
 
-soundManager.onload = function() {
-  var singular = $('span.item_strong#singular').createSound();
-  var plural = $('span.item_strong#plural').createSound();
-
-  if (singular) { 
-    soundManager.play(singular, { onfinish: function() {
-      var playPl = function() {
-        if (plural) {
-          soundManager.play(plural, { onfinish: function() { $("input[name=commit]").attr({disabled: false}); } });
-        } else {
-          $("input[name=commit]").attr({disabled: false});
-        }
-      };
-      $("#plural_col").css({display: "inline-block"});
-      setTimeout(playPl, 500);
-    } });
-  }
-}
+soundManager.onload = loadSoundManager;
 
 $(document).ready(function() {
   $('#volume_test').click(function(){
@@ -60,8 +72,8 @@ $(document).ready(function() {
     soundManager.play('testSound');
   });
   
-  $('form.ajax').submitWithAjax();
-  
+  $('form.ajax_submit').submitWithAjax();
+    
   $('.toggle_results').click(function() {
     $('ul#' + $(this).attr('data-phase')).slideToggle();
   });

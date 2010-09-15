@@ -24,27 +24,42 @@ class ExperimentsController < ApplicationController
   end
   
   def show
-    unless @result = @participant.results.find_by_display_order(@participant.experiment_position)
-      render :finished
+    respond_to do |format|
+      unless @result = @participant.results.find_by_display_order(@participant.experiment_position)
+        format.html { render :finished }
+      end
+      format.html
+      format.json { render :layout => false }
     end
   end
   
   def update
-    @result = @participant.results.find_by_display_order(@participant.experiment_position)
+    @previous_result = @participant.results.find(params[:result][:id])
     @participant.experiment_position += 1
     if @participant.save
-      case @result.experiment_phase
+      case @previous_result.experiment_phase
       when 'testing', 'training_test'
-        @result.update_attributes params[:result]
+        if @previous_result.response.nil?
+          @previous_result.update_attributes params[:result]
+        else  
+          flash.now[:message] = "Sorry, you can't change your responses."
+          redirect_to experiment_url(@participant)
+        end
       end
-      next_result = @participant.results.find_by_display_order(@participant.experiment_position)
-      if next_result.nil?
+      @result = @participant.results.find_by_display_order(@participant.experiment_position)
+      if @result.nil?
         render :finished
       else
-        if @result.experiment_phase != next_result.experiment_phase
-          render next_result.experiment_phase
+        if @previous_result.experiment_phase != @result.experiment_phase
+          respond_to do |format|
+            format.html { render @result.experiment_phase }
+            format.json { render :partial => 'screen', :layout => false }
+          end
         else
-          redirect_to experiment_url(@participant)
+          respond_to do |format|
+            format.html { redirect_to experiment_url(@participant) }
+            format.json { render :layout => false }
+          end
         end
       end
     else
