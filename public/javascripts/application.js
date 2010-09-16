@@ -27,7 +27,7 @@ var loadSoundManager = function() {
 jQuery.ajaxSetup( { 
   'beforeSend': function(xhr) {
     $('fieldset.submit').html("Loading...");
-    xhr.setRequestHeader("Accept", "text/javascript");
+    xhr.setRequestHeader("Accept", "application/json");
   }
 });
 
