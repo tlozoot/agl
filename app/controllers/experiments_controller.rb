@@ -32,7 +32,7 @@ class ExperimentsController < ApplicationController
   
   def show
     respond_to do |format|
-      if @result = @participant.results.find_by_display_order(@participant.experiment_position)
+      unless @result = @participant.results.find_by_display_order(@participant.experiment_position)
         format.html { render :finished }
       end
       format.html
@@ -55,7 +55,10 @@ class ExperimentsController < ApplicationController
       end
       @result = @participant.results.find_by_display_order(@participant.experiment_position)
       if @result.nil?
-        render :finished
+         respond_to do |format|
+            format.html { render :finished }
+            format.json { render :finished, :layout => false }
+          end
       else
         if @previous_result.experiment_phase != @result.experiment_phase
           respond_to do |format|
