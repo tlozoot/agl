@@ -6,7 +6,7 @@
     %strong
       Test sound:
       %button#volume_test Play
-    - form_for @participant, :url => experiments_url, :html => { :class => "new_participant" } do |f|
+    - form_for @participant, :url => experiments_url, :html => { :class => "new_participant ajax_submit" } do |f|
       %fieldset.name
         %label.strong Your ID:
         %span.static_form_field= @participant.code

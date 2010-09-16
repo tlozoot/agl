@@ -2,6 +2,7 @@ class ExperimentsController < ApplicationController
   
   layout 'application'
   before_filter :get_participant, :only => [:show, :update]
+  before_filter :get_participant_id, :only => [:training, :training_test, :learning, :testing, :finished]
   
   def index
     redirect_to :action => :new
@@ -16,7 +17,13 @@ class ExperimentsController < ApplicationController
     @participant.assign_training_group
     if @participant.save
       @participant.generate_items
-      redirect_to experiment_training_url(@participant)
+      respond_to do |format|
+        format.html { redirect_to experiment_training_url(@participant) } 
+        format.json { 
+          @result = @participant.results.first
+          render :partial => 'screen', :layout => false
+        }
+      end  
     else
       flash.now[:message] = "Sorry, we had a problem starting your experiment."
       render :new
@@ -25,7 +32,7 @@ class ExperimentsController < ApplicationController
   
   def show
     respond_to do |format|
-      unless @result = @participant.results.find_by_display_order(@participant.experiment_position)
+      if @result = @participant.results.find_by_display_order(@participant.experiment_position)
         format.html { render :finished }
       end
       format.html
@@ -84,6 +91,10 @@ class ExperimentsController < ApplicationController
   
   def get_participant
     @participant = Participant.find(params[:id])
+  end
+  
+  def get_participant_id
+    @participant = Participant.find(params[:experiment_id])
   end
   
 

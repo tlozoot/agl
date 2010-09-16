@@ -32,18 +32,26 @@ jQuery.ajaxSetup( {
 });
 
 jQuery.fn.submitWithAjax = function() {
-  this.submit(function() {
-    $.post(this.action, $(this).serialize(), function(data) {
-      $('#main').html(data.mainDiv);
-      // console.log(data.mainDiv);
-      loadSoundManager();
-      $('#result_response').attr('value', '');
-      $('form.edit_result').submitWithAjax();
-    }, "json");
-    // console.log($(this).serialize());
+  if(this.id == 'asdf') {
     return false;
-  });
-  return this;
+  } else {
+    this.submit(function() {
+      $.ajax( {
+        type: this.method,
+        url: this.action, 
+        data: $(this).serialize(), 
+        success: function(data) {
+          $('#main').html(data.mainDiv);
+          loadSoundManager();
+          $('#result_response').attr('value', '');
+          $('form.ajax_submit').submitWithAjax();
+        }, 
+        dataType: "json"
+      } );
+      return false;
+    });
+    return this;
+  }
 };
 
 jQuery.fn.createSound = function() {

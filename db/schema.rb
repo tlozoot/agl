@@ -30,15 +30,15 @@ ActiveRecord::Schema.define(:version => 20100910031152) do
   end
 
   create_table "participants", :force => true do |t|
-    t.string    "name"
-    t.string    "code"
-    t.string    "location"
-    t.integer   "age"
-    t.timestamp "created_at"
-    t.timestamp "updated_at"
-    t.string    "training_group"
-    t.string    "experiment_type"
-    t.integer   "experiment_position", :default => 1
+    t.string   "name"
+    t.string   "code"
+    t.string   "location"
+    t.integer  "age"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "training_group"
+    t.string   "experiment_type"
+    t.integer  "experiment_position", :default => 1
   end
 
   create_table "results", :force => true do |t|
