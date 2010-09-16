@@ -54,8 +54,7 @@ class Participant < ActiveRecord::Base
     end
     
     [:training, :training_test, :learning, :testing].each do |phase|
-      @items[phase].sort_by{ rand }
-      @items[phase].each do |item|
+      @items[phase].sort_by{ rand }.each do |item|
         self.results.create(:paradigm => item, :clipart => item.clipart, :experiment_phase => phase.to_s)
       end
     end
