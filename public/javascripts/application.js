@@ -85,5 +85,7 @@ $(document).ready(function() {
   $('.toggle_results').click(function() {
     $('ul#' + $(this).attr('data-phase')).slideToggle();
   });
+  
+  $('input[type=text]').attr('autocomplete', 'off');
 
-})
+});
