@@ -23,11 +23,11 @@ class Paradigm < ActiveRecord::Base
   end
   
   def singular_sound_file
-    "/stimuli/#{experiment_type}/#{singular}.mp3"
+    "http://phonetics.fas.harvard.edu/AGL/stimuli/#{experiment_type}/#{singular}.mp3"
   end
   
   def plural_sound_file
-    "/stimuli/#{experiment_type}/#{plural}.mp3"
+    "http://phonetics.fas.harvard.edu/AGL/stimuli/#{experiment_type}/#{plural}.mp3"
   end
   
   def human_singular

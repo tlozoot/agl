@@ -3,11 +3,11 @@ class Clipart < ActiveRecord::Base
   has_many :results
   
   def singular_file
-    "/clipart/#{name}1.jpg"
+    "http://phonetics.fas.harvard.edu/AGL/clipart/#{name}1.jpg"
   end
   
   def plural_file
-    "/clipart/#{name}2.jpg"
+    "http://phonetics.fas.harvard.edu/AGL/clipart/#{name}2.jpg"
   end
   
 end

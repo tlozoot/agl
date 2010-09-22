@@ -75,7 +75,7 @@ $(document).ready(function() {
   $('#volume_test').click(function(){
     soundManager.createSound({
       id: 'testSound',
-      url: "/stimuli/welcome.mp3"
+      url: "http://phonetics.fas.harvard.edu/AGL/stimuli/welcome.mp3"
     });
     soundManager.play('testSound');
   });
