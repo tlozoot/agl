@@ -30,6 +30,14 @@ class Paradigm < ActiveRecord::Base
     "/stimuli/#{experiment_type}/#{plural}.mp3"
   end
   
+  def human_singular
+    singular.sub('_', '^').sub('x', 'ai')
+  end
+  
+  def human_plural
+    plural.sub('_', '^').sub('x', 'ai')
+  end
+  
   def plural
     case experiment_type
     when 'fixed'
