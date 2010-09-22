@@ -20,11 +20,20 @@ label.strong
   
 .info
 
+#intro
+  ol
+    li
+      list-style: decimal
+      margin: 1em 0 0 2em
+
 .intro_inputs
   width: 515px
   background-color: $lightGray
   padding: 1em 1em 
   margin-right: 1em
+  +clearfix
+  &:first-child
+    margin-top: 0
 
 form.new_participant
   fieldset

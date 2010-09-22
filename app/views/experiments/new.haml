@@ -3,55 +3,40 @@
   %h2 Learn Martian in 3 easy steps!
 
   - form_for @participant, :url => experiments_url, :html => { :class => "new_participant ajax_submit" } do |f|
-  
-    %br
-    1. Put headphones on and play the test sound.
-    %br
-    %br
-  
-    .intro_inputs
-      Listen to a test word:
-      %button#volume_test Play
+    
+    %ol
+      %li
+        %p Put headphones on and play the test sound.
+    
+        .intro_inputs
+          Listen to a test word:
+          %button#volume_test Play
       
-      %p
-
-      The test word...
+          The test word...
       
-      %input{"type"=>"button", "value"=>"ends with a ''p'' sound"}      
-      %input{"type"=>"button", "value"=>"ends with a ''t'' sound"}      
+          %input{"type"=>"button", "value"=>"ends with a ''p'' sound"}    
+          %input{"type"=>"button", "value"=>"ends with a ''t'' sound"}      
 
-    %br(clear="both")  
-
-    2. Copy this code and paste it in your task:
-
-    %br 
-    %br(clear="both")  
+      %li
+        %p Copy this code and paste it in your task:
   
-  
-    .intro_inputs
-      %fieldset.name
-        %label.strong Your ID:
-        %span.static_form_field= @participant.code
-        = f.hidden_field :code
-      %fieldset.experiment_type{ :style => "display: #{@participant.experiment_type.nil? ? 'block' : 'none'};" }
-        = f.label :experiment, "Experiment type: ", :class => "strong"
-        = radio_button(:participant, :experiment_type, :variable)
-        = f.label(:variable, "Variable")
-        = radio_button(:participant, :experiment_type, :fixed)
-        = f.label(:fixed, "Fixed")
+        .intro_inputs
+          %fieldset.name
+            %label.strong Your ID:
+            %span.static_form_field= @participant.code
+            = f.hidden_field :code
+          %fieldset.experiment_type{ :style => "display: #{@participant.experiment_type.nil? ? 'block' : 'none'};" }
+            = f.label :experiment, "Experiment type: ", :class => "strong"
+            = radio_button(:participant, :experiment_type, :variable)
+            = f.label(:variable, "Variable")
+            = radio_button(:participant, :experiment_type, :fixed)
+            = f.label(:fixed, "Fixed")
 
-    %br
-    3. Get going!
+      %li
+        %p Get going!
 
-    %br 
-    %br(clear="both")  
-
-
-    .intro_inputs
-
-      %fieldset.submit= submit_tag "Continue &raquo;" #, :disabled => 'disabled'
-
-
+        .intro_inputs
+          %fieldset.submit= submit_tag "Continue &raquo;" #, :disabled => 'disabled'
 
 
       
@@ -60,5 +45,3 @@
 /      Please put your headphones on, press the "play" button to hear a sample sound, and adjust the volume to a comfortable level.
 /    
 /      Enter your name, #{ if @participant.experiment_type.nil? then "choose your experiment type, " end } and press the "continue" button when you are all set.  
-  
-    
