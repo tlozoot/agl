@@ -26,6 +26,16 @@ label.strong
       list-style: decimal
       margin: 1em 0 0 2em
 
+
+ul#sanity_test
+  +inline-block
+  vertical-align: top
+  li
+    list-style: none
+    margin: 0.5em 0 0 1em
+    &:first-child
+      margin-top: 0
+
 .intro_inputs
   width: 580px
   background-color: $lightGray
@@ -47,7 +57,7 @@ form.new_participant
 form.plural_form
   +inline-block
 
-ul
+ol.spaced
   margin-top: 1em
   li
     line-height: 130%

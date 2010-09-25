@@ -9,13 +9,18 @@
         %p Put headphones on and play the test sound.
     
         .intro_inputs
-          Listen to a test word:
+          %strong Listen to a test word:
           %button#volume_test Play
       
-          The test word...
-      
-          %input{"type"=>"button", "value"=>"ends with a ''p'' sound"}    
-          %input{"type"=>"button", "value"=>"ends with a ''t'' sound"}      
+          %fieldset.experiment_type
+            = f.label :experiment, "The test word... ", :class => "strong"
+            %ul#sanity_test
+              %li
+                = radio_button(:participant, :perception, :p)
+                = f.label(:p, 'ends with a "p" sound')
+              %li
+                = radio_button(:participant, :perception, :t)
+                = f.label(:t, 'ends with a "t" sound')
 
       %li
         %p Copy this code and paste it in your task:
@@ -36,12 +41,4 @@
         %p Get going!
 
         .intro_inputs
-          %fieldset.submit= submit_tag "Continue &raquo;" #, :disabled => 'disabled'
-
-
-      
-/  .info
-/    :textile
-/      Please put your headphones on, press the "play" button to hear a sample sound, and adjust the volume to a comfortable level.
-/    
-/      Enter your name, #{ if @participant.experiment_type.nil? then "choose your experiment type, " end } and press the "continue" button when you are all set.  
+          %fieldset.submit= submit_tag "Continue &raquo;", :disabled => 'disabled'
