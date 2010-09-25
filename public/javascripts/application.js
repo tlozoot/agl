@@ -28,30 +28,35 @@ jQuery.ajaxSetup( {
   'beforeSend': function(xhr) {
     $('fieldset.submit').html("Loading...");
     xhr.setRequestHeader("Accept", "application/json");
+  }, 
+  'error': function(xhr, textStatus, errorThrown) {
+    alert("Sorry, an error occurred. Please refresh the page and try again.");
   }
 });
 
 jQuery.fn.submitWithAjax = function() {
-  if(this.id == 'asdf') {
+  this.submit(function() {
+    if($(this).attr('id') == 'new_participant') {
+      if (!($('input[value=variable]').attr('checked') || $('input[value=fixed]').attr('checked'))) {
+        alert("Please select an experiment type.");
+        return false;
+      }
+    }
+    $.ajax( {
+      type: this.method,
+      url: this.action, 
+      data: $(this).serialize(), 
+      success: function(data) {
+        $('#main').html(data.mainDiv);
+        loadSoundManager();
+        $('#result_response').attr('value', '');
+        $('form.ajax_submit').submitWithAjax();
+      }, 
+      dataType: "json"
+    } );
     return false;
-  } else {
-    this.submit(function() {
-      $.ajax( {
-        type: this.method,
-        url: this.action, 
-        data: $(this).serialize(), 
-        success: function(data) {
-          $('#main').html(data.mainDiv);
-          loadSoundManager();
-          $('#result_response').attr('value', '');
-          $('form.ajax_submit').submitWithAjax();
-        }, 
-        dataType: "json"
-      } );
-      return false;
-    });
-    return this;
-  }
+  });
+  return this;
 };
 
 jQuery.fn.createSound = function() {
