@@ -10,11 +10,11 @@
     
         .intro_inputs
           %strong Listen to a test word:
-          %button#volume_test Play
+          %span#volume_test Play
       
-          %fieldset.experiment_type
+          %fieldset.perception
             = f.label :experiment, "The test word... ", :class => "strong"
-            %ul#sanity_test
+            %ul#perception_test
               %li
                 = radio_button(:participant, :perception, :p)
                 = f.label(:p, 'ends with a "p" sound')

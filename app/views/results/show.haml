@@ -1,11 +1,15 @@
 %h2 Participant #{ @participant.code }
 #code
-  Status:
-  %strong
-    - if @participant.experiment_position > @participant.results.length
-      = "finished"
-    - else
-      = "Completed #{@participant.experiment_position}/#{@participant.results.length}"
+  %p
+    Status:
+    %strong
+      - if @participant.experiment_position > @participant.results.length
+        = "finished"
+      - else
+        = "Completed #{@participant.experiment_position}/#{@participant.results.length}"
+  %p    
+    Perception:
+    %strong= @participant.perception
 
 .analytics
   %h3 Analytics

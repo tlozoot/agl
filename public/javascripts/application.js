@@ -85,6 +85,10 @@ $(document).ready(function() {
     soundManager.play('testSound');
   });
   
+  $('ul#perception_test input[type=radio]').click( function() {
+    $('form#new_participant input[type=submit]').attr({ disabled: false });
+  });
+  
   $('form.ajax_submit').submitWithAjax();
     
   $('.toggle_results').click(function() {
