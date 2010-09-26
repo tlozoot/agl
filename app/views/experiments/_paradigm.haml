@@ -10,7 +10,7 @@
     #plural_col.item_text
       These are 
       - if (@result.experiment_phase == 'testing') || (@result.experiment_phase == 'training_test')
-        = f.text_field :response
+        = f.text_field :plural_response
       - else
         %span.item_strong#plural{ 'data-soundFile' => @result.paradigm.plural_sound_file }= @result.paradigm.human_plural
       %br

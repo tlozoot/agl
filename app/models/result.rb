@@ -10,7 +10,8 @@ class Result < ActiveRecord::Base
     paradigm.to_s.chomp + "
     Order: #{display_order}
     Phase: #{experiment_phase}
-    Response: #{response}"
+    Singular: #{singular_response}
+    Plural: #{plural_response}"
   end
 
 end

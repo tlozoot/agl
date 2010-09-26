@@ -5,9 +5,9 @@
     = result.paradigm.human_plural
   - unless result.experiment_phase == 'learning'
     .reponse
-      %strong Response:
-      = result.response
-    - if result.paradigm.human_plural == result.response
+      %strong Plural response:
+      = result.plural_response
+    - if result.paradigm.human_plural == result.plural_response
       .correct Correct!
     - else
       .incorrect Incorrect

@@ -46,7 +46,7 @@ class ExperimentsController < ApplicationController
     if @participant.save
       case @previous_result.experiment_phase
       when 'testing', 'training_test'
-        if @previous_result.response.nil?
+        if @previous_result.plural_response.nil?
           @previous_result.update_attributes params[:result]
         else  
           flash.now[:message] = "Sorry, you can't change your responses."
