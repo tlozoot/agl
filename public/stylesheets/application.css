@@ -252,13 +252,24 @@ label.strong {
 
 /* line 29, ../../app/stylesheets/_experiment.sass */
 span#volume_test {
-  cursor: pointer;
-  color: blue;
-  text-decoration: underline;
   margin-left: 5px;
 }
 
-/* line 43, ../../app/stylesheets/_experiment.sass */
+/* line 32, ../../app/stylesheets/_experiment.sass */
+.linkish {
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+}
+
+/* line 37, ../../app/stylesheets/_experiment.sass */
+#show_plural {
+  padding: 1em 1em 0 0;
+  text-align: right;
+  display: none;
+}
+
+/* line 42, ../../app/stylesheets/_experiment.sass */
 ul#perception_test {
   display: -moz-inline-box;
   -moz-box-orient: vertical;
@@ -268,17 +279,17 @@ ul#perception_test {
   *vertical-align: auto;
   vertical-align: top;
 }
-/* line 46, ../../app/stylesheets/_experiment.sass */
+/* line 45, ../../app/stylesheets/_experiment.sass */
 ul#perception_test li {
   list-style: none;
   margin: 0.5em 0 0 1em;
 }
-/* line 49, ../../app/stylesheets/_experiment.sass */
+/* line 48, ../../app/stylesheets/_experiment.sass */
 ul#perception_test li:first-child {
   margin-top: 0;
 }
 
-/* line 52, ../../app/stylesheets/_experiment.sass */
+/* line 51, ../../app/stylesheets/_experiment.sass */
 .intro_inputs {
   width: 580px;
   background-color: #eeeeee;
@@ -287,25 +298,25 @@ ul#perception_test li:first-child {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 58, ../../app/stylesheets/_experiment.sass */
+/* line 57, ../../app/stylesheets/_experiment.sass */
 .intro_inputs:first-child {
   margin-top: 0;
 }
 
-/* line 62, ../../app/stylesheets/_experiment.sass */
+/* line 61, ../../app/stylesheets/_experiment.sass */
 form.new_participant fieldset:first-child {
   margin-top: 0em;
 }
-/* line 64, ../../app/stylesheets/_experiment.sass */
+/* line 63, ../../app/stylesheets/_experiment.sass */
 form.new_participant fieldset {
   margin-top: 1em;
 }
-/* line 67, ../../app/stylesheets/_experiment.sass */
+/* line 66, ../../app/stylesheets/_experiment.sass */
 form.new_participant fieldset.submit {
   float: right;
 }
 
-/* line 70, ../../app/stylesheets/_experiment.sass */
+/* line 69, ../../app/stylesheets/_experiment.sass */
 form.plural_form {
   display: -moz-inline-box;
   -moz-box-orient: vertical;
@@ -315,11 +326,11 @@ form.plural_form {
   *vertical-align: auto;
 }
 
-/* line 73, ../../app/stylesheets/_experiment.sass */
+/* line 72, ../../app/stylesheets/_experiment.sass */
 ol.spaced {
   margin-top: 1em;
 }
-/* line 75, ../../app/stylesheets/_experiment.sass */
+/* line 74, ../../app/stylesheets/_experiment.sass */
 ol.spaced li {
   line-height: 130%;
   border-top: 1px solid #bbbbbb;
@@ -327,7 +338,7 @@ ol.spaced li {
   padding-top: 1em;
 }
 
-/* line 81, ../../app/stylesheets/_experiment.sass */
+/* line 80, ../../app/stylesheets/_experiment.sass */
 .progress {
   font-family: Helvetica, Arial, Verdana, sans-serif;
   display: -moz-inline-box;
@@ -339,7 +350,7 @@ ol.spaced li {
   font-size: 10px;
   color: #444444;
 }
-/* line 86, ../../app/stylesheets/_experiment.sass */
+/* line 85, ../../app/stylesheets/_experiment.sass */
 .progress .progress_container {
   margin-left: 5px;
   display: -moz-inline-box;
@@ -353,18 +364,18 @@ ol.spaced li {
   width: 100px;
   border: 1px solid #444444;
 }
-/* line 93, ../../app/stylesheets/_experiment.sass */
+/* line 92, ../../app/stylesheets/_experiment.sass */
 .progress .progress_container .progress_bar {
   background: #444444;
   height: inherit;
 }
 
-/* line 97, ../../app/stylesheets/_experiment.sass */
+/* line 96, ../../app/stylesheets/_experiment.sass */
 .strong {
   font-weight: bold;
 }
 
-/* line 101, ../../app/stylesheets/_experiment.sass */
+/* line 100, ../../app/stylesheets/_experiment.sass */
 .paradigm .item_text {
   display: -moz-inline-box;
   -moz-box-orient: vertical;
@@ -375,19 +386,19 @@ ol.spaced li {
   vertical-align: top;
   text-align: center;
 }
-/* line 105, ../../app/stylesheets/_experiment.sass */
+/* line 104, ../../app/stylesheets/_experiment.sass */
 .paradigm .item_text img {
   margin-top: 1em;
 }
-/* line 107, ../../app/stylesheets/_experiment.sass */
+/* line 106, ../../app/stylesheets/_experiment.sass */
 .paradigm .item_text img.plural_img {
   margin-right: 1em;
 }
-/* line 109, ../../app/stylesheets/_experiment.sass */
+/* line 108, ../../app/stylesheets/_experiment.sass */
 .paradigm #singular_col {
   width: 275px;
 }
-/* line 111, ../../app/stylesheets/_experiment.sass */
+/* line 110, ../../app/stylesheets/_experiment.sass */
 .paradigm #plural_col {
   width: 375px;
   display: none;

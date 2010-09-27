@@ -53,12 +53,19 @@ class Participant < ActiveRecord::Base
       @items[:testing] += testing_words_by_place(place).randomly_pick(5)
     end
     
+    # randomly decide to make users spell both words or not
+    @bools = {}
+    @bools[:training] = @items[:training].map{ false }
+    @bools[:training_test] = @items[:training_test].map{ false }
+    @bools[:learning] = @items[:learning].enum_with_index.collect{ |item, i| i % 2 == 0 ? false : true }.sort_by{ rand }
+    @bools[:testing] = @items[:testing].enum_with_index.collect{ |item, i| i % 2 == 0 ? false : true }.sort_by{ rand }
+      
     [:training, :training_test, :learning, :testing].each do |phase|
       @items[phase].sort_by{ rand }.each do |item|
-        self.results.create(:paradigm => item, :clipart => item.clipart, :experiment_phase => phase.to_s)
+        self.results.create(:paradigm => item, :clipart => item.clipart, :experiment_phase => phase.to_s, :both_responses => @bools[phase].pop)
       end
     end
-    
+        
     self.results.each_with_index do |result, i|
       result.display_order = i + 1
       result.save
