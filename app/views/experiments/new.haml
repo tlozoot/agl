@@ -13,14 +13,8 @@
           %span#volume_test.linkish Play
       
           %fieldset.perception
-            = f.label :experiment, "The test word... ", :class => "strong"
-            %ul#perception_test
-              %li
-                = radio_button(:participant, :perception, :d)
-                = f.label(:d, 'ends with a "d" sound')
-              %li
-                = radio_button(:participant, :perception, :t)
-                = f.label(:t, 'ends with a "t" sound')
+            = f.label :experiment, "And try spelling it: ", :class => "strong"
+            = f.text_field :perception
 
       %li
         %p Copy this code and paste it in your task:

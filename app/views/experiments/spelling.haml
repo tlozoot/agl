@@ -1,0 +1,19 @@
+:textile
+  h2. How to spell Martian
+
+  _Your spelling:_ *#{ @participant.perception }*
+
+  Martian consonants are just like English consonants. Their vowels are a little different though:
+  
+  (#martian_vowels)* The 'a' sound is just like "wash"
+  * The 'u' sound is just like "absolute"
+  * The 'i' sound is just like "elite"
+  * The 'o' sound is just like "wrote"
+  * The 'e' sound is just like "weigh"
+  
+  The purpose of this experiment isn't to learn the spelling of Martian words, but it'll be necessary to complete the following tasks. At the beginning, we'll give you some feedback and help you spell these words. At the end, you'll have to spell them yourself.
+  
+%form.ajax_submit{ :action => experiment_training_url(@participant), :method => "get" }
+  %fieldset.continue
+    %fieldset.submit
+      %input{ :value => "Continue &raquo;", :type => "submit" }

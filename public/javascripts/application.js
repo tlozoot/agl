@@ -94,7 +94,7 @@ $(document).ready(function() {
     soundManager.play('testSound');
   });
   
-  $('ul#perception_test input[type=radio]').click( function() {
+  $('input#participant_perception').keyup( function() {
     $('form#new_participant input[type=submit]').attr({ disabled: false });
   });
   

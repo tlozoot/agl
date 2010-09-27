@@ -178,29 +178,34 @@ strong {
 }
 
 /* line 42, ../../app/stylesheets/_core.sass */
+em {
+  font-style: oblique;
+}
+
+/* line 45, ../../app/stylesheets/_core.sass */
 #loading {
   display: none;
   margin-bottom: 1em;
 }
 
-/* line 46, ../../app/stylesheets/_core.sass */
+/* line 49, ../../app/stylesheets/_core.sass */
 #footer {
   font-family: Helvetica, Arial, Verdana, sans-serif;
   font-size: 0.6em;
   margin: 0.5em 0;
   color: #555555;
 }
-/* line 49, ../../app/stylesheets/_core.sass */
+/* line 52, ../../app/stylesheets/_core.sass */
 #footer span.copy {
   float: right;
   clear: both;
 }
-/* line 54, ../../app/stylesheets/_core.sass */
+/* line 57, ../../app/stylesheets/_core.sass */
 #footer a {
   color: #555555;
 }
 
-/* line 57, ../../app/stylesheets/_core.sass */
+/* line 60, ../../app/stylesheets/_core.sass */
 #flash {
   background-color: #666666;
   color: white;
@@ -338,7 +343,13 @@ ol.spaced li {
   padding-top: 1em;
 }
 
-/* line 80, ../../app/stylesheets/_experiment.sass */
+/* line 81, ../../app/stylesheets/_experiment.sass */
+ul#martian_vowels li {
+  margin: 0 0 1em 2em;
+  list-style-type: disc;
+}
+
+/* line 85, ../../app/stylesheets/_experiment.sass */
 .progress {
   font-family: Helvetica, Arial, Verdana, sans-serif;
   display: -moz-inline-box;
@@ -350,7 +361,7 @@ ol.spaced li {
   font-size: 10px;
   color: #444444;
 }
-/* line 85, ../../app/stylesheets/_experiment.sass */
+/* line 90, ../../app/stylesheets/_experiment.sass */
 .progress .progress_container {
   margin-left: 5px;
   display: -moz-inline-box;
@@ -364,18 +375,18 @@ ol.spaced li {
   width: 100px;
   border: 1px solid #444444;
 }
-/* line 92, ../../app/stylesheets/_experiment.sass */
+/* line 97, ../../app/stylesheets/_experiment.sass */
 .progress .progress_container .progress_bar {
   background: #444444;
   height: inherit;
 }
 
-/* line 96, ../../app/stylesheets/_experiment.sass */
+/* line 101, ../../app/stylesheets/_experiment.sass */
 .strong {
   font-weight: bold;
 }
 
-/* line 100, ../../app/stylesheets/_experiment.sass */
+/* line 105, ../../app/stylesheets/_experiment.sass */
 .paradigm .item_text {
   display: -moz-inline-box;
   -moz-box-orient: vertical;
@@ -386,19 +397,19 @@ ol.spaced li {
   vertical-align: top;
   text-align: center;
 }
-/* line 104, ../../app/stylesheets/_experiment.sass */
+/* line 109, ../../app/stylesheets/_experiment.sass */
 .paradigm .item_text img {
   margin-top: 1em;
 }
-/* line 106, ../../app/stylesheets/_experiment.sass */
+/* line 111, ../../app/stylesheets/_experiment.sass */
 .paradigm .item_text img.plural_img {
   margin-right: 1em;
 }
-/* line 108, ../../app/stylesheets/_experiment.sass */
+/* line 113, ../../app/stylesheets/_experiment.sass */
 .paradigm #singular_col {
   width: 275px;
 }
-/* line 110, ../../app/stylesheets/_experiment.sass */
+/* line 115, ../../app/stylesheets/_experiment.sass */
 .paradigm #plural_col {
   width: 375px;
   display: none;

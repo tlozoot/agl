@@ -11,6 +11,8 @@ ActionController::Routing::Routes.draw do |map|
     experiments.learning 'learning', :controller => 'experiments', :action => 'learning'
     experiments.testing 'testing', :controller => 'experiments', :action => 'testing'
     experiments.finished 'finished', :controller => 'experiments', :action => 'finished'
+    experiments.spelling 'spelling', :controller => 'experiments', :action => 'spelling'
+    
   end
   
   map.resource :variable, :only => :show, :controller => :variable

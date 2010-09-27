@@ -2,7 +2,7 @@ class ExperimentsController < ApplicationController
   
   layout 'application'
   before_filter :get_participant, :only => [:show, :update]
-  before_filter :get_participant_id, :only => [:training, :training_test, :learning, :testing, :finished]
+  before_filter :get_participant_id, :only => [:training, :training_test, :learning, :testing, :finished, :spelling]
   
   def index
     redirect_to :action => :new
@@ -18,10 +18,10 @@ class ExperimentsController < ApplicationController
     if @participant.save
       @participant.generate_items
       respond_to do |format|
-        format.html { redirect_to experiment_training_url(@participant) } 
+        format.html { render :spelling }
         format.json { 
           @result = @participant.results.first
-          render :partial => 'screen', :layout => false
+          render :spelling, :layout => false
         }
       end  
     else
@@ -79,7 +79,12 @@ class ExperimentsController < ApplicationController
   end
   
   def training 
-    @participant = Participant.find(params[:experiment_id])
+    @result = @participant.results.first
+    respond_to do |format|
+      format.json { 
+        render :partial => 'screen', :layout => false
+      }
+    end
   end
   
   def training_test ; end
@@ -89,6 +94,10 @@ class ExperimentsController < ApplicationController
   def testing ; end
   
   def finished ; end
+  
+  def spelling
+    @result = @participant.results.first
+  end
 
   private
   
