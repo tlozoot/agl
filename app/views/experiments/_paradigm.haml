@@ -6,7 +6,7 @@
       - if @result.both_responses
         = f.text_field :singular_response, :class => 'paradigm_sound singular', :id => @result.paradigm.singular, 'data-soundFile' => @result.paradigm.singular_sound_file
       - else
-        %span.strong.paradigm_sound{ 'data-soundFile' => @result.paradigm.singular_sound_file, :id => @result.paradigm.singular }= @result.paradigm.human_singular
+        %span.strong.paradigm_sound.singular{ 'data-soundFile' => @result.paradigm.singular_sound_file, :id => @result.paradigm.singular }= @result.paradigm.human_singular
       %br
       = image_tag @result.clipart.singular_file, :width => "150"
     
