@@ -6,8 +6,8 @@ soundManager.url = "/soundmanager2.swf";
 soundManager.debugMode = false;
 
 var loadSoundManager = function() {
-  var singular = $('span.item_strong#singular').createSound();
-  var plural = $('span.item_strong#plural').createSound();
+  var singular = $('.paradigm_sound.singular').createSound();
+  var plural = $('.paradigm_sound.plural').createSound();
 
   if (singular) { 
     soundManager.play(singular, { onfinish: function() {
@@ -61,7 +61,7 @@ jQuery.fn.submitWithAjax = function() {
 
 jQuery.fn.createSound = function() {
   if (this.length > 0 ) {
-    var sound = this.html() + ' ' + this.attr('id')
+    var sound = this.attr('id') + ' ' + this.attr('class').split(' ')[1]
     var soundFile = this.attr('data-soundFile');
     soundManager.createSound({
       id: sound,
@@ -80,7 +80,7 @@ $(document).ready(function() {
   $('#volume_test').click(function(){
     soundManager.createSound({
       id: 'testSound',
-      url: "http://phonetics.fas.harvard.edu/AGL/stimuli/welcome.mp3"
+      url: "http://phonetics.fas.harvard.edu/AGL/stimuli/fixed/larb_d.mp3"
     });
     soundManager.play('testSound');
   });

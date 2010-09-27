@@ -360,7 +360,7 @@ ol.spaced li {
 }
 
 /* line 97, ../../app/stylesheets/_experiment.sass */
-span.item_strong {
+.strong {
   font-weight: bold;
 }
 
@@ -442,25 +442,29 @@ ul.phase_items {
   display: none;
   margin-bottom: 2em;
 }
+/* line 31, ../../app/stylesheets/_results.sass */
+ul.phase_items li {
+  margin-bottom: 1em;
+}
 
-/* line 32, ../../app/stylesheets/_results.sass */
+/* line 34, ../../app/stylesheets/_results.sass */
 .result {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 33, ../../app/stylesheets/_results.sass */
+/* line 35, ../../app/stylesheets/_results.sass */
 .result img {
   float: left;
   margin-right: 1em;
 }
 
-/* line 38, ../../app/stylesheets/_results.sass */
+/* line 40, ../../app/stylesheets/_results.sass */
 .correct {
   color: green;
   font-weight: bold;
 }
 
-/* line 41, ../../app/stylesheets/_results.sass */
+/* line 43, ../../app/stylesheets/_results.sass */
 .incorrect {
   color: red;
   font-weight: bold;

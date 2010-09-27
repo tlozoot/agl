@@ -8,7 +8,7 @@ class Paradigm < ActiveRecord::Base
   def self.assign_pictures_to_paradigms_of_type(type)
     @clipart = Clipart.all.sort_by{ rand }
     Paradigm.find(:all, :conditions => { :experiment_type => type.to_s.downcase, }) \
-        .reject{ |paradigm| (paradigm.stress == 'trochee') && (type.to_s.downcase == 'variable') } \
+        .reject{ |paradigm| (paradigm.singular == 'larb_d') || (paradigm.stress == 'trochee') && (type.to_s.downcase == 'variable') } \
         .sort_by{ rand } \
         .each{ |paradigm| paradigm.clipart = @clipart.shift }
   end
