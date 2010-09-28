@@ -66,17 +66,6 @@ class ExperimentsController < ApplicationController
           format.html { redirect_to experiment_url(@participant) }
           format.json { render :layout => false }
         end
-        # if @previous_result.experiment_phase != @result.experiment_phase
-        #   respond_to do |format|
-        #     format.html { render @result.experiment_phase }
-        #     format.json { render :partial => 'screen', :layout => false }
-        #   end
-        # else
-        #   respond_to do |format|
-        #     format.html { redirect_to experiment_url(@participant) }
-        #     format.json { render :layout => false }
-        #   end
-        # end
       end
     else
       flash.now[:message] = "Sorry--try again."
