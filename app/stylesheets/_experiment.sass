@@ -33,9 +33,11 @@ span#volume_test
   text-decoration: underline
 
 #show_plural
-  padding: 1em 1em 0 0
-  text-align: right
+  padding: 0.5em 1em 0 0
+  text-align: center
   display: none
+  font-size: 0.8em
+  line-height: 140%
 
 ul#perception_test
   +inline-block
@@ -94,6 +96,18 @@ ul#martian_vowels
     .progress_bar
       background: #444
       height: inherit
+
+span.paradigm_sound
+  font-weight: bold
+  
+.true_spelling
+  display: none
+  margin-top: 0.5em
+  line-height: 140%
+  font-size: 0.8em
+  .correct, .incorrect
+    // margin-bottom: 0.5em
+    display: none
 
 .strong
   font-weight: bold

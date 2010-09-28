@@ -1,7 +1,3 @@
-// Place your application-specific JavaScript functions and classes here
-// This file is automatically included by javascript_include_tag :defaults
-
-
 soundManager.url = "/soundmanager2.swf";
 soundManager.debugMode = false;
 
@@ -13,17 +9,35 @@ var loadSoundManager = function() {
     soundManager.play(singular, { onfinish: function() {
       var showPl = function() {
         var playPl = function() {
+          $("#plural_col").css({display: "inline-block"});
           if (plural) {
             soundManager.play(plural, { onfinish: function() { $("input[name=commit]").attr({disabled: false}); } });
           } else {
             $("input[name=commit]").attr({disabled: false});
           }
         };
-        $("#plural_col").css({display: "inline-block"});
-        setTimeout(playPl, 500);
-        $('#show_plural').hide();        
+        if ($('#show_plural').length) {
+          $('.paradigm_sound.singular').attr('disabled', 'disabled');
+          $('#show_plural').hide();    
+          if ($('input.paradigm_sound.singular').attr('value') == $('.true_spelling').attr('data-spelling')) {
+            $('.correct').show();
+          } else {
+            $('.incorrect').show();
+          }
+          $('.true_spelling').show();
+          setTimeout(playPl, 2500);
+        } else {
+          setTimeout(playPl, 500);
+        } 
       }
       if ($('#show_plural').length) {
+        $('form.ajax_submit').keypress(function() {
+          if (event.keyCode == '13') {
+            event.preventDefault();
+            showPl();
+            event.unbind();
+          }
+        });
         $('#show_plural').click(showPl);
         $('#show_plural').show();
       } else {
