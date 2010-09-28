@@ -345,13 +345,13 @@ ol.spaced li {
   padding-top: 1em;
 }
 
-/* line 81, ../../app/stylesheets/_experiment.sass */
-ul#martian_vowels li {
+/* line 82, ../../app/stylesheets/_experiment.sass */
+.martian_spelling ul li {
   margin: 0 0 1em 2em;
   list-style-type: disc;
 }
 
-/* line 85, ../../app/stylesheets/_experiment.sass */
+/* line 86, ../../app/stylesheets/_experiment.sass */
 .progress {
   font-family: Helvetica, Arial, Verdana, sans-serif;
   display: -moz-inline-box;
@@ -363,7 +363,7 @@ ul#martian_vowels li {
   font-size: 10px;
   color: #444444;
 }
-/* line 90, ../../app/stylesheets/_experiment.sass */
+/* line 91, ../../app/stylesheets/_experiment.sass */
 .progress .progress_container {
   margin-left: 5px;
   display: -moz-inline-box;
@@ -377,18 +377,18 @@ ul#martian_vowels li {
   width: 100px;
   border: 1px solid #444444;
 }
-/* line 97, ../../app/stylesheets/_experiment.sass */
+/* line 98, ../../app/stylesheets/_experiment.sass */
 .progress .progress_container .progress_bar {
   background: #444444;
   height: inherit;
 }
 
-/* line 101, ../../app/stylesheets/_experiment.sass */
+/* line 102, ../../app/stylesheets/_experiment.sass */
 span.paradigm_sound {
   font-weight: bold;
 }
 
-/* line 104, ../../app/stylesheets/_experiment.sass */
+/* line 105, ../../app/stylesheets/_experiment.sass */
 .play_again {
   margin-left: 5px;
   padding: 3px 5px;
@@ -398,24 +398,24 @@ span.paradigm_sound {
   font-family: Helvetica, Arial, Verdana, sans-serif;
 }
 
-/* line 112, ../../app/stylesheets/_experiment.sass */
+/* line 113, ../../app/stylesheets/_experiment.sass */
 .true_spelling {
   display: none;
   margin-top: 0.5em;
   line-height: 140%;
   font-size: 0.8em;
 }
-/* line 117, ../../app/stylesheets/_experiment.sass */
+/* line 118, ../../app/stylesheets/_experiment.sass */
 .true_spelling .correct, .true_spelling .incorrect {
   display: none;
 }
 
-/* line 121, ../../app/stylesheets/_experiment.sass */
+/* line 122, ../../app/stylesheets/_experiment.sass */
 .strong {
   font-weight: bold;
 }
 
-/* line 125, ../../app/stylesheets/_experiment.sass */
+/* line 126, ../../app/stylesheets/_experiment.sass */
 .paradigm .item_text {
   display: -moz-inline-box;
   -moz-box-orient: vertical;
@@ -426,19 +426,19 @@ span.paradigm_sound {
   vertical-align: top;
   text-align: center;
 }
-/* line 129, ../../app/stylesheets/_experiment.sass */
+/* line 130, ../../app/stylesheets/_experiment.sass */
 .paradigm .item_text img {
   margin-top: 1em;
 }
-/* line 131, ../../app/stylesheets/_experiment.sass */
+/* line 132, ../../app/stylesheets/_experiment.sass */
 .paradigm .item_text img.plural_img {
   margin-right: 1em;
 }
-/* line 133, ../../app/stylesheets/_experiment.sass */
+/* line 134, ../../app/stylesheets/_experiment.sass */
 .paradigm #singular_col {
   width: 275px;
 }
-/* line 135, ../../app/stylesheets/_experiment.sass */
+/* line 136, ../../app/stylesheets/_experiment.sass */
 .paradigm #plural_col {
   width: 375px;
   display: none;
