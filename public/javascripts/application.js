@@ -8,22 +8,29 @@ var loadSoundManager = function() {
   var singular2 = $('.play_again.singular').createSound();
   var plural2 = $('.play_again.plural').createSound();
   
-  
   $('.play_again.singular').click(function() {
-    soundManager.play(singular2);
+    soundManager.play(singular2, { onfinish: function() {
+      $('#result_singular_play_count').incrementValue();
+    } });
   });
   
   $('.play_again.plural').click(function() {
-    soundManager.play(plural2);
+    soundManager.play(plural2, { onfinish: function() {
+      $('#result_plural_play_count').incrementValue(); 
+    } });
   });
   
   if (singular) { 
     soundManager.play(singular, { onfinish: function() {
+      $('#result_singular_play_count').incrementValue();
       var showPl = function() {
         var playPl = function() {
           $("#plural_col").css({display: "inline-block"});
           if (plural) {
-            soundManager.play(plural, { onfinish: function() { $("input[name=commit]").attr({disabled: false}); } });
+            soundManager.play(plural, { onfinish: function() { 
+              $('#result_plural_play_count').incrementValue();
+              $("input[name=commit]").attr({disabled: false});
+            } });
           } else {
             $("input[name=commit]").attr({disabled: false});
           }
@@ -73,6 +80,10 @@ jQuery.ajaxSetup( {
     alert("Sorry, an error occurred. Please refresh the page and try again.");
   }
 });
+
+jQuery.fn.incrementValue = function() {
+  this.attr('value', parseInt(this.attr('value')) + 1);
+}
 
 jQuery.fn.submitWithAjax = function() {
   this.submit(function() {

@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100925202255) do
+ActiveRecord::Schema.define(:version => 20100928170656) do
 
   create_table "cliparts", :force => true do |t|
     t.string    "name"
@@ -52,7 +52,9 @@ ActiveRecord::Schema.define(:version => 20100925202255) do
     t.datetime "updated_at"
     t.integer  "clipart_id"
     t.string   "singular_response"
-    t.boolean  "both_responses",    :default => false
+    t.boolean  "both_responses",      :default => false
+    t.integer  "singular_play_count", :default => 0
+    t.integer  "plural_play_count",   :default => 0
   end
 
   create_table "users", :force => true do |t|

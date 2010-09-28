@@ -45,6 +45,8 @@ class ExperimentsController < ApplicationController
     @participant.experiment_position += 1
     if @participant.save
       case @previous_result.experiment_phase
+      when 'learning'
+        @previous_result.update_attributes params[:result]
       when 'testing', 'training_test'
         if @previous_result.plural_response.nil?
           @previous_result.update_attributes params[:result]

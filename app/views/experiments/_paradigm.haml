@@ -1,5 +1,7 @@
 - form_for [:experiment, @result], :url => experiment_path(@participant), :html => { :method => :put, :class => "ajax_submit" } do |f|
   = f.hidden_field :id
+  = f.hidden_field :singular_play_count
+  = f.hidden_field :plural_play_count
   - div_for @result.paradigm do
     #singular_col.item_text
       This is a
