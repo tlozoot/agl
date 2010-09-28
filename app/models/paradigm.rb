@@ -31,11 +31,11 @@ class Paradigm < ActiveRecord::Base
   end
   
   def human_singular
-    singular.sub('_', '^').sub('x', 'ai')
+    singular.sub('_', '-').sub('x', 'ai')
   end
   
   def human_plural
-    plural.sub('_', '^').sub('x', 'ai')
+    plural.sub('_', '-').sub('x', 'ai')
   end
   
   def plural
