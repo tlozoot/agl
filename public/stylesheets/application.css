@@ -338,7 +338,7 @@ form.plural_form {
 }
 
 /* line 74, ../../app/stylesheets/_experiment.sass */
-input.paradigm_sound {
+input[type=text] {
   width: 100px;
 }
 

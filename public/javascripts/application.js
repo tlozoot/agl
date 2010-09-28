@@ -57,6 +57,7 @@ var loadSoundManager = function() {
             $("input[name=commit]").attr({disabled: false});
           } });
         } else {
+          $("input#result_plural_response").focus();
           $("input[name=commit]").attr({disabled: false});
         }
       };
