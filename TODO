@@ -1,5 +1,7 @@
 - select best samples
 
-- how to explain to people that they randomly have to spell words
-	- tell them in "learning" screen?
-	- maybe put spelling screen elsewhere
+- fix event bindings
+
+- where to place play buttons
+	- currently only shown when we give you text
+	- could also be shown next to text-boxes for singular and/or ___ for singular

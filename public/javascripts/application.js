@@ -5,6 +5,18 @@ var loadSoundManager = function() {
   var singular = $('.paradigm_sound.singular').createSound();
   var plural = $('.paradigm_sound.plural').createSound();
 
+  var singular2 = $('.play_again.singular').createSound();
+  var plural2 = $('.play_again.plural').createSound();
+  
+  
+  $('.play_again.singular').click(function() {
+    soundManager.play(singular2);
+  });
+  
+  $('.play_again.plural').click(function() {
+    soundManager.play(plural2);
+  });
+  
   if (singular) { 
     soundManager.play(singular, { onfinish: function() {
       var showPl = function() {
@@ -25,7 +37,7 @@ var loadSoundManager = function() {
             $('.incorrect').show();
           }
           $('.true_spelling').show();
-          setTimeout(playPl, 2500);
+          setTimeout(playPl, 1500);
         } else {
           setTimeout(playPl, 500);
         } 
@@ -35,7 +47,12 @@ var loadSoundManager = function() {
           if (event.keyCode == '13') {
             event.preventDefault();
             showPl();
-            event.unbind();
+            // event.unbind();
+            // event.keypress(function() {
+            //   if (event.keyCode == '13') {
+            //     $(this).submitWithAjax;
+            //   }
+            // });
           }
         });
         $('#show_plural').click(showPl);

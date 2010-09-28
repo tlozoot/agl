@@ -5,10 +5,10 @@
       This is a
       - if @result.both_responses && (@result.experiment_phase == 'learning')
         = f.text_field :singular_response, :class => 'paradigm_sound singular', :id => @result.paradigm.singular, 'data-soundFile' => @result.paradigm.singular_sound_file
-        #show_plural
+        #show_plural.paradigm_instructions
           Enter the word you just heard, then
           %br
-          %span.linkish click to continue.
+          %span.linkish click to continue
         .true_spelling{ 'data-spelling' => @result.paradigm.human_singular }
           .correct Correct!
           .incorrect Not exactly...
@@ -18,6 +18,7 @@
         %span.paradigm_sound.singular{ 'data-soundFile' => @result.paradigm.singular_sound_file, :id => @result.paradigm.singular } ________
       - else
         %span.paradigm_sound.singular{ 'data-soundFile' => @result.paradigm.singular_sound_file, :id => @result.paradigm.singular }= @result.paradigm.human_singular
+        %span.play_again.singular.linkish{ 'data-soundFile' => @result.paradigm.singular_sound_file, :id => @result.paradigm.singular } play again
       %br
       = image_tag @result.clipart.singular_file, :width => "150"
     
@@ -25,8 +26,13 @@
       These are
       - if (@result.experiment_phase == 'testing') || (@result.experiment_phase == 'training_test')
         = f.text_field :plural_response
+        #show_next.paradigm_instructions
+          Enter this word's plural, then
+          %br
+          press enter to continue.
       - else
         %span.paradigm_sound.plural{ 'data-soundFile' => @result.paradigm.plural_sound_file, :id => @result.paradigm.plural }= @result.paradigm.human_plural
+        %span.play_again.plural.linkish{ 'data-soundFile' => @result.paradigm.plural_sound_file, :id => @result.paradigm.plural } play again
       %br
       = (image_tag @result.clipart.plural_file, :width => "50", :class => "plural_img") * 3
       %br

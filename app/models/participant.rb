@@ -31,38 +31,36 @@ class Participant < ActiveRecord::Base
   
   # learning: 3 places * 3 of each (only one stress) + 9 filler = 18 learning words
   # testing:  3 places * (5 training[2 old + 3 new] + 5 opposite training) + 5 old filler + 5 new filler = 40 testing words
+  
+  # learning: 2 places * 5 of each (only one stress) + 5 filler = 15 learning words
+  # testing:  2 places * (5 training[2 old + 3 new] + 5 opposite training) + 3 old filler + 7 new filler = 30 testing words
   def generate_items
     assign_training_group
     @paradigms = Paradigm.assign_pictures_to_paradigms_of_type(experiment_type.downcase)
     
     @items = {} # is this necessary?
-    @items[:training] = training_items
-    @items[:training_test] = @items[:training]
-    
+
     @items[:learning] = []
     @items[:testing] = []
     
-    @control_words = control_words.randomly_pick(14) 
-    @items[:learning] += @control_words.last(9)
+    @control_words = control_words.randomly_pick(12) 
+    @items[:learning] += @control_words.last(5)
     @items[:testing] += @control_words.first(10)
     
     places_of_articulation.each do |place|
-      @training_words = training_words_by_place(place).randomly_pick(6)
-      @items[:learning] += @training_words.last(3)
+      @training_words = training_words_by_place(place).randomly_pick(8)
+      @items[:learning] += @training_words.last(5)
       @items[:testing] += @training_words.first(5)
       @items[:testing] += testing_words_by_place(place).randomly_pick(5)
     end
-    
-    # randomly decide to make users spell both words or not
+        
     @bools = {}
-    @bools[:training] = @items[:training].map{ false }
-    @bools[:training_test] = @items[:training_test].map{ false }
-    @bools[:learning] = @items[:learning].enum_with_index.collect{ |item, i| i % 2 == 0 ? false : true }.sort_by{ rand }
-    @bools[:testing] = @items[:testing].enum_with_index.collect{ |item, i| i % 2 == 0 ? false : true }.sort_by{ rand }
+    @bools[:learning] = (1..7).map{ false } + (1..8).map{ true } # spell the latter half of the learning words
+    @bools[:testing] = (1..15).map{ false } + (1..15).map{ true } # hide the singulars in latter half of the testing
       
-    [:training, :training_test, :learning, :testing].each do |phase|
+    [:learning, :testing].each do |phase|
       @items[phase].sort_by{ rand }.each do |item|
-        self.results.create(:paradigm => item, :clipart => item.clipart, :experiment_phase => phase.to_s, :both_responses => @bools[phase].pop)
+        self.results.create(:paradigm => item, :clipart => item.clipart, :experiment_phase => phase.to_s, :both_responses => @bools[phase].shift)
       end
     end
         
