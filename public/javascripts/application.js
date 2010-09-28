@@ -23,50 +23,59 @@ var loadSoundManager = function() {
   if (singular) { 
     soundManager.play(singular, { onfinish: function() {
       $('#result_singular_play_count').incrementValue();
-      var showPl = function() {
-        var playPl = function() {
-          $("#plural_col").css({display: "inline-block"});
-          if (plural) {
-            soundManager.play(plural, { onfinish: function() { 
-              $('#result_plural_play_count').incrementValue();
-              $("input[name=commit]").attr({disabled: false});
-            } });
-          } else {
+      var playPl = function() {
+        $("#plural_col").css({display: "inline-block"});
+        if (plural) {
+          soundManager.play(plural, { onfinish: function() { 
+            $('#result_plural_play_count').incrementValue();
+            var checkSpelling = function() {
+              $('.paradigm_sound.plural').attr('disabled', 'disabled');
+              $('#show_spelling').hide();    
+              if ($('input.paradigm_sound.plural').attr('value') == $('.true_spelling').attr('data-spelling')) {
+                $('.correct').show();
+              } else {
+                $('.incorrect').show();
+              }
+              $('.true_spelling').show();
+            }
+            if ($('#show_spelling').length) {
+              $('#show_spelling').show();
+              $('input.paradigm_sound').focus()
+              $('form.ajax_submit').keypress(function() {
+                if (event.keyCode == '13') {
+                  event.preventDefault();
+                  checkSpelling();
+                  $('form.ajax_submit').keypress(function() {
+                    if (event.keyCode == '13') {
+                      $(this).submit();
+                    }
+                  });
+                }
+              });
+              $('#show_spelling').click(checkSpelling);
+            }
             $("input[name=commit]").attr({disabled: false});
-          }
-        };
-        if ($('#show_plural').length) {
-          $('.paradigm_sound.singular').attr('disabled', 'disabled');
-          $('#show_plural').hide();    
-          if ($('input.paradigm_sound.singular').attr('value') == $('.true_spelling').attr('data-spelling')) {
-            $('.correct').show();
-          } else {
-            $('.incorrect').show();
-          }
-          $('.true_spelling').show();
-          setTimeout(playPl, 1500);
+          } });
         } else {
-          setTimeout(playPl, 500);
-        } 
-      }
-      if ($('#show_plural').length) {
-        $('form.ajax_submit').keypress(function() {
-          if (event.keyCode == '13') {
-            event.preventDefault();
-            showPl();
-            // event.unbind();
-            // event.keypress(function() {
-            //   if (event.keyCode == '13') {
-            //     $(this).submitWithAjax;
-            //   }
-            // });
-          }
-        });
-        $('#show_plural').click(showPl);
-        $('#show_plural').show();
-      } else {
-        showPl();
-      }
+          $("input[name=commit]").attr({disabled: false});
+        }
+      };
+      setTimeout(playPl, 500);
+      
+      // var showPl = function() {
+
+      // if ($('#show_spelling').length) {
+      //   $('form.ajax_submit').keypress(function() {
+      //     if (event.keyCode == '13') {
+      //       event.preventDefault();
+      //       showPl();
+      //     }
+      //   });
+      //   $('#show_spelling').click(showPl);
+      //   $('#show_spelling').show();
+      // } else {
+      //   showPl();
+      // }
     } });
   }
 };

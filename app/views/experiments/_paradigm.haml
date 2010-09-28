@@ -5,19 +5,19 @@
   - div_for @result.paradigm do
     #singular_col.item_text
       This is a
-      - if @result.both_responses && (@result.experiment_phase == 'learning')
-        = f.text_field :singular_response, :class => 'paradigm_sound singular', :id => @result.paradigm.singular, 'data-soundFile' => @result.paradigm.singular_sound_file
-        = play_again(@result, :singular)
-        #show_plural.paradigm_instructions
-          Enter the word you just heard, then
-          %br
-          %span.linkish click to continue
-        .true_spelling{ 'data-spelling' => @result.paradigm.human_singular }
-          .correct Correct!
-          .incorrect Not exactly...
-          The martian spelling of this word is
-          %strong #{ @result.paradigm.human_singular }
-      - elsif (@result.experiment_phase == 'testing') && @result.both_responses
+      / - if @result.both_responses && (@result.experiment_phase == 'learning')
+      /   = f.text_field :singular_response, :class => 'paradigm_sound singular', :id => @result.paradigm.singular, 'data-soundFile' => @result.paradigm.singular_sound_file
+      /   = play_again(@result, :singular)
+      /   #show_plural.paradigm_instructions
+      /     Enter the word you just heard, then
+      /     %br
+      /     %span.linkish click to continue
+      /   .true_spelling{ 'data-spelling' => @result.paradigm.human_singular }
+      /     .correct Correct!
+      /     .incorrect Not exactly...
+      /     The martian spelling of this word is
+      /     %strong #{ @result.paradigm.human_singular }
+      - if (@result.experiment_phase == 'testing') && @result.both_responses
         %span.paradigm_sound.singular{ 'data-soundFile' => @result.paradigm.singular_sound_file, :id => @result.paradigm.singular } ________
         = play_again(@result, :singular)
       - else
@@ -34,6 +34,21 @@
           Enter this word's plural, then
           %br
           press enter to continue.
+      - elsif @result.both_responses && (@result.experiment_phase == 'learning')
+        = f.text_field :plural_response, :class => 'paradigm_sound plural', :id => @result.paradigm.plural, 'data-soundFile' => @result.paradigm.plural_sound_file
+        = play_again(@result, :plural)
+        #show_spelling.paradigm_instructions
+          Enter the word you just heard, then
+          %br
+          %span.linkish click to continue
+        .true_spelling{ 'data-spelling' => @result.paradigm.human_plural }
+          .correct Correct!
+          .incorrect Not exactly...
+          The martian spelling of this word is
+          %strong #{ @result.paradigm.human_plural }
+          %br
+          Click 'next' or press enter to continue         
+    
       - else
         %span.paradigm_sound.plural{ 'data-soundFile' => @result.paradigm.plural_sound_file, :id => @result.paradigm.plural }= @result.paradigm.human_plural
         = play_again(@result, :plural)
