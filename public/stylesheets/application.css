@@ -419,12 +419,12 @@ span.paradigm_sound {
   display: none;
 }
 
-/* line 127, ../../app/stylesheets/_experiment.sass */
+/* line 126, ../../app/stylesheets/_experiment.sass */
 .strong {
   font-weight: bold;
 }
 
-/* line 131, ../../app/stylesheets/_experiment.sass */
+/* line 130, ../../app/stylesheets/_experiment.sass */
 .paradigm .item_text {
   display: -moz-inline-box;
   -moz-box-orient: vertical;
@@ -435,19 +435,19 @@ span.paradigm_sound {
   vertical-align: top;
   text-align: center;
 }
-/* line 135, ../../app/stylesheets/_experiment.sass */
+/* line 134, ../../app/stylesheets/_experiment.sass */
 .paradigm .item_text img {
   margin-top: 1em;
 }
-/* line 137, ../../app/stylesheets/_experiment.sass */
+/* line 136, ../../app/stylesheets/_experiment.sass */
 .paradigm .item_text img.plural_img {
   margin-right: 1em;
 }
-/* line 139, ../../app/stylesheets/_experiment.sass */
+/* line 138, ../../app/stylesheets/_experiment.sass */
 .paradigm #singular_col {
   width: 275px;
 }
-/* line 141, ../../app/stylesheets/_experiment.sass */
+/* line 140, ../../app/stylesheets/_experiment.sass */
 .paradigm #plural_col {
   width: 375px;
   display: none;

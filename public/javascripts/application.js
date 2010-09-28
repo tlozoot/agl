@@ -91,6 +91,7 @@ jQuery.fn.incrementValue = function() {
 
 jQuery.fn.submitWithAjax = function() {
   this.submit(function() {
+    $('.paradigm_sound.plural').attr('disabled', false);
     if($(this).attr('id') == 'new_participant') {
       if (!($('input[value=variable]').attr('checked') || $('input[value=fixed]').attr('checked'))) {
         alert("Please select an experiment type.");
@@ -116,7 +117,7 @@ jQuery.fn.submitWithAjax = function() {
 
 jQuery.fn.createSound = function() {
   if (this.length > 0 ) {
-    var sound = this.attr('id') + ' ' + this.attr('class').split(' ')[1]
+    var sound = this.attr('data-id') + ' ' + this.attr('class').split(' ')[1]
     var soundFile = this.attr('data-soundFile');
     soundManager.createSound({
       id: sound,
