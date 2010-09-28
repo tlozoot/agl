@@ -5,18 +5,6 @@
   - div_for @result.paradigm do
     #singular_col.item_text
       This is a
-      / - if @result.both_responses && (@result.experiment_phase == 'learning')
-      /   = f.text_field :singular_response, :class => 'paradigm_sound singular', :id => @result.paradigm.singular, 'data-soundFile' => @result.paradigm.singular_sound_file
-      /   = play_again(@result, :singular)
-      /   #show_plural.paradigm_instructions
-      /     Enter the word you just heard, then
-      /     %br
-      /     %span.linkish click to continue
-      /   .true_spelling{ 'data-spelling' => @result.paradigm.human_singular }
-      /     .correct Correct!
-      /     .incorrect Not exactly...
-      /     The martian spelling of this word is
-      /     %strong #{ @result.paradigm.human_singular }
       - if (@result.experiment_phase == 'testing') && @result.both_responses
         %span.paradigm_sound.singular{ 'data-soundFile' => @result.paradigm.singular_sound_file, :id => @result.paradigm.singular } ________
         = play_again(@result, :singular)
@@ -56,6 +44,5 @@
       %br
       = (image_tag @result.clipart.plural_file, :width => "50", :class => "plural_img") * 2
   %fieldset.continue
-    /%span.phase= @result.experiment_phase.humanize
     = render 'progress', :participant => @participant
     %fieldset.submit= submit_tag "Next &raquo;", :disabled => true

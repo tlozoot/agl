@@ -70,22 +70,7 @@ var loadSoundManager = function() {
           });
         }
       };
-      setTimeout(playPl, 500);
-      
-      // var showPl = function() {
-
-      // if ($('#show_spelling').length) {
-      //   $('form.ajax_submit').keypress(function() {
-      //     if (event.keyCode == '13') {
-      //       event.preventDefault();
-      //       showPl();
-      //     }
-      //   });
-      //   $('#show_spelling').click(showPl);
-      //   $('#show_spelling').show();
-      // } else {
-      //   showPl();
-      // }
+      setTimeout(playPl, 500);      
     } });
   }
 };
