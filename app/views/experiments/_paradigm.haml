@@ -31,15 +31,14 @@
       - if (@result.experiment_phase == 'testing') || (@result.experiment_phase == 'training_test')
         = f.text_field :plural_response
         #show_next.paradigm_instructions
-          Enter this word's plural, then
-          %br
-          press enter to continue.
+          Now you tell us what the plural is
       - elsif @result.both_responses && (@result.experiment_phase == 'learning')
-        = f.text_field :plural_response, :class => 'paradigm_sound plural', :id => @result.paradigm.plural, 'data-soundFile' => @result.paradigm.plural_sound_file
+        = f.text_field :plural_response, :class => 'paradigm_sound plural', :id => @result.paradigm.plural, 'data-soundFile' => @result.paradigm.plural_sound_file, :disabled => 'disabled'
         = play_again(@result, :plural)
         #show_spelling.paradigm_instructions
           Enter the word you just heard, then
           %br
+          press enter or
           %span.linkish click to continue
         .true_spelling{ 'data-spelling' => @result.paradigm.human_plural }
           .correct Correct!

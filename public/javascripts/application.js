@@ -1,6 +1,14 @@
 soundManager.url = "/soundmanager2.swf";
 soundManager.debugMode = false;
 
+var addSubmitFormEvent = function() {
+  $('form.ajax_submit').keypress(function() {
+    if (event.keyCode == '13') {
+      $(this).submit();
+    }
+  });
+}
+
 var loadSoundManager = function() {
   var singular = $('.paradigm_sound.singular').createSound();
   var plural = $('.paradigm_sound.plural').createSound();
@@ -28,6 +36,7 @@ var loadSoundManager = function() {
         if (plural) {
           soundManager.play(plural, { onfinish: function() { 
             $('#result_plural_play_count').incrementValue();
+            $('input.paradigm_sound').attr({disabled: false})
             var checkSpelling = function() {
               $('.paradigm_sound.plural').attr('disabled', 'disabled');
               $('#show_spelling').hide();    
@@ -37,6 +46,7 @@ var loadSoundManager = function() {
                 $('.incorrect').show();
               }
               $('.true_spelling').show();
+              $("input[name=commit]").attr({disabled: false});
             }
             if ($('#show_spelling').length) {
               $('#show_spelling').show();
@@ -45,20 +55,19 @@ var loadSoundManager = function() {
                 if (event.keyCode == '13') {
                   event.preventDefault();
                   checkSpelling();
-                  $('form.ajax_submit').keypress(function() {
-                    if (event.keyCode == '13') {
-                      $(this).submit();
-                    }
-                  });
+                  addSubmitFormEvent();
                 }
               });
               $('#show_spelling').click(checkSpelling);
+            } else {
+              $("input[name=commit]").attr({disabled: false});
+              $('input[type=submit]').focus();
             }
-            $("input[name=commit]").attr({disabled: false});
           } });
         } else {
-          $("input#result_plural_response").focus();
-          $("input[name=commit]").attr({disabled: false});
+          $("input#result_plural_response").focus().keydown(function() {
+            $("input[name=commit]").attr({disabled: false});
+          });
         }
       };
       setTimeout(playPl, 500);
