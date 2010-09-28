@@ -223,7 +223,7 @@ label.strong {
 .continue {
   background-color: #eeeeee;
   padding: 0.5em;
-  margin-top: 0.5em;
+  margin-top: 1em;
 }
 /* line 8, ../../app/stylesheets/_experiment.sass */
 .continue fieldset.submit {
