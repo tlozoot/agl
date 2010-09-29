@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery # See ActionController::RequestForgeryProtection for details
   filter_parameter_logging :password
 
-  helper_method :current_user 
+  helper_method :current_user, :url_base
 
   private
   
@@ -35,4 +35,7 @@ class ApplicationController < ActionController::Base
     session[:return_to] = nil
   end
   
+  def url_base
+    request.env['HTTP_HOST']
+  end  
 end

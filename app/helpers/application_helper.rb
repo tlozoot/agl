@@ -16,7 +16,7 @@ module ApplicationHelper
   end
   
   def soundmanager_url
-    if RAILS_ENV == 'production'
+    if url_base =~ /phonetics.fas.harvard.edu/
       "/agl/soundmanager2.swf"
     else
       "soundmanager2.swf"
