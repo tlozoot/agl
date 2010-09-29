@@ -15,4 +15,12 @@ module ApplicationHelper
     end
   end
   
+  def soundmanager_url
+    if url_base =~ /phonetics.fas.harvard.edu/
+      "/agl/soundmanager2.swf"
+    else
+      "soundmanager2.swf"
+    end
+  end
+  
 end

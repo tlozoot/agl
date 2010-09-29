@@ -1,4 +1,4 @@
-soundManager.url = "/soundmanager2.swf";
+soundManager.url = $('meta.soundman').attr('data-soundmanager-url');
 soundManager.debugMode = false;
 
 var addSubmitFormEvent = function() {
