@@ -4,6 +4,11 @@ class ResultsController < ApplicationController
   
   def index
     @participants = Participant.all
+    @results = @participants.map(&:results).flatten
+    respond_to do |format|
+      format.html
+      format.csv { @filename = 'results.csv'; render :layout => false }
+    end
   end
   
   def show

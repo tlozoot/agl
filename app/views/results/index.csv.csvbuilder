@@ -1,0 +1,5 @@
+csv << %w(participant_id participant_code experiment_type training_group experiment_phase display_order singular singular_play_count plural plural_play_count plural_response part_b) # header row
+@results.each do |r|  # data rows
+  csv << [r.participant.id, r.participant.code, r.participant.experiment_type.to_s.downcase, r.participant.training_group, r.experiment_phase, r.display_order, r.paradigm.human_singular, r.singular_play_count, r.paradigm.human_plural, r.plural_play_count, r.plural_response, r.both_responses]
+  # @columns.map{ |col| paradigm.method(col).call } # why doesn't this work???
+end
