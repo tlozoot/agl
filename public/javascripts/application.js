@@ -1,4 +1,4 @@
-soundManager.url = "http://phonetics.fas.harvard.edu/agl/soundmanager2.swf";
+soundManager.url = "soundmanager2.swf";
 soundManager.debugMode = false;
 
 var addSubmitFormEvent = function() {
