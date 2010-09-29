@@ -136,7 +136,7 @@ $(document).ready(function() {
   $('#volume_test').click(function(){
     soundManager.createSound({
       id: 'testSound',
-      url: "http://phonetics.fas.harvard.edu/AGL/stimuli/fixed/larb_d.mp3"
+      url: "http://phonetics.fas.harvard.edu/agl/stimuli/fixed/larb_d.mp3"
     });
     soundManager.play('testSound');
   });
