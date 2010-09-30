@@ -1,7 +1,8 @@
 class Fixed < Participant
 
   def pick_training_group
-    rand > 0.5 ? 'iamb' : 'trochee'
+    # rand > 0.5 ? 'iamb' : 'trochee'
+    'iamb'
   end
   
   private
