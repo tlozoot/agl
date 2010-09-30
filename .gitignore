@@ -10,4 +10,4 @@ doc/app
 db/*.sqlite3
 .dropbox
 Icon*
-
+log/production.log
