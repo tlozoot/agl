@@ -16,11 +16,23 @@ class Fixed < Participant
   end
   
   def places_of_articulation
-    %w(e u)
+    {
+      'e' => 5,
+      'u' => 5
+    }
+  end
+  
+  def control_places
+    'a'
   end
   
   def independent_variable
     'vowel'
   end
+  
+  def opposite_training_group
+    (training_group == 'iamb') ? 'trochee' : 'iamb'
+  end
+  
   
 end

@@ -37,34 +37,50 @@ class Participant < ActiveRecord::Base
     results.map(&:plural_play_count).inject { |sum, n| sum + n.to_i }
   end
   
-  # learning: 3 places * 3 of each (only one stress) + 9 filler = 18 learning words
-  # testing:  3 places * (5 training[2 old + 3 new] + 5 opposite training) + 5 old filler + 5 new filler = 40 testing words
+  # VARIABLE:
+  # learning: 3 places * 3 of each (only one stress) + 1 extra [p] + 5 filler = 17 learning words
+  # testing:  3 places * (3 training[1 old + 2 new] + 3 opposite training) + 1 of each extra for [p] + 3 old filler + 7 new filler = 34 testing words
   
+  # FIXED:
   # learning: 2 places * 5 of each (only one stress) + 5 filler = 15 learning words
   # testing:  2 places * (5 training[2 old + 3 new] + 5 opposite training) + 3 old filler + 7 new filler = 30 testing words
+  
   def generate_items
     assign_training_group
     @paradigms = Paradigm.assign_pictures_to_paradigms_of_type(experiment_type.downcase)
     
-    @items = {} # is this necessary?
-
+    @items = {}
     @items[:learning] = []
     @items[:testing] = []
     
-    @control_words = control_words.randomly_pick(12) 
-    @items[:learning] += @control_words.last(5)
-    @items[:testing] += @control_words.first(10)
+    # Control words:
+    # => Training: 2 same meter + 3 different meter = 5
+    # => Testing: 5 same meter (1 old) + 5 different meter (2 old)
+    @similar_control_words = paradigms_by_characteristic(control_places, training_group).randomly_pick(6)
+    @different_control_words = paradigms_by_characteristic(control_places, opposite_training_group).randomly_pick(6)
+    @items[:learning] += (@similar_control_words.first(2) + @different_control_words.first(3)).sort_by{ rand }
+    @items[:testing] += (@similar_control_words.last(5) + @different_control_words.last(5)).sort_by{ rand }
     
-    places_of_articulation.each do |place|
-      @training_words = training_words_by_place(place).randomly_pick(8)
-      @items[:learning] += @training_words.last(5)
-      @items[:testing] += @training_words.first(5)
-      @items[:testing] += testing_words_by_place(place).randomly_pick(5)
+    
+    # Experimental words:
+    # Variable => [t, k] get 3 each in learning, 1 old + 2 new in old place + 3 opposite place = 6 in testing
+    #             [p] gets 4 in learning; 2 old + 2 new in old place + 4 opposite place = 8 in testing
+    #             In other words, we want 5 total for [t,k] in old place and 6 total for [p]
+    #
+    # Fixed => Both places get 5 each in learning; 2 old + 3 new in testing + 5 opposite = 10 in testing
+    #
+    # In total, in experimental testing items, everyone sees 4 old items and 16 new ones
+    
+    places_of_articulation.each_pair do |place, number|
+      @training_words = paradigms_by_characteristic(place, training_group).randomly_pick((number * 1.5).ceil)
+      @items[:learning] += @training_words.last(number)
+      @items[:testing] += @training_words.first(number)
+      @items[:testing] += paradigms_by_characteristic(place, opposite_training_group).randomly_pick(number)
     end
         
     @bools = {}
-    @bools[:learning] = (1..7).map{ false } + (1..8).map{ true } # spell the latter half of the learning words
-    @bools[:testing] = (1..15).map{ false } + (1..15).map{ true } # hide the singulars in latter half of the testing
+    @bools[:learning] = Array.new(7, false) + Array.new(8, true) # spell the latter half of the learning words
+    @bools[:testing] = Array.new(15, false) + Array.new(15, true) # hide the singulars in latter half of the testing
       
     [:learning, :testing].each do |phase|
       @items[phase].sort_by{ rand }.each do |item|
@@ -80,12 +96,8 @@ class Participant < ActiveRecord::Base
   
   private
   
-  def training_words_by_place(place)
-    @paradigms.select{ |p| p.method(independent_variable).call == place && p.stress == training_group }
+  def paradigms_by_characteristic(place, stress)
+    @paradigms.select{ |p| p.method(independent_variable).call =~ Regexp.new(place) && p.stress == stress }
   end
-  
-  def testing_words_by_place(place)
-    @paradigms.select{ |p| p.method(independent_variable).call == place && p.stress != training_group }
-  end
-  
+      
 end

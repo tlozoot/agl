@@ -26,11 +26,23 @@ class Variable < Participant
   end
   
   def places_of_articulation
-    %w(p t k)
+    {
+      'p' => 4,
+      't' => 3,
+      'k' => 3
+    }
+  end
+  
+  def control_places
+    'r|l|m|ng'
   end
   
   def independent_variable
     'consonant'
+  end
+  
+  def opposite_training_group
+    (training_group == 'mono') ? 'iamb' : 'mono'
   end
   
 end
