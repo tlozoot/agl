@@ -1,13 +1,5 @@
 class Variable < Participant
-    
-  def self.test
-    v = Variable.new
-    v.name = "variable test"
-    v.save
-    v.generate_items
-    v
-  end  
-    
+        
   def pick_training_group
     rand > 0.5 ? 'iamb' : 'mono'
   end
