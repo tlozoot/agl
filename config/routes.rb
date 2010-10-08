@@ -20,6 +20,7 @@ ActionController::Routing::Routes.draw do |map|
   
   map.resources :results, :only => [:index, :show]
   map.resources :paradigms
+  map.resources :participants, :only => [:update]
   
   map.resources :user_sessions
   map.resources :users

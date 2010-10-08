@@ -104,7 +104,7 @@ class ExperimentsController < ApplicationController
   private
   
   def get_participant
-    @participant = Participant.find(params[:id])
+    @participant = Participant.find(params[:id]) 
   end
   
   def get_participant_id

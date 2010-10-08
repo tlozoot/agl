@@ -44,7 +44,34 @@ form.formtastic
   
   fieldset ol
     li
+      +clearfix
       display: block
       position: relative
       margin-bottom: 7px
+      
+form.finished_form
+  margin-top: 1em
+  
+  label
+    color: #333
+    width: 250px
+    line-height: 130%
+    text-align: left
+  input[type=text], textarea
+    width: 350px
+  input[type=submit]
+    margin-left: 260px
+    left: 0
+    
+  fieldset ol li
+    margin-bottom: 1em
+    
+    &.radio
+    ol
+      li
+        +inline-block
+        margin-bottom: 0
+        label
+          width: 80px
+    
   

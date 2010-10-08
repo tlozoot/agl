@@ -146,6 +146,21 @@ $(document).ready(function() {
   });
   
   $('form.ajax_submit').submitWithAjax();
+  
+  $('form.finished_form').submit(function() {
+    $.ajax({
+      type: 'POST',
+      url: this.action,
+      data: $(this).serialize(),
+      beforeSend: function(xhr) {
+           $(this).html("<p>Please wait...</p>");
+           xhr.setRequestHeader("Accept", "text/javascript");
+         },
+      success: null,
+      dataType: "script"
+    });
+    return false;
+  });
     
   $('.toggle_results').click(function() {
     $('ul#' + $(this).attr('data-phase')).slideToggle();

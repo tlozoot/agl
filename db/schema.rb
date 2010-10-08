@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100928170656) do
+ActiveRecord::Schema.define(:version => 20101008183833) do
 
   create_table "cliparts", :force => true do |t|
     t.string    "name"
@@ -33,13 +33,19 @@ ActiveRecord::Schema.define(:version => 20100928170656) do
     t.string   "name"
     t.string   "code"
     t.string   "location"
-    t.integer  "age"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "training_group"
     t.string   "experiment_type"
     t.integer  "experiment_position", :default => 1
     t.string   "perception"
+    t.integer  "year_born"
+    t.string   "language_background"
+    t.string   "email"
+    t.text     "comments"
+    t.string   "other_languages"
+    t.boolean  "native"
+    t.string   "gender"
   end
 
   create_table "results", :force => true do |t|
