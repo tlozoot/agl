@@ -19,7 +19,7 @@ module ApplicationHelper
     if url_base =~ /phonetics.fas.harvard.edu/
       "/agl/soundmanager2.swf"
     else
-      "soundmanager2.swf"
+      "/soundmanager2.swf"
     end
   end
   

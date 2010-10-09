@@ -8,6 +8,14 @@ class Participant < ActiveRecord::Base
   def self.inheritance_column
     "experiment_type"
   end
+  
+  def self.finished
+    self.all.select{ |p| p.finished? }
+  end
+  
+  def finished?
+    self.experiment_position > self.results.length
+  end
 
   def self.generate_code
     code = (0..2).map{ (rand(26) + 65).chr }.join + Participant.all.length.to_s
@@ -35,6 +43,17 @@ class Participant < ActiveRecord::Base
   
   def plural_play_count
     results.map(&:plural_play_count).inject { |sum, n| sum + n.to_i }
+  end
+  
+  def pick_training_group
+    group1, group2 = self.groups    
+    finished = self.experiment_type.capitalize.constantize.finished
+    if finished.length > 0
+      finished.select{ |p| p.training_group == group1 }.length < \
+        finished.select{ |p| p.training_group == group2 }.length ? group1 : group2
+    else
+      rand > 0.5 ? group1 : group2
+    end
   end
   
   # VARIABLE:

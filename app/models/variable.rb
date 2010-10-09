@@ -1,7 +1,7 @@
 class Variable < Participant
-        
-  def pick_training_group
-    rand > 0.5 ? 'iamb' : 'mono'
+    
+  def groups
+    ['mono', 'iamb']
   end
   
   private
