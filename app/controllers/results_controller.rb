@@ -3,8 +3,14 @@ class ResultsController < ApplicationController
   before_filter :require_user, :except => :index
   
   def index
-    @participants = Participant.all
+    @participants = Participant.all.select{ |p| p.finished? && p.perception != 'wugster' }
+    
+    if exp_type = params[:exp_type]
+      @participants = @participants.select{ |p| p.experiment_type == exp_type.capitalize }
+    end
+    
     @results = @participants.map(&:results).flatten
+    
     if current_user
       respond_to do |format|
         format.html
