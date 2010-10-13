@@ -22,5 +22,24 @@ module ApplicationHelper
       "/soundmanager2.swf"
     end
   end
+
+  def hebrew_plural(participant, paradigm)
+    case participant.training_group
+    when 'surf'
+      case paradigm.vowel
+      when 'o'
+        paradigm.singular.sub('o', 'i') + 'im'
+      when 'i'
+        paradigm.singular.sub('i', 'o') + 'ot'
+      end
+    when 'deep'
+      case paradigm.vowel
+      when 'o'
+        paradigm.singular.sub('o', 'i') + 'ot'
+      when 'i'
+        paradigm.singular.sub('i', 'o') + 'im'
+      end
+    end
+  end
   
 end
