@@ -1,7 +1,7 @@
 class Hebrew < Participant
   
   def groups
-    ['surf', 'deep']
+    ['surface', 'deep']
   end
   
   private
@@ -30,7 +30,7 @@ class Hebrew < Participant
   end
   
   def opposite_training_group
-    (training_group == 'surf') ? 'deep' : 'surf'
+    (training_group == 'surface') ? 'deep' : 'surface'
   end
   
   

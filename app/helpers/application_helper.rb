@@ -25,7 +25,7 @@ module ApplicationHelper
 
   def hebrew_plural(participant, paradigm)
     case participant.training_group
-    when 'surf'
+    when 'surface'
       case paradigm.vowel
       when 'o'
         paradigm.singular.sub('o', 'i') + 'im'
