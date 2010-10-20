@@ -12,11 +12,12 @@ ActionController::Routing::Routes.draw do |map|
     experiments.testing 'testing', :controller => 'experiments', :action => 'testing'
     experiments.finished 'finished', :controller => 'experiments', :action => 'finished'
     experiments.spelling 'spelling', :controller => 'experiments', :action => 'spelling'
-    
   end
   
   map.resource :variable, :only => :show, :controller => :variable
   map.resource :fixed, :only => :show, :controller => :fixed
+  map.resource :hebrew, :only => :show, :controller => :hebrew
+  
   
   map.resources :results, :only => [:index, :show]
   map.resources :paradigms
