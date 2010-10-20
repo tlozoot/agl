@@ -1,4 +1,4 @@
-:textile
-  Thanks for your participation!
-
-  Your code is: *#{ @participant.code }*. Please copy and paste this code into Mechanical Turk.
+- if @participant.is_a? Hebrew
+  = render 'hebrew'
+- else
+  = render 'english'

@@ -17,11 +17,12 @@ class ExperimentsController < ApplicationController
     @participant.assign_training_group
     if @participant.save
       @participant.generate_items
+      exp = if @participant.is_a? Hebrew then 'hebrew/' else '' end
       respond_to do |format|
-        format.html { render :spelling }
+        format.html { render "#{exp}spelling" }
         format.json { 
           @result = @participant.results.first
-          render :spelling, :layout => false
+          render "#{exp}spelling", :layout => false
         }
       end  
     else
@@ -56,10 +57,11 @@ class ExperimentsController < ApplicationController
         end
       end
       @result = @participant.results.find_by_display_order(@participant.experiment_position)
+      exp = if @participant.is_a? Hebrew then 'hebrew/' else '' end
       if @result.nil?
          respond_to do |format|
-            format.html { render :finished }
-            format.json { render :finished, :layout => false }
+            format.html { render "#{exp}finished" }
+            format.json { render "#{exp}finished", :layout => false }
           end
       else
         respond_to do |format|
@@ -86,10 +88,9 @@ class ExperimentsController < ApplicationController
   
   def learning
     @result = @participant.results.first
+    exp = if @participant.is_a? Hebrew then 'hebrew/' else '' end
     respond_to do |format|
-      format.json { 
-        render :partial => 'screen', :layout => false
-      }
+      format.json { render :partial => "#{exp}screen", :layout => false }
     end
   end
   
@@ -99,6 +100,13 @@ class ExperimentsController < ApplicationController
   
   def spelling
     @result = @participant.results.first
+    exp = if @participant.is_a? Hebrew then 'hebrew/' else '' end
+    if @participant.is_a? Hebrew
+      respond_to do |format|
+        format.json { render "#{exp}spelling" }
+        format.html { render "#{exp}spelling" }
+      end
+    end
   end
 
   private
