@@ -12,10 +12,10 @@
 ActiveRecord::Schema.define(:version => 20101020045010) do
 
   create_table "cliparts", :force => true do |t|
-    t.string    "name"
-    t.timestamp "created_at"
-    t.timestamp "updated_at"
-    t.string    "experiment"
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "experiment"
   end
 
   create_table "paradigms", :force => true do |t|
