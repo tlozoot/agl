@@ -9,12 +9,13 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101019221727) do
+ActiveRecord::Schema.define(:version => 20101020045010) do
 
   create_table "cliparts", :force => true do |t|
     t.string    "name"
     t.timestamp "created_at"
     t.timestamp "updated_at"
+    t.string    "experiment"
   end
 
   create_table "paradigms", :force => true do |t|

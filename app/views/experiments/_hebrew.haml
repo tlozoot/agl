@@ -12,7 +12,7 @@
         %span.paradigm_sound.singular{ 'data-soundFile' => @result.paradigm.singular_sound_file, 'data-id' => @result.paradigm.singular }= @result.paradigm.human_singular
         = play_again(@result, :singular)
       %br
-      = image_tag @result.clipart.singular_file, :width => "150"
+      = image_tag @result.clipart.singular_file, :width => "250"
     
     #plural_col.item_text
       These are
@@ -39,9 +39,7 @@
         %span.paradigm_sound.plural{ 'data-soundFile' => @result.plural_sound_file, 'data-id' => @result.plural }= @result.human_plural
         = play_again(@result, :plural)
       %br
-      = (image_tag @result.clipart.plural_file, :width => "50", :class => "plural_img") * 3
-      %br
-      = (image_tag @result.clipart.plural_file, :width => "50", :class => "plural_img") * 2
+      = (image_tag @result.clipart.plural_file, :width => "250", :class => "plural_img")
   %fieldset.continue
     = render 'progress', :participant => @participant
     %fieldset.submit= submit_tag "Next &raquo;", :disabled => true

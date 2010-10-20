@@ -8,9 +8,15 @@ class Paradigm < ActiveRecord::Base
   attr_accessor :clipart
   
   def self.assign_pictures_to_paradigms_of_type(type)
+    type = type.to_s.downcase
     @clipart = Clipart.all.sort_by{ rand }
-    Paradigm.find(:all, :conditions => { :experiment_type => type.to_s.downcase, }) \
-        .reject{ |paradigm| (paradigm.singular == 'larb_d') || (paradigm.stress == 'trochee') && (type.to_s.downcase == 'variable') } \
+    if type == 'hebrew'
+      @clipart = @clipart.select{ |c| c.experiment == 'hebrew' }
+    else 
+      @clipart = @clipart.reject{ |c| c.experiment == 'hebrew' }
+    end
+    Paradigm.find(:all, :conditions => { :experiment_type => type, }) \
+        .reject{ |paradigm| (paradigm.singular == 'larb_d') || (paradigm.stress == 'trochee') && (type == 'variable') } \
         .sort_by{ rand } \
         .each{ |paradigm| paradigm.clipart = @clipart.shift }
   end
