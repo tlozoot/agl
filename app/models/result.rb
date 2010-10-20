@@ -16,6 +16,10 @@ class Result < ActiveRecord::Base
     Plural: #{plural_response}"
   end
   
+  def singular
+    paradigm.singular
+  end
+  
   def human_singular
     case participant.experiment_type
     when 'Hebrew'
@@ -41,6 +45,10 @@ class Result < ActiveRecord::Base
     else
       paradigm.plural
     end
+  end
+  
+  def singular_sound_file
+    paradigm.singular_sound_file
   end
   
   def plural_sound_file
