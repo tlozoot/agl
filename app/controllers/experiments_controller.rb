@@ -32,12 +32,13 @@ class ExperimentsController < ApplicationController
   end
   
   def show
+    exp = if @participant.is_a? Hebrew then 'hebrew/' else '' end
     respond_to do |format|
       unless @result = @participant.results.find_by_display_order(@participant.experiment_position)
-        format.html { render :finished }
+        format.html { render "#{exp}finished" }
       end
-      format.html
-      format.json { render :layout => false }
+      format.html { render "#{exp}show" } 
+      format.json { render "#{exp}show", :layout => false }
     end
   end
   
@@ -66,7 +67,7 @@ class ExperimentsController < ApplicationController
       else
         respond_to do |format|
           format.html { redirect_to experiment_url(@participant) }
-          format.json { render :layout => false }
+          format.json { render "#{exp}update", :layout => false }
         end
       end
     else
