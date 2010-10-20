@@ -1,9 +1,4 @@
 HEBREW
-
-Figure out what other columns we need (only 'training_word?' are ? allowed in SQL?)
-Have michael fill out doc with what training words are
-have script recognize training words
-save them in DB
 figure out how to pick them for experiments
 
 

@@ -1,7 +1,5 @@
-@michaels_file = '/Users/michaelbecker/Documents/Dropbox/Research/AGLs/heb01\ materials/hebrewitems.txt'
-@jons_file = '/Users/jonathan/Desktop/hebrewitems.txt'
 
-@lines = IO.read(@jons_file).split("\n")
+@lines = IO.read("#{RAILS_ROOT}/lib/hebrew_items.txt").split("\n")
 
 @lines.each do |line|
   singular, experiment_group = line.split('_')
