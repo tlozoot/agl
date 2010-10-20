@@ -18,7 +18,7 @@ class Result < ActiveRecord::Base
   
   def human_singular
     case participant.experiment_type
-    when 'hebrew'
+    when 'Hebrew'
       help.to_hebrew(paradigm.singular)
     else
       paradigm.singular
@@ -27,7 +27,7 @@ class Result < ActiveRecord::Base
   
   def plural
     case participant.experiment_type
-    when 'hebrew'
+    when 'Hebrew'
       help.hebrew_plural(participant, paradigm)
     else
       paradigm.plural
@@ -36,7 +36,7 @@ class Result < ActiveRecord::Base
   
   def human_plural
     case participant.experiment_type
-    when 'hebrew'
+    when 'Hebrew'
       help.to_hebrew(plural)
     else
       paradigm.plural

@@ -44,7 +44,8 @@ module ApplicationHelper
   end
   
   def to_hebrew(string)
-    string.sub('a', 'א').sub('i', 'י') .sub('o', 'ו') \
+    # sub out ALL of the vowels... amirite?
+    string.gsub('a', 'א').gsub('i', 'י').gsub('o', 'ו') \
           .sub('sh', 'ש') \
           .sub('p', 'פ').sub('b', 'ב') \
           .sub('f', 'פ').sub('v', 'ב') \
