@@ -1,4 +1,4 @@
-dirname = "#{RAILS_ROOT}/public/stimuli/variable/"
+dirname = "#{RAILS_ROOT}/public/stimuli/hebrew/"
 
 Dir.new(dirname).each do |old_name|
   unless old_name == "." || old_name == ".."

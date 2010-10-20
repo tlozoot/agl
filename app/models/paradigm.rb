@@ -38,17 +38,7 @@ class Paradigm < ActiveRecord::Base
     when 'fixed','variable'
       singular.sub('_', '-').sub('x', 'ai')
 	  when 'hebrew'
-      singular.sub('a', 'א').sub('i', 'י') .sub('o', 'ו') \
-              .sub('sh', 'ש') \
-              .sub('p', 'פ').sub('b', 'ב') \
-              .sub('f', 'פ').sub('v', 'ב') \
-              .sub('t', 'ט').sub('c', 'צ').sub('d', 'ד') \
-              .sub('s', 'ס').sub('z', 'ז') \
-              .sub('x', 'כ').sub('k', 'ק').sub('g', 'ג') \
-              .sub('m', 'מ').sub('n', 'נ').sub('l', 'ל').sub('r', 'ר') \
-              .sub(/כ$/, 'ך').sub(/מ$/, 'ם') \
-              .sub(/נ$/, 'ן').sub(/פ$/, 'ף').sub(/צ$/, 'ץ') 
-              
+	    help.to_hebrew(singular)
 	  end
   end
   

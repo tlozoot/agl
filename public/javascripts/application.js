@@ -93,7 +93,7 @@ jQuery.fn.submitWithAjax = function() {
   this.submit(function() {
     $('.paradigm_sound.plural').attr('disabled', false);
     if($(this).attr('id') == 'new_participant') {
-      if (!($('input[value=variable]').attr('checked') || $('input[value=fixed]').attr('checked'))) {
+      if (!$.grep($('input[type=radio]'), function(e) { return e.checked; }).length) {
         alert("Please select an experiment type.");
         return false;
       }
