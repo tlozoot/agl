@@ -3,6 +3,8 @@ class Paradigm < ActiveRecord::Base
   has_many :results
   has_many :participants, :through => :results
   
+  require 'lib/helper'
+  
   attr_accessor :clipart
   
   def self.assign_pictures_to_paradigms_of_type(type)
@@ -19,7 +21,8 @@ class Paradigm < ActiveRecord::Base
     Vowel: #{ vowel }
     Consonant: #{ consonant}
     Stress: #{ stress }
-    Experiment: #{ experiment_type }\n"
+    Experiment: #{ experiment_type }
+    Experiment group: #{ experiment_group }\n"
   end
   
   def singular_sound_file
@@ -34,33 +37,19 @@ class Paradigm < ActiveRecord::Base
     case experiment_type
     when 'fixed','variable'
       singular.sub('_', '-').sub('x', 'ai')
-	when 'hebrew'
-      singular.sub('a', 'א') \
-      .sub('i', 'י') \
-      .sub('o', 'ו') \
-      .sub('sh', 'ש') \
-      .sub('p', 'פ') \
-      .sub('b', 'ב') \
-      .sub('f', 'פ') \
-      .sub('v', 'ב') \
-      .sub('t', 'ט') \
-      .sub('c', 'צ') \
-      .sub('d', 'ד') \
-      .sub('s', 'ס') \
-      .sub('z', 'ז') \ 
-      .sub('x', 'כ') \
-      .sub('k', 'ק') \
-      .sub('g', 'ג') \
-      .sub('m', 'מ') \
-      .sub('n', 'נ') \
-      .sub('l', 'ל') \
-      .sub('r', 'ר') \
-      .sub(/כ$/, 'ך') \
-      .sub(/מ$/, 'ם') \
-      .sub(/נ$/, 'ן') \
-      .sub(/פ$/, 'ף') \
-      .sub(/צ$/, 'ץ') 
-	end
+	  when 'hebrew'
+      singular.sub('a', 'א').sub('i', 'י') .sub('o', 'ו') \
+              .sub('sh', 'ש') \
+              .sub('p', 'פ').sub('b', 'ב') \
+              .sub('f', 'פ').sub('v', 'ב') \
+              .sub('t', 'ט').sub('c', 'צ').sub('d', 'ד') \
+              .sub('s', 'ס').sub('z', 'ז') \
+              .sub('x', 'כ').sub('k', 'ק').sub('g', 'ג') \
+              .sub('m', 'מ').sub('n', 'נ').sub('l', 'ל').sub('r', 'ר') \
+              .sub(/כ$/, 'ך').sub(/מ$/, 'ם') \
+              .sub(/נ$/, 'ן').sub(/פ$/, 'ף').sub(/צ$/, 'ץ') 
+              
+	  end
   end
   
   def human_plural
@@ -90,7 +79,7 @@ class Paradigm < ActiveRecord::Base
         singular
       end) + 'ni'
     when 'hebrew'
-      nil
+      "Surface: #{help.hebrew_plural(:surface, self)}, Deep: #{help.hebrew_plural(:deep, self)}"
     end
   end
   

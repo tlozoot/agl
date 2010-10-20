@@ -33,5 +33,4 @@ class Hebrew < Participant
     (training_group == 'surface') ? 'deep' : 'surface'
   end
   
-  
 end

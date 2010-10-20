@@ -23,8 +23,9 @@ module ApplicationHelper
     end
   end
 
-  def hebrew_plural(participant, paradigm)
-    case participant.training_group
+  def hebrew_plural(group_or_participant, paradigm)
+    group = group_or_participant.is_a?(Participant) ? group_or_participant.training_group : group_or_participant.to_s
+    case group
     when 'surface'
       case paradigm.vowel
       when 'o'

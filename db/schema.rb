@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101008183833) do
+ActiveRecord::Schema.define(:version => 20101019221727) do
 
   create_table "cliparts", :force => true do |t|
     t.string    "name"
@@ -18,15 +18,16 @@ ActiveRecord::Schema.define(:version => 20101008183833) do
   end
 
   create_table "paradigms", :force => true do |t|
-    t.string    "singular"
-    t.string    "spelled_plural"
-    t.string    "vowel"
-    t.string    "stress"
-    t.timestamp "created_at"
-    t.timestamp "updated_at"
-    t.string    "experiment_type"
-    t.string    "consonant"
-    t.string    "spelled_singular"
+    t.string   "singular"
+    t.string   "spelled_plural"
+    t.string   "vowel"
+    t.string   "stress"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "experiment_type"
+    t.string   "consonant"
+    t.string   "spelled_singular"
+    t.string   "experiment_group"
   end
 
   create_table "participants", :force => true do |t|
