@@ -40,7 +40,7 @@ class ApplicationController < ActionController::Base
   end  
   
   def url_path
-    request.env['REQUEST_PATH']
+    request.env['REQUEST_URI']
   end
   
 end
