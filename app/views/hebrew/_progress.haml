@@ -1,0 +1,4 @@
+%span.progress.hebrew
+  = "Hebrew Progress: #{participant.experiment_position}/#{participant.results.length}"
+  .progress_container
+    .progress_bar{ :style => "width: #{(participant.experiment_position.to_f / participant.results.length.to_f) * 100}px;" }
