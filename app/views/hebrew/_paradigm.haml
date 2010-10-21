@@ -45,5 +45,5 @@
       %br
       = (image_tag @result.clipart.plural_file, :width => "200", :class => "plural_img")
   %fieldset.continue
-    = render 'progress', :participant => @participant
+    = render 'hebrew/progress', :participant => @participant
     %fieldset.submit= submit_tag "Next &raquo;", :disabled => true
