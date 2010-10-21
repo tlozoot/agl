@@ -4,6 +4,8 @@
   = f.hidden_field :plural_play_count
   - div_for @result.paradigm do
     #singular_col.item_text
+      = image_tag @result.clipart.singular_file, :width => "200"
+      %br
       זה
       - if (@result.experiment_phase == 'testing') && @result.both_responses
         %span.paradigm_sound.singular{ 'data-soundFile' => @result.paradigm.singular_sound_file, 'data-id' => @result.paradigm.singular } ________
@@ -11,12 +13,12 @@
         = play_again(@result, :singular)
       - else
         %span.paradigm_sound.singular{ 'data-soundFile' => @result.paradigm.singular_sound_file, 'data-id' => @result.paradigm.singular }= @result.paradigm.human_singular
-        נחמד
+        נחמד אחד
         = play_again(@result, :singular)
-      %br
-      = image_tag @result.clipart.singular_file, :width => "200"
     
     #plural_col.item_text
+      = (image_tag @result.clipart.plural_file, :width => "200", :class => "plural_img")
+      %br
       אלה שני
       - if (@result.experiment_phase == 'testing') || (@result.experiment_phase == 'training_test')
         = f.text_field :plural_response
@@ -43,8 +45,6 @@
         %span.paradigm_sound.plural{ 'data-soundFile' => @result.plural_sound_file, 'data-id' => @result.plural }= @result.human_plural
         נחמדים
         = play_again(@result, :plural)
-      %br
-      = (image_tag @result.clipart.plural_file, :width => "200", :class => "plural_img")
   %fieldset.continue
     = render 'hebrew/progress', :participant => @participant
     %fieldset.submit= submit_tag "לדף הבא &raquo;", :disabled => true

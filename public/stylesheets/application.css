@@ -479,16 +479,17 @@ span.paradigm_sound {
 /* line 134, ../../app/stylesheets/_experiment.sass */
 .paradigm .item_text img {
   margin-top: 1em;
+  margin-bottom: 1em;
 }
-/* line 136, ../../app/stylesheets/_experiment.sass */
+/* line 137, ../../app/stylesheets/_experiment.sass */
 .paradigm .item_text img.plural_img {
   margin-right: 1em;
 }
-/* line 138, ../../app/stylesheets/_experiment.sass */
+/* line 139, ../../app/stylesheets/_experiment.sass */
 .paradigm #singular_col {
   width: 275px;
 }
-/* line 140, ../../app/stylesheets/_experiment.sass */
+/* line 141, ../../app/stylesheets/_experiment.sass */
 .paradigm #plural_col {
   width: 375px;
   display: none;
@@ -619,4 +620,9 @@ body {
 /* line 31, ../../app/stylesheets/_hebrew.sass */
 form.new_participant fieldset.submit {
   float: left;
+}
+
+/* line 36, ../../app/stylesheets/_hebrew.sass */
+.paradigm .item_text {
+  margin-bottom: 2em;
 }
