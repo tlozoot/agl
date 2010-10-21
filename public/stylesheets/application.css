@@ -615,3 +615,8 @@ body {
   margin: 1em 2em 0em 0em;
   list-style-type: disc;
 }
+
+/* line 31, ../../app/stylesheets/_hebrew.sass */
+form.new_participant fieldset.submit {
+  float: left;
+}
