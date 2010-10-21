@@ -1,11 +1,11 @@
 :textile
-  That's it! We'd appreciate it if you just answered a few questions before leaving IN HEBREW!!!!
+  זהו סוף המשחק! נודה לכם מאוד אם תענו על מספר שאלות לגבי הרקע הלשוני שלכם.
 
 - semantic_form_for @participant, :url => participant_path(@participant), :html => { :class => "finished_form" } do |f|
   - f.inputs do 
-    = f.input :year_born, :label => "In what year were you born?", :as => :select, :collection => (1900..2010).to_a.reverse
-    = f.input :gender, :label => "What is your gender?", :as => :radio, :collection => ["Female", "Male"]
-    = f.input :location, :label => 'Where are you from?', :as => :select, :collection => ['United States or Canada', 'Other English-speaking country', 'Other non-English speaking country']
+    = f.input :year_born, :label => "שנת לידה:", :as => :select, :collection => (1900..2010).to_a.reverse
+    = f.input :gender, :label => "מין:", :as => :radio, :collection => ["נקבה", "זכר"]
+    = f.input :location, :label => 'ארץ מוצא', :as => :select, :collection => ['אני יליד/ת הארץ', 'Other English-speaking country', 'Other non-English speaking country']
     = f.input :native, :label => "Did you grow up speaking English?", :as => :radio
     = f.input :language_background, :label => "When you speak English, where do people think you're from? (e.g. New England, Texas, Eastern Europe...)"
     = f.input :other_languages, :label => "What other languages do you speak?"

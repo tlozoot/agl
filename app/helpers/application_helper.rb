@@ -11,7 +11,7 @@ module ApplicationHelper
   def play_again(result, form)
     content_tag(:span, :class => "linkish play_again #{form.to_s}", 'data-id' => result.method(form).call, \
         'data-soundFile' => result.method("#{form}_sound_file").call) do
-      "play again"
+      "נגן שוב"
     end
   end
   

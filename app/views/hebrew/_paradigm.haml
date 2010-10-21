@@ -20,24 +20,25 @@
       אלה שני
       - if (@result.experiment_phase == 'testing') || (@result.experiment_phase == 'training_test')
         = f.text_field :plural_response
+        נחמדים
         #show_next.paradigm_instructions
-          Now you tell us what the plural is
+          עכשיו תגידו לנו אתם מהי צורת הרבים
       - elsif @result.both_responses && (@result.experiment_phase == 'learning')
         = f.text_field :plural_response, :class => 'paradigm_sound plural', 'data-id' => @result.plural, 'data-soundFile' => @result.plural_sound_file, :disabled => 'disabled'
         נחמדים
         = play_again(@result, :plural)
         #show_spelling.paradigm_instructions
-          Enter the word you just heard, then
+          הקלד את צורת הרבים ששמעת,
           %br
-          press enter or
-          %span.linkish click to continue
+          ולחץ
+          %span.linkish להמשך
         .true_spelling{ 'data-spelling' => @result.human_plural }
           .correct נכון!
           .incorrect לא בדיוק...
-          The martian spelling of this word is
+          בחייזרית כותבים את המילה הזאת ככה:
           %strong #{ @result.human_plural }
           %br
-          Click 'next' or press enter to continue
+          הקישו אנטר או לחצו על כפתור 'הדף הבא' להמשך
       - else
         %span.paradigm_sound.plural{ 'data-soundFile' => @result.plural_sound_file, 'data-id' => @result.plural }= @result.human_plural
         נחמדים
@@ -46,4 +47,4 @@
       = (image_tag @result.clipart.plural_file, :width => "200", :class => "plural_img")
   %fieldset.continue
     = render 'hebrew/progress', :participant => @participant
-    %fieldset.submit= submit_tag "Next &raquo;", :disabled => true
+    %fieldset.submit= submit_tag "לדף הבא &raquo;", :disabled => true
