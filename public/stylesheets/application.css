@@ -603,3 +603,15 @@ body {
   float: left;
   clear: both;
 }
+
+/* line 19, ../../app/stylesheets/_hebrew.sass */
+#intro ol li {
+  list-style: decimal;
+  margin: 1em 2em 0em 0em;
+}
+
+/* line 25, ../../app/stylesheets/_hebrew.sass */
+.martian_spelling ul li {
+  margin: 1em 2em 0em 0em;
+  list-style-type: disc;
+}

@@ -1,6 +1,6 @@
 
 #intro
-  %h2 בואו ללמוד חייזרית בשלושה צעדים פשוטים
+  %h2 ברוכים הבאים לשיעור בחייזרית
 
   - form_for @participant, :url => experiments_url, :html => { :class => "new_participant ajax_submit" } do |f|
     
@@ -9,17 +9,17 @@
         %p הרכיבו אוזניות והאזינו למילת הפתיחה:
     
         .intro_inputs
-          %strong Listen to a test word:
+          %strong לחצו להשמעה:
           %span#volume_test.linkish נגן
       
           %fieldset.perception
             = f.label :experiment, "מה שמעתם? ", :class => "strong"
             = f.text_field :perception
 
-      %li
+      %li{ :style => 'display:none;'}
         %p Copy this code and paste it in your task:
   
-        .intro_inputs
+        .intro_inputs{ :style => 'display:none;'}
           %fieldset.name
             %label.strong Your ID:
             %span.static_form_field= @participant.code
