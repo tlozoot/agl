@@ -1,19 +1,19 @@
 
 #intro
-  %h2 Learn Martian in 3 easy steps IN HEBREW!
+  %h2 בואו ללמוד חייזרית בשלושה צעדים פשוטים
 
   - form_for @participant, :url => experiments_url, :html => { :class => "new_participant ajax_submit" } do |f|
     
     %ol
       %li
-        %p Put headphones on and play the test sound.
+        %p הרכיבו אוזניות והאזינו למילת הפתיחה:
     
         .intro_inputs
           %strong Listen to a test word:
-          %span#volume_test.linkish Play
+          %span#volume_test.linkish נגן
       
           %fieldset.perception
-            = f.label :experiment, "And try spelling it: ", :class => "strong"
+            = f.label :experiment, "מה שמעתם? ", :class => "strong"
             = f.text_field :perception
 
       %li
@@ -34,10 +34,7 @@
             = f.label(:hebrew, "Hebrew")
 
       %li
-        %p Get going!
-      
-      %li
-        %p Imagine that this entire page is in Hebrew!
+        %p צאו לדרך!
 
         .intro_inputs
-          %fieldset.submit= submit_tag "Continue &raquo;", :disabled => 'disabled'
+          %fieldset.submit= submit_tag "לדף הבא &raquo;", :disabled => 'disabled'
