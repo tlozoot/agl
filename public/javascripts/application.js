@@ -1,5 +1,5 @@
 soundManager.url = $('meta.soundman').attr('data-soundmanager-url');
-soundManager.debugMode = true;
+soundManager.debugMode = false;
 
 
 var addSubmitFormEvent = function() {
