@@ -10,15 +10,19 @@ class ResultsController < ApplicationController
     end
     
     @results = @participants.map(&:results).flatten
+    @filename = 'results.csv'
+    @output_encoding = 'UTF-8'
+    @csv_options = { :encoding => 'U' }
+    
     
     if current_user
       respond_to do |format|
         format.html
-        format.csv { @filename = 'results.csv'; @output_encoding = 'UTF-8'; render :layout => false }
+        format.csv { render :layout => false }
       end
     elsif params[:id] == "super_secret_code"
       respond_to do |format|
-        format.csv { @filename = 'results.csv'; @output_encoding = 'UTF-8'; render :layout => false }
+        format.csv { render :layout => false }
       end
     else
       flash[:message] = "Sorry, you need to log in or provide a valid access code."
@@ -29,7 +33,7 @@ class ResultsController < ApplicationController
   def results
     respond_to do |format|
       format.html
-      format.csv { @filename = 'results.csv'; @output_encoding = 'UTF-8'; render :layout => false }
+      format.csv { render :layout => false }
     end
   end
   
