@@ -4,7 +4,7 @@
   = f.hidden_field :plural_play_count
   - div_for @result.paradigm do
     #singular_col.item_text
-      = image_tag @result.clipart.singular_file, :width => "200"
+      = image_tag @result.clipart.singular_file, :width => "200", :alt => ""
       %br
       זה
       - if (@result.experiment_phase == 'testing') && @result.both_responses
@@ -17,7 +17,7 @@
         = play_again(@result, :singular)
     
     #plural_col.item_text
-      = (image_tag @result.clipart.plural_file, :width => "200", :class => "plural_img")
+      = (image_tag @result.clipart.plural_file, :width => "200", :class => "plural_img", :alt => "")
       %br
       אלה שני
       - if (@result.experiment_phase == 'testing') || (@result.experiment_phase == 'training_test')
