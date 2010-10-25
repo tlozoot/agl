@@ -51,3 +51,7 @@ form.finished_form input[type=submit] {
 form.finished_form fieldset ol li {
   margin-bottom: 1em;
 }
+/* line 57, ../../app/stylesheets/hebrew.sass */
+form.finished_form fieldset ol li.radio legend {
+  float: right;
+}

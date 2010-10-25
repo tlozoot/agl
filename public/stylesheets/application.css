@@ -141,12 +141,16 @@ form.finished_form input[type=submit] {
 form.finished_form fieldset ol li {
   margin-bottom: 1em;
 }
-/* line 69, ../../app/stylesheets/_formtastic.sass */
-form.finished_form fieldset ol li ol {
+/* line 70, ../../app/stylesheets/_formtastic.sass */
+form.finished_form fieldset ol li.radio legend {
   float: left;
 }
-/* line 71, ../../app/stylesheets/_formtastic.sass */
-form.finished_form fieldset ol li ol li {
+/* line 72, ../../app/stylesheets/_formtastic.sass */
+form.finished_form fieldset ol li.radio legend label {
+  float: none;
+}
+/* line 75, ../../app/stylesheets/_formtastic.sass */
+form.finished_form fieldset ol li.radio ol li {
   display: -moz-inline-box;
   -moz-box-orient: vertical;
   display: inline-block;
@@ -155,8 +159,8 @@ form.finished_form fieldset ol li ol li {
   *vertical-align: auto;
   margin-bottom: 0;
 }
-/* line 74, ../../app/stylesheets/_formtastic.sass */
-form.finished_form fieldset ol li ol li label {
+/* line 78, ../../app/stylesheets/_formtastic.sass */
+form.finished_form fieldset ol li.radio ol li label {
   width: 80px;
 }
 
