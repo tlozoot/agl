@@ -67,11 +67,15 @@ form.finished_form
     margin-bottom: 1em
     
     &.radio
-    ol
-      li
-        +inline-block
-        margin-bottom: 0
+      legend
+        float: left
         label
-          width: 80px
+          float: none
+      ol
+        li
+          +inline-block
+          margin-bottom: 0
+          label
+            width: 80px
     
   

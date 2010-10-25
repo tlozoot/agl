@@ -6,8 +6,8 @@
     %title Harvard language study
     = javascript_include_tag 'jquery-1.4.2.min', 'soundmanager2-jsmin', 'application'
     = stylesheet_link_tag 'application'
-    /- if url_path =~ /hebrew/
-    = stylesheet_link_tag 'hebrew'
+    - if url_path =~ /hebrew/
+      = stylesheet_link_tag 'hebrew'
     /[if lt IE 8]
       = stylesheet_link_tag 'ie'
     

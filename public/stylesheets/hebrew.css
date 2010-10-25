@@ -31,3 +31,8 @@ body {
 form.new_participant fieldset.submit {
   float: left;
 }
+
+/* line 36, ../../app/stylesheets/hebrew.sass */
+.paradigm .item_text {
+  margin-bottom: 2em;
+}
