@@ -1,0 +1,5 @@
+%form.ajax_submit{ :action => experiment_url(@participant), :method => "get" }
+  %fieldset.continue
+    = render 'progress', :participant => @participant
+    %fieldset.submit
+      %input{ :value => "Continue &raquo;", :type => "submit" }
