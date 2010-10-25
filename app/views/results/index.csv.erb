@@ -1,4 +1,3 @@
 <%= @columns.join(", ") %>
-<% @results.each do |r| %>
-  <%= @columns.map{ |col| method_call(r, col).to_s.gsub(',', '\,') }.join(", ") %>
+<% @results.each do |r| %><%= @columns.map{ |col| method_call(r, col).to_s.gsub(',', '\,') }.join(", ").lstrip.chomp %>
 <% end %>
