@@ -5,7 +5,7 @@
   - f.inputs do 
     = f.input :year_born, :label => "שנת לידה:", :as => :select, :collection => (1900..2010).to_a.reverse
     = f.input :gender, :label => "מין:", :as => :radio, :collection => ["זכר","נקבה"]
-    = f.input :location, :label => 'לידה/עלייה', :as => :select, :collection => ['אני יליד/ת הארץ', 'עליתי ארצה כילד/ה', 'עליתי ארצה כנער/ה או בוגר/ת']
+    = f.input :location, :label => 'לידה/עלייה:', :as => :select, :collection => ['אני יליד/ת הארץ', 'עליתי ארצה כילד/ה', 'עליתי ארצה כנער/ה או בוגר/ת']
     = f.input :language_background, :label => "איזה מבטא יש לך בעברית? רגיל/בלי מבטא, מזרחי, רוסי, וכו'"
     = f.input :other_languages, :label => "אילו שפות זרות את/ה מדבר/ת באופן שוטף?"
     = f.input :comments, :label => "נשמח לשמוע כל הארה והערה.".html_safe
