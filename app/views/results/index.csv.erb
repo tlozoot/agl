@@ -1,4 +1,4 @@
 <%= @columns.join(", ") %>
-<% @results.each do |r|  # data rows %>
+<% @results.each do |r| %>
   <%= @columns.map{ |col| method_call(r, col).to_s.gsub(',', '\,') }.join(", ") %>
 <% end %>
