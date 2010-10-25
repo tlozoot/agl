@@ -1,5 +1,7 @@
 soundManager.url = $('meta.soundman').attr('data-soundmanager-url');
-soundManager.debugMode = false;
+soundManager.debugMode = true;
+soundManager.debugFlash = true;
+
 
 var addSubmitFormEvent = function() {
   $('form.ajax_submit').keypress(function() {
