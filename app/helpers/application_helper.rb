@@ -31,4 +31,11 @@ module ApplicationHelper
     end
   end
   
+  def csv_for(collection, columns)
+    "#{ columns.join(', ') }\n" +
+    (collection.map do |o|
+      columns.map{ |col| method_call(o, col).to_s.gsub(',', ';') }.join(", ") 
+    end).join("\n")
+  end
+  
 end

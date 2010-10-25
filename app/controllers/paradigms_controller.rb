@@ -8,7 +8,7 @@ class ParadigmsController < ApplicationController
     @columns = %w(human_singular human_plural experiment_type)
     respond_to do |format|
       format.html
-      format.csv { render :content_type => "text/csv", :layout => false }
+      format.csv { render :text => help.csv_for(@paradigms, @columns), :content_type => "text/csv", :layout => false }
     end
   end
   
