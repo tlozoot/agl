@@ -10,7 +10,7 @@
     
         .intro_inputs
           %strong Listen to a test word:
-          %span#volume_test.linkish Play
+          %span#volume_test.linkish{ 'data-soundfile' => "http://phonetics.fas.harvard.edu/agl/stimuli/fixed/larb_d.mp3" } Play
       
           %fieldset.perception
             = f.label :experiment, "And try spelling it: ", :class => "strong"

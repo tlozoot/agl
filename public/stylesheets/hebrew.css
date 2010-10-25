@@ -1,0 +1,33 @@
+/* line 1, ../../app/stylesheets/hebrew.sass */
+body {
+  direction: rtl;
+}
+
+/* line 6, ../../app/stylesheets/hebrew.sass */
+#footer span.copy {
+  float: left;
+  clear: both;
+}
+
+/* line 12, ../../app/stylesheets/hebrew.sass */
+.continue fieldset.submit {
+  float: left;
+  clear: both;
+}
+
+/* line 19, ../../app/stylesheets/hebrew.sass */
+#intro ol li {
+  list-style: decimal;
+  margin: 1em 2em 0em 0em;
+}
+
+/* line 25, ../../app/stylesheets/hebrew.sass */
+.martian_spelling ul li {
+  margin: 1em 2em 0em 0em;
+  list-style-type: disc;
+}
+
+/* line 31, ../../app/stylesheets/hebrew.sass */
+form.new_participant fieldset.submit {
+  float: left;
+}

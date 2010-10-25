@@ -10,7 +10,7 @@
     
         .intro_inputs
           %strong לחצו להשמעה:
-          %span#volume_test.linkish נגן
+          %span#volume_test.linkish{ 'data-soundfile' => "http://phonetics.fas.harvard.edu/agl/stimuli/hebrew/shalom.mp3" } נגן
       
           %fieldset.perception
             = f.label :experiment, "מה שמעתם? ", :class => "strong"

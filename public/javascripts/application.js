@@ -136,7 +136,7 @@ $(document).ready(function() {
   $('#volume_test').click(function(){
     soundManager.createSound({
       id: 'testSound',
-      url: "http://phonetics.fas.harvard.edu/agl/stimuli/hebrew/shalom.mp3"
+      url: $(this).attr('data-soundfile'),
     });
     soundManager.play('testSound');
   });
