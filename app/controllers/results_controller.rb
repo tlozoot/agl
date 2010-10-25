@@ -3,6 +3,8 @@ class ResultsController < ApplicationController
   before_filter :require_user, :except => :index
   
   def index
+    # results.csv?code=super_secret_code&exp_type=hebrew
+    
     @participants = Participant.all.select{ |p| p.finished? && p.perception != 'wugster' }
     
     if exp_type = params[:exp_type]
@@ -10,30 +12,19 @@ class ResultsController < ApplicationController
     end
     
     @results = @participants.map(&:results).flatten
-    @filename = 'results.csv'
-    @output_encoding = 'UTF-8'
-    @csv_options = { :encoding => 'U' }
-    
     
     if current_user
       respond_to do |format|
         format.html
-        format.csv { render :layout => false }
+        format.csv { render :content_type => "text/csv", :layout => false }
       end
     elsif params[:id] == "super_secret_code"
       respond_to do |format|
-        format.csv { render :layout => false }
+        format.csv { render :content_type => "text/csv", :layout => false }
       end
     else
       flash[:message] = "Sorry, you need to log in or provide a valid access code."
       redirect_to login_url
-    end
-  end
-  
-  def results
-    respond_to do |format|
-      format.html
-      format.csv { render :layout => false }
     end
   end
   
