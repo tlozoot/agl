@@ -5,9 +5,10 @@ class ParadigmsController < ApplicationController
   
   def index    
     @paradigms = Paradigm.all
+    @columns = %w(human_singular human_plural experiment_type)
     respond_to do |format|
       format.html
-      format.csv { @filename = 'paradigms.csv'; render :layout => false }
+      format.csv { render :content_type => "text/csv", :layout => false }
     end
   end
   

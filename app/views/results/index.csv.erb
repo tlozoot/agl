@@ -1,5 +1,4 @@
-<%= %w(perception participant_id participant_code start_time response_time experiment_type training_group experiment_phase display_order consonant vowel shape singular singular_play_count plural plural_play_count plural_response part_b).join(", ") %>
-
+<%= @columns.join(", ") %>
 <% @results.each do |r|  # data rows %>
-  <%= [r.participant.perception, r.participant.id, r.participant.code, r.participant.created_at, r.updated_at, r.participant.experiment_type.to_s.downcase, r.participant.training_group, r.experiment_phase, r.display_order, r.paradigm.consonant, r.paradigm.vowel, r.paradigm.stress, r.human_singular, r.singular_play_count, r.human_plural, r.plural_play_count, r.plural_response, r.both_responses].map{ |s| s.to_s.gsub(',', '\,') }.join(", ") %>
+  <%= @columns.map{ |col| method_call(r, col).to_s.gsub(',', '\,') }.join(", ") %>
 <% end %>

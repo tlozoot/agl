@@ -23,4 +23,12 @@ module ApplicationHelper
     end
   end
   
+  def method_call(object, method)
+    if method =~ /(.*)\.(.*)/
+      method_call(method_call(object, $1), $2)
+    else
+      object.send(method)
+    end
+  end
+  
 end

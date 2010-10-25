@@ -1,0 +1,4 @@
+<%= @columns.join(", ") %>
+<% @paradigms.each do |paradigm| %>
+  <%= @columns.map{ |col| method_call(paradigm, col).to_s }.join(", ") %>
+<% end %>
