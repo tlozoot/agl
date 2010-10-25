@@ -17,6 +17,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resource :variable, :only => :show, :controller => :variable
   map.resource :fixed, :only => :show, :controller => :fixed
   map.resource :hebrew, :only => :show, :controller => :hebrew
+  map.resources :hebrew, :controller => :experiments
   
   
   map.resources :results, :only => [:index, :show]
