@@ -31,3 +31,23 @@ body {
 form.new_participant fieldset.submit {
   float: left;
 }
+
+/* line 36, ../../app/stylesheets/hebrew.sass */
+.paradigm .item_text {
+  margin-bottom: 2em;
+}
+
+/* line 43, ../../app/stylesheets/hebrew.sass */
+form.finished_form label {
+  text-align: right;
+  float: right;
+}
+/* line 49, ../../app/stylesheets/hebrew.sass */
+form.finished_form input[type=submit] {
+  margin-left: 260px;
+  left: 0;
+}
+/* line 53, ../../app/stylesheets/hebrew.sass */
+form.finished_form fieldset ol li {
+  margin-bottom: 1em;
+}

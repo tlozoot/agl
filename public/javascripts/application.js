@@ -77,7 +77,7 @@ var loadSoundManager = function() {
 
 jQuery.ajaxSetup( { 
   'beforeSend': function(xhr) {
-    $('fieldset.submit').html("Loading...");
+    $('fieldset.submit').html("טוען...");
     xhr.setRequestHeader("Accept", "application/json");
   }, 
   'error': function(xhr, textStatus, errorThrown) {
