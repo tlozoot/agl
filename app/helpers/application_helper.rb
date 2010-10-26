@@ -23,18 +23,14 @@ module ApplicationHelper
     end
   end
   
-  def method_call(object, method)
-    if method =~ /(.*)\.(.*)/
-      method_call(method_call(object, $1), $2)
-    else
-      object.send(method)
-    end
-  end
+  def method_call(object, methods)
+    methods.split('.').inject(object){ |result, method| result.send(method) }
+  end    
   
   def csv_for(collection, columns)
-    "#{ columns.join(', ') }\n" +
+    "#{ columns.join(',') }\n" +
     (collection.map do |o|
-      columns.map{ |col| method_call(o, col).to_s.gsub(',', ';') }.join(", ") 
+      columns.map{ |col| method_call(o, col).to_s.gsub(',', ';') }.join(',') 
     end).join("\n")
   end
   

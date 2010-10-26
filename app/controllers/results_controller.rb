@@ -15,7 +15,7 @@ class ResultsController < ApplicationController
     
     @columns = %w(participant.perception participant.id participant.code participant.created_at updated_at participant.experiment_type.to_s.downcase participant.training_group experiment_phase display_order paradigm.consonant paradigm.vowel paradigm.stress human_singular singular_play_count human_plural plural_play_count plural_response both_responses)
     
-    # begin
+    begin
       respond_to do |format|
         format.html do
           if current_user then render
@@ -29,10 +29,10 @@ class ResultsController < ApplicationController
           end
         end
       end
-    # rescue
-      # flash[:message] = "Sorry, you need to log in or provide a valid access code."
-      # redirect_to login_url
-    # end
+    rescue
+      flash[:message] = "Sorry, you need to log in or provide a valid access code."
+      redirect_to login_url
+    end
     
   end
   
