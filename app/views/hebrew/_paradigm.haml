@@ -30,9 +30,9 @@
         נחמדים
         = play_again(@result, :plural)
         #show_spelling.paradigm_instructions
-          הקלד את צורת הרבים ששמעת,
+          הקלידו את צורת הרבים ששמעתם,
           %br
-          ולחץ
+          ולחצו
           %span.linkish להמשך
         .true_spelling{ 'data-spelling' => @result.human_plural }
           .correct נכון!
@@ -40,7 +40,7 @@
           בחייזרית כותבים את המילה הזאת ככה:
           %strong #{ @result.human_plural }
           %br
-          הקישו אנטר או לחצו על כפתור 'הדף הבא' להמשך
+          לחצו על כפתור ‘לדף הבא' להמשך
       - else
         %span.paradigm_sound.plural{ 'data-soundFile' => @result.plural_sound_file, 'data-id' => @result.plural }= @result.human_plural
         נחמדים
