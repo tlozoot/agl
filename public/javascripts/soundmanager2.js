@@ -268,7 +268,7 @@ function SoundManager(smURL,smID) {
       self.oMC.className = 'movieContainer';
       // "hide" flash movie
       self.oMC.style.position = 'absolute';
-      self.oMC.style.left = '-256px';
+      self.oMC.style.right = '0px';
       self.oMC.style.width = '1px';
       self.oMC.style.height = '1px';
       try {
