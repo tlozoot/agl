@@ -4,7 +4,7 @@ class ParticipantsController < ApplicationController
   
   def update
     @participant = Participant.find(params[:id])
-    @params = params[:fixed] || params[:variable]
+    @params = params[:fixed] || params[:variable] || params[:hebrew]
     if @participant.update_attributes(@params)
       respond_to do |format|
         format.html { render :show }
