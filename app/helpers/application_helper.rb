@@ -1,3 +1,4 @@
+# coding: utf-8
 module ApplicationHelper
   
   # Thanks Max! no idea how this works =]
