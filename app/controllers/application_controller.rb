@@ -1,5 +1,8 @@
 class ApplicationController < ActionController::Base
   
+  class PermissionError < Exception
+  end
+    
   require "#{RAILS_ROOT}/lib/helper"
   
   helper :all # include all helpers, all the time
