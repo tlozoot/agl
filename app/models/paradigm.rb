@@ -67,7 +67,9 @@ class Paradigm < ActiveRecord::Base
   end
   
   def human_plural
-    plural.sub('_', '-').sub('x', 'ai')
+    if plural
+      plural.sub('_', '-').sub('x', 'ai')
+    end
   end
   
   def plural

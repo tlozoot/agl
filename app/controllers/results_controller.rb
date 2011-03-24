@@ -5,7 +5,7 @@ class ResultsController < ApplicationController
   def index
     # results.csv?id=super_secret_code&exp_type=hebrew
     
-    @participants = Participant.all.select{ |p| p.finished? && p.perception != 'wugster' }
+    @participants = Participant.all.select{ |p| p.finished? && p.perception == 'wugster' }
     
     if exp_type = params[:exp_type]
       @participants = @participants.select{ |p| p.experiment_type == exp_type.capitalize }
@@ -16,7 +16,7 @@ class ResultsController < ApplicationController
       @columns = %w(id created_at year_born language_background email comments other_languages native gender)
     else
       @rows = @participants.map(&:results).flatten
-      @columns = %w(participant.perception participant.id participant.code participant.created_at updated_at participant.experiment_type.to_s.downcase participant.training_group experiment_phase display_order paradigm.consonant paradigm.vowel paradigm.stress paradigm.human_singular singular_play_count paradigm.human_plural plural_play_count plural_response both_responses)
+      @columns = %w(participant.perception participant.id participant.code participant.created_at updated_at participant.experiment_type.to_s.downcase participant.training_group experiment_phase display_order paradigm.consonant paradigm.vowel paradigm.stress paradigm.human_singular singular_play_count paradigm.human_plural plural_play_count plural_response both_responses participant.year_born participant.language_background participant.email participant.comments participant.other_languages participant.native participant.gender)
     end
       
     begin
