@@ -5,7 +5,7 @@ class ResultsController < ApplicationController
   def index
     # results.csv?id=super_secret_code&exp_type=hebrew
     
-    @participants = Participant.all.select{ |p| p.finished? && p.perception == 'wugster' }
+    @participants = Participant.all.select{ |p| p.finished? && p.perception != 'wugster' }
     
     if exp_type = params[:exp_type]
       @participants = @participants.select{ |p| p.experiment_type == exp_type.capitalize }
