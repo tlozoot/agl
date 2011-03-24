@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
   
-  require 'lib/helper'
+  require "#{RAILS_ROOT}/lib/helper"
   
   helper :all # include all helpers, all the time
   protect_from_forgery # See ActionController::RequestForgeryProtection for details
