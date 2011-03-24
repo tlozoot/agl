@@ -42,4 +42,15 @@ module ApplicationHelper
     end
   end
   
+  def method_call(object, methods)
+    methods.split('.').inject(object){ |result, method| result.send(method) }
+  end    
+  
+  def csv_for(collection, columns)
+    "#{ columns.join(',') }\n" +
+    (collection.map do |o|
+      columns.map{ |col| method_call(o, col).to_s.gsub(',', ';') }.join(',') 
+    end).join("\n")
+  end
+  
 end
