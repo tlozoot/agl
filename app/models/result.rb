@@ -1,6 +1,6 @@
 class Result < ActiveRecord::Base
 
-  require 'lib/helper'
+  require "#{RAILS_ROOT}/lib/helper"
 
   belongs_to :paradigm
   belongs_to :participant

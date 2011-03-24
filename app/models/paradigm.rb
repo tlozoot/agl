@@ -3,7 +3,7 @@ class Paradigm < ActiveRecord::Base
   has_many :results
   has_many :participants, :through => :results
   
-  require 'lib/helper'
+  require "#{RAILS_ROOT}/lib/helper"
   
   attr_accessor :clipart
   

@@ -1,0 +1,5 @@
+csv << %w(singular plural spelled_singular spelled_plural experiment_type) # header row
+@paradigms.each do |paradigm|  # data rows
+  csv << [paradigm.singular, paradigm.plural, paradigm.spelled_singular, paradigm.spelled_plural, paradigm.experiment_type]
+  # @columns.map{ |col| paradigm.method(col).call } # why doesn't this work???
+end
