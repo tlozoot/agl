@@ -3,8 +3,8 @@
 
 - semantic_form_for @participant, :url => participant_path(@participant), :html => { :class => "finished_form" } do |f|
   - f.inputs do 
-    = f.input :year_born, :label => "In what year were you born?", :as => :select, :collection => (1900..2010).to_a.reverse
-    = f.input :gender, :label => "What is your gender?", :as => :radio, :collection => ["Female", "Male"]
+    = f.input :year_born, :label => "In what year were you born? <strong>(required)</strong>".html_safe, :as => :select, :collection => (1900..2010).to_a.reverse
+    = f.input :gender, :label => "What is your gender? <strong>(required)</strong>".html_safe, :as => :radio, :collection => ["Female", "Male"]
     = f.input :location, :label => 'Where are you from?', :as => :select, :collection => ['United States or Canada', 'Other English-speaking country', 'Other non-English speaking country']
     = f.input :native, :label => "Did you grow up speaking English?", :as => :radio
     = f.input :language_background, :label => "When you speak English, where do people think you're from? (e.g. New England, Texas, Eastern Europe...)"
