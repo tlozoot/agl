@@ -46,6 +46,8 @@ class Participant < ActiveRecord::Base
   end
   
   def pick_training_group
+    return 'mono' # Remove this later!
+  
     group1, group2 = self.groups    
     finished = self.experiment_type.capitalize.constantize.finished
     if finished.length > 0
