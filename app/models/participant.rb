@@ -61,8 +61,8 @@ class Participant < ActiveRecord::Base
   # testing:  3 places * (3 training[1 old + 2 new] + 3 opposite training) + 1 of each extra for [p] + 3 old filler + 7 new filler = 34 testing words
   
   # FIXED:
-  # learning: 2 places * 5 of each (only one stress) + 5 filler = 15 learning words
-  # testing:  2 places * (5 training[2 old + 3 new] + 5 opposite training) + 3 old filler + 7 new filler = 30 testing words
+  # learning: 2 places * 5 of each (only one stress) + 6 (balanced) filler = 16 learning words
+  # testing:  2 places * (5 training[2 old + 3 new] + 5 opposite training) + 4 old filler + 6 new filler [5 from each group] = 30 testing words
   
   def generate_items
     assign_training_group
@@ -73,11 +73,11 @@ class Participant < ActiveRecord::Base
     @items[:testing] = []
     
     # Control words:
-    # => Training: 2 same meter + 3 different meter = 5
-    # => Testing: 5 same meter (1 old) + 5 different meter (2 old)
-    @similar_control_words = paradigms_by_characteristic(control_places, training_group).randomly_pick(6)
-    @different_control_words = paradigms_by_characteristic(control_places, opposite_training_group).randomly_pick(6)
-    @items[:learning] += (@similar_control_words.first(2) + @different_control_words.first(3)).sort_by{ rand }
+    # => Training: 3 same meter + 3 different meter = 6
+    # => Testing: 5 same meter (2 old) + 5 different meter (2 old)
+    @similar_control_words = paradigms_by_characteristic(control_places, training_group).randomly_pick(7)
+    @different_control_words = paradigms_by_characteristic(control_places, opposite_training_group).randomly_pick(7)
+    @items[:learning] += (@similar_control_words.first(3) + @different_control_words.first(3)).sort_by{ rand }
     @items[:testing] += (@similar_control_words.last(5) + @different_control_words.last(5)).sort_by{ rand }
     
     
