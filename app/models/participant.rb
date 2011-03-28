@@ -98,7 +98,7 @@ class Participant < ActiveRecord::Base
     end
         
     @bools = {}
-    @bools[:learning] = Array.new(7, false) + Array.new(8, true) # spell the latter half of the learning words
+    @bools[:learning] = Array.new(8, false) + Array.new(8, true) # spell the latter half of the learning words
     @bools[:testing] = Array.new(15, false) + Array.new(15, true) # hide the singulars in latter half of the testing
       
     [:learning, :testing].each do |phase|
